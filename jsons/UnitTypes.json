@@ -1,0 +1,2254 @@
+[
+    {
+        "name": "Civilian",
+        "movementType": "Land"
+    },
+    {
+        "name": "Sword",
+        "movementType": "Land"
+    },
+    {
+        "name": "Gunpowder",
+        "movementType": "Land"
+    },
+    {
+        "name": "Archery",
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Gunpowder",
+        "movementType": "Land"
+    },
+    {
+        "name": "Scout",
+        "movementType": "Land"
+    },
+    {
+        "name": "Mounted",
+        "movementType": "Land"
+    },
+    {
+        "name": "Armored",
+        "movementType": "Land"
+    },
+    {
+        "name": "Siege",
+        "movementType": "Land",
+        "civilopediaText": [
+            {
+                "text": "Siege units are extremely powerful against cities, but need to be Set Up before they can attack.\nOnce your siege unit is set up, it can attack from the current tile,\n  but once moved to another tile, it will need to be set up again."
+            }
+        ]
+    },
+    {
+        "name": "Civilian Water",
+        "movementType": "Water"
+    },
+    {
+        "name": "Melee Water",
+        "movementType": "Water"
+    },
+    {
+        "name": "Ranged Water",
+        "movementType": "Water"
+    },
+    {
+        "name": "Submarine",
+        "movementType": "Water",
+        "uniques": [
+            "Can enter ice tiles",
+            "Invisible to non-adjacent units",
+            "Can see invisible [Submarine] units"
+        ]
+    },
+    {
+        "name": "Aircraft Carrier",
+        "movementType": "Water"
+    },
+    {
+        "name": "Fighter",
+        "movementType": "Air",
+        "uniques": [
+            "Aircraft",
+            "[+4] Sight",
+            "Can see over obstacles",
+            "Can perform Air Sweep"
+        ]
+    },
+    {
+        "name": "Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Atomic Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Missile",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking", "Cannot be intercepted"]
+    },
+    {
+        "name": "Helicopter",
+        "movementType": "Land",
+        "uniques": ["Can pass through impassable tiles"]
+    },
+    {
+        "name": "Air Base",
+        "movementType": "Land"
+    },
+
+    {
+        "name": "Land Carrier",
+        "movementType": "Land"
+    },
+
+    {
+        "name": "Anti Air",
+        "movementType": "Land"
+    },
+    {
+        "name": "Civilian",
+        "movementType": "Land"
+    },
+    {
+        "name": "Sword",
+        "movementType": "Land",
+        "uniques": [
+            "[+33]% Strength <vs [Air] units> <when adjacent to a [Anti-Air] unit>",
+            "[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>",
+            "May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>"
+        ]
+    },
+    {
+        "name": "Gunpowder",
+        "movementType": "Land",
+        "uniques": [
+            "[+33]% Strength <vs [Air] units> <when adjacent to a [Anti-Air] unit>",
+            "[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>",
+            "May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>"
+        ]
+    },
+    {
+        "name": "Archery",
+        "movementType": "Land",
+        "uniques": [
+            "[+33]% Strength <vs [Air] units> <when adjacent to a [Anti-Air] unit>",
+            "[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>",
+            "May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>"
+        ]
+    },
+    {
+        "name": "Ranged Gunpowder",
+        "movementType": "Land",
+        "uniques": [
+            "[+33]% Strength <vs [Air] units> <when adjacent to a [Anti-Air] unit>",
+            "[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>",
+            "May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>"
+        ]
+    },
+    {
+        "name": "Scout",
+        "movementType": "Land",
+        "uniques": [
+            "[+33]% Strength <vs [Air] units> <when adjacent to a [Anti-Air] unit>",
+            "[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>",
+            "May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>"
+        ]
+    },
+    {
+        "name": "Mounted",
+        "movementType": "Land",
+        "uniques": [
+            "[+33]% Strength <vs [Air] units> <when adjacent to a [Anti-Air] unit>",
+            "[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>",
+            "May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>"
+        ]
+    },
+    {
+        "name": "Armored",
+        "movementType": "Land",
+        "uniques": [
+            "[+33]% Strength <vs [Air] units> <when adjacent to a [Anti-Air] unit>",
+            "[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>",
+            "May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>"
+        ]
+    },
+    {
+        "name": "Siege",
+        "movementType": "Land",
+        "uniques": [
+            "[+33]% Strength <vs [Air] units> <when adjacent to a [Anti-Air] unit>",
+            "[+1] Range <when adjacent to a [Intel] unit>",
+            "[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>",
+            "May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>"
+        ]
+    },
+    {
+        "name": "Civilian Water",
+        "movementType": "Water"
+    },
+    {
+        "name": "Melee Water",
+        "movementType": "Water",
+        "uniques": [
+            "[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>",
+            "May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>"
+        ]
+    },
+    {
+        "name": "Ranged Water",
+        "movementType": "Water",
+        "uniques": [
+            "[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>",
+            "May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>"
+        ]
+    },
+    {
+        "name": "Submarine",
+        "movementType": "Water",
+        "uniques": [
+            "[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>",
+            "Can enter ice tiles",
+            "Invisible to non-adjacent units",
+            "Can see invisible [Submarine] units",
+            "May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>"
+        ]
+    },
+    {
+        "name": "Aircraft Carrier",
+        "movementType": "Water",
+        "uniques": [
+            "[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>",
+            "May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>"
+        ]
+    },
+    {
+        "name": "Fighter",
+        "movementType": "Air",
+        "uniques": [
+            "Aircraft",
+            "[+4] Sight",
+            "Can see over obstacles",
+            "Can perform Air Sweep"
+        ]
+    },
+    {
+        "name": "Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Atomic Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Missile",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking", "Cannot be intercepted"]
+    },
+    {
+        "name": "Helicopter",
+        "movementType": "Land",
+        "uniques": [
+            "[+33]% Strength <vs [Air] units> <when adjacent to a [Anti-Air] unit>",
+            "[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>",
+            "May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>",
+            "Can pass through impassable tiles"
+        ]
+    },
+    {
+        "name": "Support",
+        "movementType": "Land"
+    },
+    {
+        "name": "Land Carrier",
+        "movementType": "Land",
+        "uniques": [
+            "[+33]% Strength <vs [Air] units> <when adjacent to a [Anti-Air] unit>",
+            "[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>",
+            "May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>",
+            "Can pass through impassable tiles"
+        ]
+    },
+    {
+        "name": "Air Base", //Due to proper Airstrip/Missile Silo tile improvements being impossible to implement in Unciv
+        "movementType": "Land"
+    },
+    {
+        "name": "Civilian",
+        "movementType": "Land"
+    },
+    {
+        "name": "Civilian Water",
+        "movementType": "Water"
+    },
+
+    //infantry
+
+    /* 
+    { 
+        "name": "Infantry", 
+	"uniques": ["[+15]% Strength <vs [Anti Cavalry] units>", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>" 
+	], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Marines", 
+        "uniques": ["Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast"], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Anti Cavalry", 
+	"uniques": [ 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>" 
+	], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Recon", 
+	"uniques": ["Ignores terrain cost", "Can see invisible [Land] units"], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Paratrooper", 
+        "movementType": "Land" 
+    }, 
+*/
+    {
+        "name": "Militia",
+        "uniques": [
+            "[+50]% to Flank Attack bonuses",
+            "[50]% Strength <when stacked with a [Civilian] unit>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Sword Anti Cavalry",
+        "uniques": [
+            "Sword",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Gunpowder Anti Cavalry",
+        "uniques": [
+            "Gunpowder",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Anti Armor",
+        "uniques": [
+            "Gunpowder",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+
+    //ranged
+    /* 
+    { 
+        "name": "Ranged Heavy", 
+	"uniques": ["[-20]% Strength <vs [Infantry] units>", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Ranged Support", 
+	"uniques": [ 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>" 
+	], 
+        "movementType": "Land" 
+    }, 
+*/
+    {
+        "name": "Archery Light",
+        "uniques": [
+            "Archery",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Gunpowder Light",
+        "uniques": [
+            "Ranged Gunpowder",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Gunpowder Emplacement",
+        "uniques": [
+            "Ranged Gunpowder",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+
+    //siege
+
+    /* 
+    { 
+        "name": "Siege Melee", 
+	"uniques": [ 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>" 
+	], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Siege Ranged", 
+	"uniques": ["[-1] Sight", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Siege Carrier", 
+	"uniques": ["[-1] Sight", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"], 
+        "movementType": "Land" 
+    }, 
+*/
+    {
+        "name": "Siege Nuke",
+        "uniques": [
+            "[-1] Sight",
+            "[-50]% XP gained from combat",
+            "Only available <if [Manhattan Project] is constructed>",
+            "[+100]% maintenance costs",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Siege Sword",
+        "uniques": [
+            "Sword",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Siege Gunpowder",
+        "uniques": [
+            "Gunpowder",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+
+    //cav
+
+    /* 
+    { 
+        "name": "Heavy Cavalry", 
+	"uniques": [ 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>" 
+	], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Light Cavalry", 
+	"uniques": [ 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>" 
+	], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Ranged Cavalry", 
+	"uniques": ["[-20]% Strength <vs [Infantry] units>", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Counter Cavalry", 
+	"uniques": [ 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>", 
+	"[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>" 
+	], 
+        "movementType": "Land" 
+    }, 
+*/
+    {
+        "name": "Archery Mounted",
+        "uniques": [
+            "Archery",
+            "Mounted",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Gunpowder Mounted",
+        "uniques": [
+            "Ranged Gunpowder",
+            "Mounted",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Gunpowder Armored",
+        "uniques": [
+            "Ranged Gunpowder",
+            "Armored",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "GDR",
+        "uniques": [
+            "Armored",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+
+    //specialist
+
+    {
+        "name": "Anti Air",
+        "uniques": [
+            "[+60]% Strength <vs [Aircraft] units>",
+            "[+100]% Strength <vs [Helicopter] units>",
+            "Cannot intercept [Ballistic] units",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Missile Defense",
+        "uniques": [
+            "Cannot intercept [non-[Ballistic]] units",
+            "[+5000]% Strength <vs [Ballistic] units>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+
+    //naval
+
+    /* 
+    { 
+        "name": "Naval Melee", 
+	"uniques": ["[+50]% Strength <vs [Naval Raider] units>"], 
+        "movementType": "Water" 
+    }, 
+    { 
+        "name": "Naval Ranged", 
+	"uniques": ["[-20]% Strength <vs [Land] units>"], 
+        "movementType": "Water" 
+    }, 
+    { 
+        "name": "Naval Siege", 
+	"uniques": ["[-20]% Strength <vs [Naval Submarine] units>","[-20]% Strength <vs [Naval Raider] units>", "[+30]% Strength <vs cities>"], 
+        "movementType": "Water" 
+    }, 
+    { 
+        "name": "Naval Carrier", 
+        "movementType": "Water" 
+    }, 
+    { 
+        "name": "Naval Raider", 
+        "uniques": ["Invisible to non-adjacent units", "Can see invisible [Naval Raider] units"], 
+        "movementType": "Water" 
+    }, 
+    { 
+        "name": "Naval Submarine", 
+        "uniques": ["Can enter ice tiles", "Invisible to non-adjacent units", "Can see invisible [Naval Submarine] units", "Can see invisible [Naval Raider] units"], 
+        "movementType": "Water" 
+    }, 
+*/
+
+    //aircraft
+
+    /* 
+    { 
+        "name": "Air Fighter", 
+        "uniques": ["Aircraft", "[+4] Sight", "Can see over obstacles", "Can perform Air Sweep"], 
+        "movementType": "Air" 
+    }, 
+    { 
+        "name": "Air Interceptor", 
+        "uniques": ["Aircraft", "[+4] Sight", "Can see over obstacles", "Can perform Air Sweep"], 
+        "movementType": "Air" 
+    }, 
+    { 
+        "name": "Air Bomber", 
+        "uniques": ["Aircraft"], 
+        "movementType": "Air" 
+    }, 
+    { 
+        "name": "Air CAS", 
+        "uniques": ["Aircraft", "Can perform Air Sweep"], 
+        "movementType": "Air" 
+    }, 
+    { 
+        "name": "Air Atomic Bomber", 
+        "uniques": ["Aircraft", "Self-destructs when attacking"], 
+        "movementType": "Air" 
+    }, 
+    { 
+        "name": "Air Missile", 
+        "movementType": "Air", 
+        "uniques": ["Self-destructs when attacking"] 
+    }, 
+    { 
+        "name": "Air Satellite", 
+        "movementType": "Air", 
+        "uniques": ["Cannot be intercepted"] 
+    }, 
+*/
+    {
+        "name": "Air Helicopter",
+        "movementType": "Land",
+        "uniques": [
+            "Aircraft",
+            "Helicopter",
+            "Can pass through impassable tiles"
+        ]
+    },
+    {
+        "name": "Air Drone",
+        "uniques": ["Aircraft", "Can see over obstacles", "[+2] Sight"],
+        "movementType": "Air"
+    },
+    {
+        "name": "Nuke Missile",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking"]
+    },
+    {
+        "name": "Interceptor",
+        "uniques": [
+            "Aircraft",
+            "[+4] Sight",
+            "Can see over obstacles",
+            "Can perform Air Sweep"
+        ],
+        "movementType": "Air"
+    },
+    {
+        "name": "CAS",
+        "uniques": ["Aircraft"],
+        "movementType": "Air"
+    },
+
+    //helicarrier
+    {
+        "name": "HeliCarrier",
+        "movementType": "Land",
+        "uniques": ["Can pass through impassable tiles"]
+    },
+
+    //vanilla items
+
+    {
+        "name": "Sword",
+        "uniques": [
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Gunpowder",
+        "uniques": [
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Archery",
+        "uniques": [
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Gunpowder",
+        "uniques": [
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Scout",
+        "uniques": [
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Mounted",
+        "uniques": [
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Armored",
+        "uniques": [
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Siege",
+        "uniques": [
+            "[This Unit] takes [5] damage <upon ending a turn in a [Coast] tile> <before discovering [Navigation]>",
+            "[This Unit] takes [5] damage <upon ending a turn in a [Ocean] tile> <before discovering [Radar]>"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Melee Water",
+        "movementType": "Water",
+        "uniques": ["Cannot intercept [Ballistic] units"]
+    },
+    {
+        "name": "Ranged Water",
+        "movementType": "Water"
+    },
+    {
+        "name": "Submarine",
+        "movementType": "Water",
+        "uniques": [
+            "Can enter ice tiles",
+            "Invisible to non-adjacent units",
+            "Can see invisible [Submarine] units"
+        ]
+    },
+    {
+        "name": "Aircraft Carrier",
+        "movementType": "Water"
+    },
+    {
+        "name": "Fighter",
+        "movementType": "Air",
+        "uniques": [
+            "Aircraft",
+            "[+4] Sight",
+            "Can see over obstacles",
+            "Cannot intercept [Ballistic] units",
+            "Can perform Air Sweep"
+        ]
+    },
+    {
+        "name": "Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Atomic Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Missile",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking"]
+    },
+    {
+        "name": "Helicopter",
+        "movementType": "Land",
+        "uniques": ["Can pass through impassable tiles"]
+    },
+
+    // Deprecated unit types required for mods without a UnitTypes.json file to work
+
+    {
+        "name": "Melee",
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged",
+        "movementType": "Land"
+    },
+    {
+        "name": "Armor",
+        "movementType": "Land"
+    },
+    {
+        "name": "WaterCivilian",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterMelee",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterRanged",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterSubmarine",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterAircraftCarrier",
+        "movementType": "Water"
+    },
+    {
+        "name": "AtomicBomber",
+        "movementType": "Air"
+    },
+
+    // Deprecated unit types required for mods without a UnitTypes.json file to work
+
+    {
+        "name": "Melee",
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged",
+        "movementType": "Land"
+    },
+    {
+        "name": "Armor",
+        "movementType": "Land"
+    },
+    {
+        "name": "WaterCivilian",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterMelee",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterRanged",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterSubmarine",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterAircraftCarrier",
+        "movementType": "Water"
+    },
+    {
+        "name": "AtomicBomber",
+        "movementType": "Air"
+    },
+    {
+        "name": "Radar Aircraft",
+        "movementType": "Air",
+        "uniques": [
+            "Aircraft",
+            "[+5] Sight",
+            "Can see over obstacles",
+            "Cannot attack"
+        ]
+    },
+    {
+        "name": "Carrier-Cruiser",
+        "movementType": "Water"
+    },
+    {
+        "name": "Icebreaker",
+        "movementType": "Water",
+        "uniques": [
+            "Can enter ice tiles",
+            "Double movement in [Coast]",
+            "Double movement in [Ice]",
+            "[+200]% Strength <when fighting in [Tundra] tiles>",
+            "[+200]% Strength <when fighting in [Snow] tiles>",
+            "Can see invisible [Submarine] units"
+        ]
+    },
+    {
+        "name": "Medical",
+        "movementType": "Land",
+        "uniques": [
+            "May heal outside of friendly territory",
+            "[+10]% Strength bonus for [Wounded] units within [2] tiles",
+            "Cannot attack"
+        ]
+    },
+    {
+        "name": "Civilian",
+        "movementType": "Land"
+    },
+    {
+        "name": "Civilian Water",
+        "movementType": "Water"
+    },
+
+    //infantry
+
+    {
+        "name": "Infantry",
+        "uniques": ["[+15]% Strength <vs [Anti Cavalry] units>"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Marines",
+        "uniques": [
+            "Eliminates combat penalty for attacking over a river",
+            "Eliminates combat penalty for attacking across a coast"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Anti Cavalry",
+        "movementType": "Land"
+    },
+    {
+        "name": "Mercenary",
+        "uniques": ["Unbuildable"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Recon",
+        "uniques": ["Ignores terrain cost", "Can see invisible [Land] units"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Paratrooper",
+        "movementType": "Land"
+    },
+    {
+        "name": "Militia",
+        "uniques": [
+            "[+50]% to Flank Attack bonuses",
+            "Can build [Trench] improvements on tiles",
+            "Can build [Fort] improvements on tiles",
+            "[+50]% Strength <when stacked with [Civilian] unit>"
+        ],
+        "movementType": "Land"
+    },
+
+    //ranged
+
+    {
+        "name": "Ranged Heavy",
+        "uniques": ["[-20]% Strength <vs [Infantry] units>"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Support",
+        "movementType": "Land"
+    },
+
+    //siege
+
+    {
+        "name": "Siege Melee",
+        "movementType": "Land"
+    },
+    {
+        "name": "Siege Ranged",
+        "uniques": ["[-1] Sight"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Siege Carrier",
+        "uniques": ["[-1] Sight"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Siege Nuke",
+        "uniques": [
+            "[-1] Sight",
+            "[-50]% XP gained from combat",
+            "Only available <if [Manhattan Project] is constructed>",
+            "[+100]% maintenance costs"
+        ],
+        "movementType": "Land"
+    },
+
+    //cav
+
+    {
+        "name": "Heavy Cavalry",
+        "uniques": ["[+10]% Strength <vs [Land] units>"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Light Cavalry",
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Cavalry",
+        "uniques": ["[-20]% Strength <vs [Infantry] units>"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Counter Cavalry",
+        "movementType": "Land"
+    },
+    {
+        "name": "Land Carrier",
+        "movementType": "Land"
+    },
+
+    //specialist
+
+    {
+        "name": "Anti Air",
+        "uniques": [
+            "[+60]% Strength <vs [Aircraft] units>",
+            "[+100]% Strength <vs [Helicopter] units>",
+            "Cannot intercept [Ballistic] units"
+        ],
+        "movementType": "Land"
+    },
+    {
+        "name": "Missile Defense",
+        "uniques": [
+            "Cannot intercept [Aircraft] units",
+            "[+5000]% Strength <vs [Ballistic] units>"
+        ],
+        "movementType": "Land"
+    },
+
+    //naval
+
+    {
+        "name": "Naval Melee",
+        "uniques": [
+            "[+50]% Strength <vs [Naval Raider] units>",
+            "Cannot intercept [Ballistic] units",
+            "Cannot intercept [Satellite] units"
+        ],
+        "movementType": "Water"
+    },
+    {
+        "name": "Naval Ranged",
+        "uniques": [
+            "[-20]% Strength <vs [Land] units>",
+            "Cannot intercept [Ballistic] units",
+            "Cannot intercept [Satellite] units"
+        ],
+        "movementType": "Water"
+    },
+    {
+        "name": "Naval Escort",
+        "uniques": [
+            "[-40]% Strength <vs [Land] units>",
+            "Cannot intercept [Ballistic] units",
+            "Cannot intercept [Satellite] units",
+            "Transfer Movement to [Embarked]",
+            "Transfer Movement to [Civilian Water]",
+            "[+20]% Strength <when stacked with [Civilian] unit>"
+        ],
+        "movementType": "Water"
+    },
+    {
+        "name": "Naval Siege",
+        "uniques": [
+            "[-20]% Strength <vs [Naval Submarine] units>",
+            "[-20]% Strength <vs [Naval Raider] units>",
+            "[+30]% Strength <vs cities>"
+        ],
+        "movementType": "Water"
+    },
+    {
+        "name": "Naval Carrier",
+        "uniques": [
+            "Cannot intercept [Ballistic] units",
+            "Cannot intercept [Satellite] units"
+        ],
+        "movementType": "Water"
+    },
+    {
+        "name": "Naval Raider",
+        "uniques": [
+            "Invisible to non-adjacent units",
+            "Can see invisible [Naval Raider] units"
+        ],
+        "movementType": "Water"
+    },
+    {
+        "name": "Naval Submarine",
+        "uniques": [
+            "Can enter ice tiles",
+            "Invisible to non-adjacent units",
+            "Can see invisible [Naval Submarine] units",
+            "Can see invisible [Naval Raider] units"
+        ],
+        "movementType": "Water"
+    },
+
+    //aircraft
+
+    {
+        "name": "Air Fighter",
+        "uniques": [
+            "Aircraft",
+            "[+4] Sight",
+            "Can see over obstacles",
+            "Cannot intercept [Ballistic] units",
+            "Cannot intercept [Satellite] units",
+            "Can perform Air Sweep"
+        ],
+        "movementType": "Air"
+    },
+    {
+        "name": "Air Bomber",
+        "uniques": ["Aircraft", "[-20]% Strength <vs [Air] units>"],
+        "movementType": "Air"
+    },
+    {
+        "name": "Air Naval Bomber",
+        "uniques": ["Aircraft", "[-20]% Strength <vs [Air] units>"],
+        "movementType": "Air"
+    },
+    {
+        "name": "Air Close Air Support",
+        "uniques": [
+            "Aircraft",
+            "Cannot intercept [Ballistic] units",
+            "Cannot intercept [Satellite] units",
+            "Can perform Air Sweep"
+        ],
+        "movementType": "Air"
+    },
+    {
+        "name": "Air Drone",
+        "uniques": [
+            "Aircraft",
+            "Can see over obstacles",
+            "[+2] Sight",
+            "Cannot intercept [Ballistic] units",
+            "Cannot intercept [Satellite] units",
+            "Can perform Air Sweep"
+        ],
+        "movementType": "Air"
+    },
+    {
+        "name": "Air Atomic Bomber",
+        "uniques": ["Aircraft", "Self-destructs when attacking"],
+        "movementType": "Air"
+    },
+    {
+        "name": "Air Missile",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking", "Ballistic"]
+    },
+    {
+        "name": "Air Nuke Missile",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking", "Ballistic"]
+    },
+    {
+        "name": "Air Helicopter",
+        "movementType": "Land",
+        "uniques": ["Can pass through impassable tiles"]
+    },
+    {
+        "name": "Air Satellite",
+        "movementType": "Air",
+        "uniques": ["Cannot be intercepted", "Satellite"]
+    },
+
+    //vanilla items
+
+    {
+        "name": "Sword",
+        "movementType": "Land"
+    },
+    {
+        "name": "Gunpowder",
+        "movementType": "Land"
+    },
+    {
+        "name": "Archery",
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Gunpowder",
+        "movementType": "Land"
+    },
+    {
+        "name": "Scout",
+        "movementType": "Land"
+    },
+    {
+        "name": "Mounted",
+        "movementType": "Land"
+    },
+    {
+        "name": "Armored",
+        "movementType": "Land"
+    },
+    {
+        "name": "Siege",
+        "movementType": "Land"
+    },
+    {
+        "name": "Melee Water",
+        "movementType": "Water",
+        "uniques": ["Cannot intercept [Ballistic] units"]
+    },
+    {
+        "name": "Ranged Water",
+        "movementType": "Water"
+    },
+    {
+        "name": "Submarine",
+        "movementType": "Water",
+        "uniques": [
+            "Can enter ice tiles",
+            "Invisible to non-adjacent units",
+            "Can see invisible [Submarine] units"
+        ]
+    },
+    {
+        "name": "Aircraft Carrier",
+        "movementType": "Water"
+    },
+    {
+        "name": "Fighter",
+        "movementType": "Air",
+        "uniques": [
+            "Aircraft",
+            "[+4] Sight",
+            "Can see over obstacles",
+            "Cannot intercept [Ballistic] units",
+            "Can perform Air Sweep"
+        ]
+    },
+    {
+        "name": "Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Atomic Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Missile",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking"]
+    },
+    {
+        "name": "Helicopter",
+        "movementType": "Land",
+        "uniques": ["Can pass through impassable tiles"]
+    },
+
+    // Deprecated unit types required for mods without a UnitTypes.json file to work
+
+    {
+        "name": "Melee",
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged",
+        "movementType": "Land"
+    },
+    {
+        "name": "Armor",
+        "movementType": "Land"
+    },
+    {
+        "name": "WaterCivilian",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterMelee",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterRanged",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterSubmarine",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterAircraftCarrier",
+        "movementType": "Water"
+    },
+    {
+        "name": "AtomicBomber",
+        "movementType": "Air"
+    },
+    //Future Expansion
+    {
+        "name": "Support",
+        "movementType": "Land"
+    },
+    {
+        "name": "Land Carrier",
+        "movementType": "Land",
+        "uniques": [
+            "[+33]% Strength <vs [Air] units> <when adjacent to a [Anti-Air] unit>",
+            "[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>",
+            "May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>",
+            "Can pass through impassable tiles"
+        ]
+    },
+    {
+        "name": "ATGM",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking", "Cannot be intercepted"]
+    },
+    {
+        "name": "Bomb",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking", "Cannot be intercepted"]
+    },
+    {
+        "name": "UAV",
+        "movementType": "Land",
+        "uniques": ["[+4] Sight"]
+    },
+    //Cultured
+    {
+        "name": "Plymouth-type",
+        "friendBonusUniques": [
+            "[+3 Culture] <before the [Medieval era]>",
+            "[+6 Culture] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+13 Culture] <starting from the [Industrial era]>",
+            "[+5]% [Culture] from every [Monument]",
+            "[+5]% [Culture] from every [Amphitheater]"
+        ],
+        "allyBonusUniques": [
+            "[+6 Culture] <before the [Medieval era]>",
+            "[+12 Culture] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+26 Culture] <starting from the [Industrial era]>",
+            "[+5]% [Culture] from every [Monument]",
+            "[+5]% [Culture] from every [Amphitheater]",
+            "[+5]% [Culture] from every [Opera House]",
+            "[+5]% [Culture] from every [Museum]"
+        ],
+        "color": [139, 96, 255]
+    },
+    {
+        "name": "San Miguel-type",
+        "friendBonusUniques": [
+            "[+4 Culture] <before the [Medieval era]>",
+            "[+8 Culture] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+16 Culture] <starting from the [Industrial era]>",
+            "[+1 Culture] per [3] social policies adopted"
+        ],
+        "allyBonusUniques": [
+            "[+3 Culture] <before the [Medieval era]>",
+            "[+6 Culture] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+13 Culture] <starting from the [Industrial era]>",
+            "[+1 Culture] per [2] social policies adopted"
+        ],
+        "color": [139, 96, 255]
+    },
+
+    //Maritime
+
+    {
+        "name": "Grand Banks-type",
+        "friendBonusUniques": [
+            "[+2 Food] [in capital]",
+            "[+1 Food] from every [Fishing Boats]"
+        ],
+        "allyBonusUniques": [
+            "[+2 Food] [in capital]",
+            "[+1 Food] [in all cities]",
+            "[+1 Food] from every [Fishing Boats]",
+            "[+1 Production] from every [Fishing Boats]"
+        ],
+        "color": [56, 255, 112]
+    },
+
+    {
+        "name": "Kaskaskia-type",
+        "friendBonusUniques": [
+            "[+2 Food] [in capital]",
+            "[+2 Gold] in cities on [River] tiles"
+        ],
+        "allyBonusUniques": [
+            "[+2 Food] [in capital]",
+            "[+1 Food] [in all cities]",
+            "[+2 Gold] in cities on [River] tiles",
+            "[+2 Gold] in cities on [Coastal] tiles"
+        ],
+        "color": [56, 255, 112]
+    },
+
+    //Mercantile
+    {
+        "name": "New Amsterdam-type",
+        "friendBonusUniques": [
+            "[+1 Happiness] <before the [Medieval era]>",
+            "[+2 Happiness] <starting from the [Medieval era]>",
+            "[+2 Gold] <before the [Medieval era]>",
+            "[+4 Gold] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+8 Gold] <starting from the [Industrial era]>",
+            "[+1 Gold] from each Trade Route"
+        ],
+        "allyBonusUniques": [
+            "[+1 Happiness] <before the [Medieval era]>",
+            "[+2 Happiness] <starting from the [Medieval era]>",
+            "[+2 Gold] <before the [Medieval era]>",
+            "[+4 Gold] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+8 Gold] <starting from the [Industrial era]>",
+            "Provides a unique luxury",
+            "[+2 Gold] from each Trade Route"
+        ],
+        "color": [255, 216, 0]
+    },
+    {
+        "name": "Republic of Pirates-type",
+        "friendBonusUniques": [
+            "[+1 Happiness] <before the [Medieval era]>",
+            "[+2 Happiness] <starting from the [Medieval era]>",
+            "[+2 Gold] <before the [Medieval era]>",
+            "[+4 Gold] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+8 Gold] <starting from the [Industrial era]>",
+            "[+1 Gold] from every [Lighthouse]",
+            "[+1 Gold] from every [Harbor]",
+            "[+1 Gold] from every [Seaport]"
+        ],
+        "allyBonusUniques": [
+            "[+1 Happiness] <before the [Medieval era]>",
+            "[+2 Happiness] <starting from the [Medieval era]>",
+            "[+2 Gold] <before the [Medieval era]>",
+            "[+4 Gold] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+8 Gold] <starting from the [Industrial era]>",
+            "Provides a unique luxury",
+            "[+2 Gold] from every [Lighthouse]",
+            "[+2 Gold] from every [Harbor]",
+            "[+2 Gold] from every [Seaport]"
+        ],
+        "color": [255, 216, 0]
+    },
+
+    {
+        "name": "Taos Outpost-type",
+        "friendBonusUniques": [
+            "[+1 Happiness] <before the [Medieval era]>",
+            "[+2 Happiness] <starting from the [Medieval era]>",
+            "[+2 Gold] <before the [Medieval era]>",
+            "[+4 Gold] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+8 Gold] <starting from the [Industrial era]>",
+            "[+1 Culture, +2 Faith] from every [Mountain]"
+        ],
+        "allyBonusUniques": [
+            "[+1 Happiness] <before the [Medieval era]>",
+            "[+2 Happiness] <starting from the [Medieval era]>",
+            "[+2 Gold] <before the [Medieval era]>",
+            "[+4 Gold] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+8 Gold] <starting from the [Industrial era]>",
+            "Provides a unique luxury",
+            "[+1 Culture, +4 Faith] from every [Mountain]"
+        ],
+        "color": [255, 216, 0]
+    },
+
+    //Militaristic
+    {
+        "name": "Militaristic",
+        "friendBonusUniques": ["Provides military units every ≈[20] turns"],
+        "allyBonusUniques": ["Provides military units every ≈[20] turns"],
+        "color": [255, 0, 0]
+    },
+    {
+        "name": "Santa Elena-type",
+        "friendBonusUniques": [
+            "Provides military units every ≈[20] turns",
+            "[+2]% [Production] from every [Barracks]",
+            "[+2]% [Production] from every [Armory]",
+            "[+2]% [Production] from every [Military Academy]"
+        ],
+        "allyBonusUniques": [
+            "Provides military units every ≈[13] turns",
+            "[+4]% [Production] from every [Barracks]",
+            "[+4]% [Production] from every [Armory]",
+            "[+4]% [Production] from every [Military Academy]"
+        ],
+        "color": [255, 0, 0]
+    },
+    {
+        "name": "Boonesborough-type",
+        "friendBonusUniques": [
+            "Provides military units every ≈[20] turns",
+            "[+50]% Yield from every [Land] <in [Fort] tiles>"
+        ],
+        "allyBonusUniques": [
+            "Provides military units every ≈[13] turns",
+            "[+75]% Yield from every [Land] <in [Fort] tiles>"
+        ],
+        "color": [255, 0, 0]
+    },
+
+    //Religious
+    {
+        "name": "Ephrata Cloister-type",
+        "friendBonusUniques": [
+            "[+4 Faith] <before the [Medieval era]>",
+            "[+8 Faith] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+16 Faith] <starting from the [Industrial era]>",
+            "[Gold] cost of purchasing items in cities [-15]%"
+        ],
+        "allyBonusUniques": [
+            "[+6 Faith] <before the [Medieval era]>",
+            "[+12 Faith] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+26 Faith] <starting from the [Industrial era]>",
+            "[Gold] cost of purchasing items in cities [-15]%",
+            "[Faith] cost of purchasing items in cities [-25]%"
+        ],
+        "color": [255, 255, 255]
+    },
+    {
+        "name": "Fort Caroline-type",
+        "friendBonusUniques": [
+            "[+4 Faith] <before the [Medieval era]>",
+            "[+8 Faith] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+16 Faith] <starting from the [Industrial era]>",
+            "[+15]% Natural religion spread [in all cities]"
+        ],
+        "allyBonusUniques": [
+            "[+6 Faith] <before the [Medieval era]>",
+            "[+12 Faith] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+26 Faith] <starting from the [Industrial era]>",
+            "[+25]% Natural religion spread [in all cities]",
+            "[+25]% Spread Religion Strength"
+        ],
+        "color": [255, 255, 255]
+    },
+
+    {
+        "name": "Roanoke Colony-type",
+        "friendBonusUniques": [
+            "[+4 Faith] <before the [Medieval era]>",
+            "[+8 Faith] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+16 Faith] <starting from the [Industrial era]>",
+            "[+1 Faith] from [Trading post] tiles [in all cities]"
+        ],
+        "allyBonusUniques": [
+            "[+6 Faith] <before the [Medieval era]>",
+            "[+12 Faith] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+26 Faith] <starting from the [Industrial era]>",
+            "[+2 Faith] from [Trading post] tiles [in all cities]"
+        ],
+        "color": [255, 255, 255]
+    },
+
+    //Industrial
+    {
+        "name": "Industrial",
+        "friendBonusUniques": [
+            "[+2 Production] [in all cities] <before the [Medieval era]>",
+            "[+4 Production] [in all cities] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+6 Production] [in all cities] <starting from the [Industrial era]>",
+            "[+1 Production] from all [Production] buildings"
+        ],
+        "allyBonusUniques": [
+            "[+4 Production] [in all cities] <before the [Medieval era]>",
+            "[+6 Production] [in all cities] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+8 Production] [in all cities] <starting from the [Industrial era]>",
+            "[+2 Production] from all [Production] buildings"
+        ],
+        "color": [139, 69, 19]
+    },
+
+    {
+        "name": "St. Augustine Saltworks-type",
+        "friendBonusUniques": [
+            "[+2 Production] [in all cities] <before the [Medieval era]>",
+            "[+4 Production] [in all cities] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+6 Production] [in all cities] <starting from the [Industrial era]>",
+            "[+1 Happiness] from every [Bonus resource]"
+        ],
+        "allyBonusUniques": [
+            "[+4 Production] [in all cities] <before the [Medieval era]>",
+            "[+6 Production] [in all cities] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+8 Production] [in all cities] <starting from the [Industrial era]>",
+            "[+1 Happiness] from every [Bonus resource]",
+            "[+1 Happiness] from every [Strategic resource]"
+        ],
+        "color": [139, 69, 19]
+    },
+    {
+        "name": "Fort Ross-type",
+        "friendBonusUniques": [
+            "[+2 Production] [in all cities] <before the [Medieval era]>",
+            "[+4 Production] [in all cities] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+6 Production] [in all cities] <starting from the [Industrial era]>",
+            "[+1 Production] from every [Strategic resource]"
+        ],
+        "allyBonusUniques": [
+            "[+4 Production] [in all cities] <before the [Medieval era]>",
+            "[+6 Production] [in all cities] <starting from the [Medieval era]> <before the [Industrial era]>",
+            "[+8 Production] [in all cities] <starting from the [Industrial era]>",
+            "[+1 Production] from every [Bonus resource]",
+            "[+1 Production] from every [Strategic resource]",
+            "[+1 Production] from every [Luxury resource]"
+        ],
+        "color": [139, 69, 19]
+    },
+    {
+        "name": "Civilian",
+        "movementType": "Land"
+    },
+    {
+        "name": "Civilian Water",
+        "movementType": "Water"
+    },
+
+    //infantry
+
+    {
+        "name": "Infantry",
+	"uniques": ["[+15]% Strength <vs [Anti Cavalry] units>"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Marines",
+        "uniques": ["Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Anti Cavalry",
+        "movementType": "Land"
+    },
+    {
+        "name": "Recon",
+	"uniques": ["Ignores terrain cost", "Can see invisible [Land] units"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Paratrooper",
+        "movementType": "Land"
+    },
+    {
+        "name": "Militia",
+	"uniques": ["[+50]% to Flank Attack bonuses", "Can build [Trench] improvements on tiles", "Can build [Fort] improvements on tiles", "[+50]% Strength when stacked with [Civilian]"],
+        "movementType": "Land"
+    },
+
+    //ranged
+
+    {
+        "name": "Ranged Heavy",
+	"uniques": ["[-20]% Strength <vs [Infantry] units>"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Support",
+        "movementType": "Land"
+    },
+
+    //siege
+
+    {
+        "name": "Siege Melee",
+        "movementType": "Land"
+    },
+    {
+        "name": "Siege Ranged",
+	"uniques": ["[-1] Sight"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Siege Carrier",
+	"uniques": ["[-1] Sight"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Siege Nuke",
+	"uniques": ["[-1] Sight", "[-50]% XP gained from combat", "Only available <if [Manhattan Project] is constructed>", "[+100]% maintenance costs"],
+        "movementType": "Land"
+    },
+
+    //cav
+
+    {
+        "name": "Heavy Cavalry",
+        "movementType": "Land"
+    },
+    {
+        "name": "Light Cavalry",
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Cavalry",
+	"uniques": ["[-20]% Strength <vs [Infantry] units>"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Counter Cavalry",
+        "movementType": "Land"
+    },
+
+    //specialist
+
+    {
+        "name": "Anti Air",
+	"uniques": ["[+60]% Strength <vs [Aircraft] units>", "[+100]% Strength <vs [Helicopter] units>", "Cannot intercept [Ballistic] units"],
+        "movementType": "Land"
+    },
+    {
+        "name": "Missile Defense",
+	"uniques": ["Cannot intercept [Aircraft] units", "[+5000]% Strength <vs [Ballistic] units>"],
+        "movementType": "Land"
+    },
+
+    //naval
+
+    {
+        "name": "Naval Melee",
+	"uniques": ["[+50]% Strength <vs [Naval Raider] units>", "Cannot intercept [Ballistic] units", "Cannot intercept [Satellite] units"],
+        "movementType": "Water"
+    },
+    {
+        "name": "Naval Ranged",
+	"uniques": ["[-20]% Strength <vs [Land] units>", "Cannot intercept [Ballistic] units", "Cannot intercept [Satellite] units"],
+        "movementType": "Water"
+    },
+    {
+        "name": "Naval Siege",
+	"uniques": ["[-20]% Strength <vs [Naval Submarine] units>","[-20]% Strength <vs [Naval Raider] units>", "[+30]% Strength <vs cities>"],
+        "movementType": "Water"
+    },
+    {
+        "name": "Naval Carrier",
+	"uniques": ["Cannot intercept [Ballistic] units", "Cannot intercept [Satellite] units"],
+        "movementType": "Water"
+    },
+    {
+        "name": "Naval Raider",
+        "uniques": ["Invisible to non-adjacent units", "Can see invisible [Naval Raider] units"],
+        "movementType": "Water"
+    },
+    {
+        "name": "Naval Submarine",
+        "uniques": ["Can enter ice tiles", "Invisible to non-adjacent units", "Can see invisible [Naval Submarine] units", "Can see invisible [Naval Raider] units"],
+        "movementType": "Water"
+    },
+
+    //aircraft
+
+    {
+        "name": "Air Fighter",
+        "uniques": ["Aircraft", "[+4] Sight", "Can see over obstacles", "Cannot intercept [Ballistic] units", "Cannot intercept [Satellite] units", "Can perform Air Sweep"],
+        "movementType": "Air"
+    },
+    {
+        "name": "Air Bomber",
+        "uniques": ["Aircraft", "[-20]% Strength <vs [Air] units>"],
+        "movementType": "Air"
+    },
+    {
+        "name": "Air Close Air Support",
+        "uniques": ["Aircraft", "Cannot intercept [Ballistic] units", "Cannot intercept [Satellite] units", "Can perform Air Sweep"],
+        "movementType": "Air"
+    },
+    {
+        "name": "Air Drone",
+        "uniques": ["Aircraft", "Can see over obstacles", "[+2] Sight", "Cannot intercept [Ballistic] units", "Cannot intercept [Satellite] units", "Can perform Air Sweep"],
+        "movementType": "Air"
+    },
+    {
+        "name": "Air Atomic Bomber",
+        "uniques": ["Aircraft", "Self-destructs when attacking"],
+        "movementType": "Air"
+    },
+    {
+        "name": "Air Missile",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking", "Ballistic"]
+    },
+    {
+        "name": "Nuke Missile",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking", "Ballistic"]
+    },
+    {
+        "name": "Air Helicopter",
+        "movementType": "Land",
+        "uniques": ["Can pass through impassable tiles"]
+    },
+    {
+        "name": "Air Satellite",
+        "movementType": "Air",
+        "uniques": ["Cannot be intercepted", "Satellite"]
+    },
+
+
+
+    //vanilla items
+
+    {
+        "name": "Sword",
+        "movementType": "Land"
+    },
+    {
+        "name": "Gunpowder",
+        "movementType": "Land"
+    },
+    {
+        "name": "Archery",
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Gunpowder",
+        "movementType": "Land"
+    },
+    {
+        "name": "Scout",
+        "movementType": "Land"
+    },
+    {
+        "name": "Mounted",
+        "movementType": "Land"
+    },
+    {
+        "name": "Armored",
+        "movementType": "Land"
+    },
+    {
+        "name": "Siege",
+        "movementType": "Land"
+    },
+    {
+        "name": "Melee Water",
+        "movementType": "Water",
+	"uniques": ["Cannot intercept [Ballistic] units"]
+    },
+    {
+        "name": "Ranged Water",
+        "movementType": "Water",
+    },
+    {
+        "name": "Submarine",
+        "movementType": "Water",
+        "uniques": ["Can enter ice tiles", "Invisible to non-adjacent units", "Can see invisible [Submarine] units"]
+    },
+    {
+        "name": "Aircraft Carrier",
+        "movementType": "Water",
+    },
+    {
+        "name": "Fighter",
+        "movementType": "Air",
+        "uniques": ["Aircraft", "[+4] Sight", "Can see over obstacles", "Cannot intercept [Ballistic] units", "Can perform Air Sweep"]
+    },
+    {
+        "name": "Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Atomic Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Missile",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking"]
+    },
+    {
+        "name": "Helicopter",
+        "movementType": "Land",
+        "uniques": ["Can pass through impassable tiles"]
+    },
+    
+    // Deprecated unit types required for mods without a UnitTypes.json file to work
+    
+    {
+        "name": "Melee",
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged",
+        "movementType": "Land"
+    },
+    {
+        "name": "Armor",
+        "movementType": "Land"
+    },
+    {
+        "name": "WaterCivilian",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterMelee",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterRanged",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterSubmarine",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterAircraftCarrier",
+        "movementType": "Water"
+    },
+    {
+        "name": "AtomicBomber",
+        "movementType": "Air"
+    },
+	//Future Expansion
+	{
+        "name": "Support",
+        "movementType": "Land"
+    },
+	{
+        "name": "Land Carrier",
+        "movementType": "Land",
+		"uniques": ["[+33]% Strength <vs [Air] units> <when adjacent to a [Anti-Air] unit>","[+33]% Strength <vs [Cyber] units> <when adjacent to a [Hacker] unit>","May capture killed [Cyber] units <with [25]% chance> <when adjacent to a [Hacker] unit>","Can pass through impassable tiles"]
+    },
+    { 
+        "name": "Civilian", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Civilian Water", 
+        "movementType": "Water" 
+    }, 
+ 
+    //infantry 
+ 
+    { 
+        "name": "Infantry", 
+	"uniques": ["[+15]% Strength <vs [Anti Cavalry] units>"], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Marines", 
+        "uniques": ["Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast"], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Anti Cavalry", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Recon", 
+	"uniques": ["Ignores terrain cost", "Can see invisible [Land] units"], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Paratrooper", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Militia", 
+	"uniques": ["[+50]% to Flank Attack bonuses", "Can build [Trench] improvements on tiles", "Can build [Fort] improvements on tiles", "[+50]% Strength when stacked with [Civilian]"], 
+        "movementType": "Land" 
+    }, 
+ 
+    //ranged 
+ 
+    { 
+        "name": "Ranged Heavy", 
+	"uniques": ["[-20]% Strength <vs [Infantry] units>"], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Ranged Support", 
+        "movementType": "Land" 
+    }, 
+ 
+    //siege 
+ 
+    { 
+        "name": "Siege Melee", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Siege Ranged", 
+	"uniques": ["[-1] Sight"], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Siege Carrier", 
+	"uniques": ["[-1] Sight"], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Siege Nuke", 
+	"uniques": ["[-1] Sight", "[-50]% XP gained from combat", "Only available <if [Manhattan Project] is constructed>", "[+100]% maintenance costs"], 
+        "movementType": "Land" 
+    }, 
+ 
+    //cav 
+ 
+    { 
+        "name": "Heavy Cavalry", 
+	"uniques": ["[+10]% Strength <vs [Land] units>"], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Light Cavalry", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Ranged Cavalry", 
+	"uniques": ["[-20]% Strength <vs [Infantry] units>"], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Counter Cavalry", 
+        "movementType": "Land" 
+    }, 
+ 
+    //specialist 
+ 
+    { 
+        "name": "Anti Air", 
+	"uniques": ["[+60]% Strength <vs [Aircraft] units>", "[+100]% Strength <vs [Helicopter] units>", "Cannot intercept [Ballistic] units"], 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Missile Defense", 
+	"uniques": ["Cannot intercept [Aircraft] units", "[+5000]% Strength <vs [Ballistic] units>"], 
+        "movementType": "Land" 
+    }, 
+ 
+    //naval 
+ 
+    { 
+        "name": "Naval Melee", 
+	"uniques": ["[+50]% Strength <vs [Naval Raider] units>", "Cannot intercept [Ballistic] units", "Cannot intercept [Satellite] units"], 
+        "movementType": "Water" 
+    }, 
+    { 
+        "name": "Naval Ranged", 
+	"uniques": ["[-20]% Strength <vs [Land] units>", "Cannot intercept [Ballistic] units", "Cannot intercept [Satellite] units"], 
+        "movementType": "Water" 
+    }, 
+ { 
+        "name": "Naval Escort", 
+	"uniques": ["[-40]% Strength <vs [Land] units>","Cannot intercept [Ballistic] units", "Cannot intercept [Satellite] units","[5] Movement for [Civilian] units within [1] tiles","[+20]% Strength when stacked with [Civilian]","[+1] Sight when stacked with [Civilian]"], 
+        "movementType": "Water" 
+    }, 
+    { 
+        "name": "Naval Siege", 
+	"uniques": ["[-20]% Strength <vs [Naval Submarine] units>","[-20]% Strength <vs [Naval Raider] units>", "[+30]% Strength <vs cities>"], 
+        "movementType": "Water" 
+    }, 
+    { 
+        "name": "Naval Carrier", 
+	"uniques": ["Cannot intercept [Ballistic] units", "Cannot intercept [Satellite] units"], 
+        "movementType": "Water" 
+    }, 
+    { 
+        "name": "Naval Raider", 
+        "uniques": ["Invisible to non-adjacent units", "Can see invisible [Naval Raider] units"], 
+        "movementType": "Water" 
+    }, 
+    { 
+        "name": "Naval Submarine", 
+        "uniques": ["Can enter ice tiles", "Invisible to non-adjacent units", "Can see invisible [Naval Submarine] units", "Can see invisible [Naval Raider] units"], 
+        "movementType": "Water" 
+    }, 
+ 
+    //aircraft 
+ 
+    { 
+        "name": "Air Fighter", 
+        "uniques": ["Aircraft", "[+4] Sight", "Can see over obstacles", "Cannot intercept [Ballistic] units", "Cannot intercept [Satellite] units", "Can perform Air Sweep"], 
+        "movementType": "Air" 
+    }, 
+    { 
+        "name": "Air Bomber", 
+        "uniques": ["Aircraft", "[-20]% Strength <vs [Air] units>"], 
+        "movementType": "Air" 
+    }, 
+    { 
+        "name": "Air Close Air Support", 
+        "uniques": ["Aircraft", "Cannot intercept [Ballistic] units", "Cannot intercept [Satellite] units", "Can perform Air Sweep"], 
+        "movementType": "Air" 
+    }, 
+    { 
+        "name": "Air Drone", 
+        "uniques": ["Aircraft", "Can see over obstacles", "[+2] Sight", "Cannot intercept [Ballistic] units", "Cannot intercept [Satellite] units", "Can perform Air Sweep"], 
+        "movementType": "Air" 
+    }, 
+    { 
+        "name": "Air Atomic Bomber", 
+        "uniques": ["Aircraft", "Self-destructs when attacking"], 
+        "movementType": "Air" 
+    }, 
+    { 
+        "name": "Air Missile", 
+        "movementType": "Air", 
+        "uniques": ["Self-destructs when attacking", "Ballistic"] 
+    }, 
+    { 
+        "name": "Air Nuke Missile", 
+        "movementType": "Air", 
+        "uniques": ["Self-destructs when attacking", "Ballistic"] 
+    }, 
+    { 
+        "name": "Air Helicopter", 
+        "movementType": "Land", 
+        "uniques": ["Can pass through impassable tiles"] 
+    }, 
+    { 
+        "name": "Air Satellite", 
+        "movementType": "Air", 
+        "uniques": ["Cannot be intercepted", "Satellite"] 
+    }, 
+ 
+ 
+ 
+    //vanilla items 
+ 
+    { 
+        "name": "Sword", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Gunpowder", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Archery", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Ranged Gunpowder", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Scout", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Mounted", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Armored", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Siege", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Melee Water", 
+        "movementType": "Water", 
+	"uniques": ["Cannot intercept [Ballistic] units"] 
+    }, 
+    { 
+        "name": "Ranged Water", 
+        "movementType": "Water", 
+    }, 
+    { 
+        "name": "Submarine", 
+        "movementType": "Water", 
+        "uniques": ["Can enter ice tiles", "Invisible to non-adjacent units", "Can see invisible [Submarine] units"] 
+    }, 
+    { 
+        "name": "Aircraft Carrier", 
+        "movementType": "Water", 
+    }, 
+    { 
+        "name": "Fighter", 
+        "movementType": "Air", 
+        "uniques": ["Aircraft", "[+4] Sight", "Can see over obstacles", "Cannot intercept [Ballistic] units", "Can perform Air Sweep"] 
+    }, 
+    { 
+        "name": "Bomber", 
+        "movementType": "Air", 
+        "uniques": ["Aircraft"] 
+    }, 
+    { 
+        "name": "Atomic Bomber", 
+        "movementType": "Air", 
+        "uniques": ["Aircraft"] 
+    }, 
+    { 
+        "name": "Missile", 
+        "movementType": "Air", 
+        "uniques": ["Self-destructs when attacking"] 
+    }, 
+    { 
+        "name": "Helicopter", 
+        "movementType": "Land", 
+        "uniques": ["Can pass through impassable tiles"] 
+    }, 
+     
+    // Deprecated unit types required for mods without a UnitTypes.json file to work 
+     
+    { 
+        "name": "Melee", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Ranged", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "Armor", 
+        "movementType": "Land" 
+    }, 
+    { 
+        "name": "WaterCivilian", 
+        "movementType": "Water" 
+    }, 
+    { 
+        "name": "WaterMelee", 
+        "movementType": "Water" 
+    }, 
+    { 
+        "name": "WaterRanged", 
+        "movementType": "Water" 
+    }, 
+    { 
+        "name": "WaterSubmarine", 
+        "movementType": "Water" 
+    }, 
+    { 
+        "name": "WaterAircraftCarrier", 
+        "movementType": "Water" 
+    }, 
+    { 
+        "name": "AtomicBomber", 
+        "movementType": "Air" 
+    } 
+]

@@ -1,0 +1,118 @@
+{
+    "name": "Global Uniques",
+    "uniques": [
+        "Requires establishing embassies to conduct advanced diplomacy",
+        "[-75]% growth [in all cities] <when between [-10] and [-1] [Happiness]>",
+        "Nullifies Growth [in all cities] <when below [-10] [Happiness]>",
+        "[-50]% [Production] [in all cities] <when below [-10] [Happiness]>",
+        "[-33]% Strength <for [All] units> <when below [-10] [Happiness]>",
+        "Cannot build [Settler] units <when below [-10] [Happiness]>",
+        "Rebel units may spawn <when below [-20] [Happiness]>",
+        "[-1] Sight <for [Embarked] units>",
+        "[+2 Production] from every [Mountain]",
+        "Gain a free [War Weariness Value] [in capital] <starting from the [Classical era]>",
+        "Instantly provides [500] [War Weariness] <upon losing a city> <when at war>", // Military units
+        "[Military] units gain the [WWV] promotion <for [All] Civilizations> <starting from the [Classical era]>",
+        "All newly-trained [Military] units [in all cities] receive the [Fearless] promotion <when above [3000] [War Weariness]> <for [All] Civilizations>",
+        // Effect
+        // I
+        "[-10]% [Production] <when above [1000] [War Weariness]>",
+        "[-10]% growth [in all cities] <when above [1000] [War Weariness]>",
+        "Rebel units may spawn <every [10] turns> <when between [1000] and [2000] [War Weariness]>",
+        "[+5]% Unhappiness from [Population] [in all cities] <when above [1000] [War Weariness]>",
+        // II
+        "[-10]% [Production] <when above [2000] [War Weariness]>",
+        "[-10]% growth [in all cities] <when above [2000] [War Weariness]>",
+        "Rebel units may spawn <every [7] turns> <when between [2000] and [3000] [War Weariness]>",
+        "[-10]% Strength <when above [2000] [War Weariness]> <for [non-[Barbarian]] units>",
+        "[+5]% Unhappiness from [Population] [in all cities] <when above [2000] [War Weariness]>",
+        // III
+        "[-15]% [Production] <when above [3000] [War Weariness]>",
+        "[-20]% growth [in all cities] <when above [3000] [War Weariness]>",
+        "Rebel units may spawn <every [4] turns> <when between [3000] and [4000] [War Weariness]>",
+        "[-10]% Strength <when above [3000] [War Weariness]> <for [non-[Barbarian]] units>",
+        "[+10]% Unhappiness from [Population] [in all cities] <when above [3000] [War Weariness]>",
+        // IV
+        "[-15]% [Production] <when above [4000] [War Weariness]>",
+        "[-20]% growth [in all cities] <when above [3000] [War Weariness]>",
+        "Rebel units may spawn <every [1] turns> <when above [4000] [War Weariness]>",
+        "[-10]% Strength <when above [4000] [War Weariness]> <for [non-[Barbarian]] units>",
+        "[+15]% Unhappiness from [Population] [in all cities] <when above [4000] [War Weariness]>", // Sound
+        "Play [Classical era] sound <upon entering the [Classical era]>",
+        "Play [Medieval era] sound <upon entering the [Medieval era]>",
+        "Play [Renaissance era] sound <upon entering the [Renaissance era]>",
+        "Play [Industrial era] sound <upon entering the [Industrial era]>",
+        "Play [Modern era] sound <upon entering the [Modern era]>",
+        "Play [Future era] sound <upon entering the [Future era]>",
+        "Play [Atomic era] sound <upon entering the [Atomic era]>",
+        "Play [Information era] sound <upon entering the [Information era]>",
+
+        // Popup
+        "Triggers a [Classical era] event <upon entering the [Classical era]>",
+        "Triggers a [Medieval era] event <upon entering the [Medieval era]>",
+        "Triggers a [Renaissance era] event <upon entering the [Renaissance era]>",
+        "Triggers a [Industrial era] event <upon entering the [Industrial era]>",
+        "Triggers a [Modern era] event <upon entering the [Modern era]>",
+        "Triggers a [Future era] event <upon entering the [Future era]>",
+        "Triggers a [Atomic era] event <upon entering the [Atomic era]>",
+        "Triggers a [Information era] event <upon entering the [Information era]>",
+        "[+75]% Strength <for [All] units> <with [15]% chance> <when above [5] HP> <when attacking>",
+        "[+75]% Strength <for [All] units> <with [25]% chance> <when below [5] HP> <when attacking>",
+        "May capture killed [Embarked] units <with [50]% chance> <for [The Republic of Pirates] Civilizations> <hidden from users>",
+        "May capture killed [Water] units <with [50]% chance> <for [The Republic of Pirates] Civilizations> <hidden from users>",
+        "[This Unit] gains the [Supply] status for [5] turn(s) <for [Iceland] Civilizations> <for [Water] units> <upon losing at least [10] HP in a single attack> <hidden from users>",
+        "[This Unit] heals [10] HP <upon turn end> <when adjacent to a [{Friendly} {Nanoswarm}] unit>",
+        "[This Unit] takes [10] damage <upon turn end> <when adjacent to a [{Friendly} {Nanoswarm}] unit>",
+        "[-25]% growth [in all cities] <when between [-10] and [-1] [Happiness]>",
+        "[-75]% growth [in all cities] <when between [-15] and [-10] [Happiness]>",
+        "Nullifies Growth [in all cities] <when below [-15] [Happiness]>",
+        "[-50]% [Production] [in all cities] <when below [-10] [Happiness]>",
+        "[-33]% Strength <for [All] units> <when below [-10] [Happiness]>",
+        "Cannot build [Settler] units <when below [-10] [Happiness]>",
+        "Rebel units may spawn <when below [-20] [Happiness]>",
+        "Gain [60] Influence with a [Diplomat] gift to a City-State",
+        "Rebel units may spawn <starting from the [Extracolonial era]>",
+        "Free [Herald] appears <upon entering a Golden Age> <before the [Renaissance era]>",
+        "Can spend Gold to annex or puppet a City-State that has been your Ally for [10] turns <before the [Industrial era]>",
+        "When conquering an encampment, earn [25] Gold and recruit a Barbarian unit <with [10]% chance> <before the [Atomic era]>","May buy [Rise Tax] buildings with [Culture] for [3] times their normal Production cost",
+        "May buy [Down Tax] buildings with [Culture] for [3] times their normal Production cost",
+
+        // TODO: Implement the uniques below
+        // "[+20]% [Culture] [in all cities] <during a golden age>",
+        // "[+20]% [Production] [in all cities] <during a golden age>",
+
+        // "[+10]% growth [in all cities] <during We Love The King Day>",
+
+        // "Nullifies All Yield <while is in resistance>",
+
+        // "[-25]% [Science] [in pupetted cities]" -- Imo cityFilters should ideally become conditionals anyway
+        // "[-25]% [Culture] [in pupetted cities]"
+
+        // "[+20]% [Production] [in cities connected via railroad]"
+        // something something unit supply
+
+        // TODO: Implement the uniques below
+        // "[+20]% [Culture] [in all cities] <during a golden age>",
+        // "[+20]% [Production] [in all cities] <during a golden age>",
+
+        // "[+10]% growth [in all cities] <during We Love The King Day>",
+
+        // "Nullifies All Yield <while is in resistance>",
+
+        // "[-25]% [Science] [in pupetted cities]" -- Imo cityFilters should ideally become conditionals anyway
+        // "[-25]% [Culture] [in pupetted cities]"
+
+        // "[+20]% [Production] [in cities connected via railroad]"
+        // something something unit supply
+    ],
+    "civilopediaText": [
+        {
+            "text": "Global uniques are ruleset-wide modifiers that apply to all civilizations."
+        }
+    ],
+    "unitUniques": [
+        "[Target Unit] gains the [Deflect Active] status for [1] turn(s) <upon damaging a [{non-[Deflect CD]} {Deflect}] unit> <for [Ranged] units> <for [non-[Air]] units>",
+        "[Target Unit] gains the [Deflect Cooldown] status for [5] turn(s) <upon damaging a [{non-[Deflect CD]} {Deflect}] unit> <for [Ranged] units> <for [non-[Air]] units>",
+        "[This Unit] gains the [Autumn Curse] promotion <for [All] units> <upon damaging a [Cursed] unit>"
+    ]
+}
