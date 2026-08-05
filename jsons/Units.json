@@ -859,7 +859,6 @@
         "uniques": ["[+10]% Strength bonus for [Sword] units within [2] tiles"],
         "requiredTech": "Bronze Working",
         "obsoleteTech": "Civil Service",
-        "upgradesTo": "Pikeman",
         "uniques": ["[+50]% Strength <vs [Mounted] units>"],
         "attackSound": "metalhit"
     },
