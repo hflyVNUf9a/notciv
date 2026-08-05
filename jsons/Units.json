@@ -2312,7 +2312,7 @@
             "Ignores zone of control",
             "All tiles cost 1 movement",
             "[+40%] strength <vs [Water] units>",
-            "Defense bonus when embarked"
+            "[+100]% Strength <when defending> <when [Embarked]>"
         ],
         "promotions": ["Amphibious"],
         "requiredResource": "Fuel"
@@ -2516,7 +2516,7 @@
         //		"upgradesTo": "Xcom Squad",
         "requiredTech": "Radar",
         "uniques": [
-            "May Paradrop up to [6] tiles from inside friendly territory",
+            "May Paradrop to [Land] tiles up to [6] tiles away <in [{Friendly} {Land}] tiles>",
             "Ignores terrain cost"
         ],
         "attackSound": "shot"
@@ -4487,7 +4487,7 @@
         "requiredTech": "Industrialization",
         "uniques": [
             "Can build [Land] improvements on tiles",
-            "[-33]% tile improvement construction time",
+            "[-33]% construction time for [All] improvements",
             "[+1] Movement <after discovering [Combustion]>",
             "[+1] Movement <after discovering [Mobile Tactics]>"
         ]
@@ -4823,7 +4823,7 @@
             "Great Person - [Faith]",
             "Unbuildable",
             "Religious Unit",
-            "Hidden when religion is disabled",
+            "Only available <when religion is enabled>",
             "Takes your religion over the one in their birth city",
             "Will not be displayed in Civilopedia"
         ],
@@ -11846,7 +11846,7 @@
             "Founds a new city",
             "Excess Food converted to Production when under construction",
             "Requires at least [2] population",
-            "May withdraw before melee ([60]%)",
+            "Withdraws before melee combat <with [60]% chance>",
             "Provides [20] Food when epended"
         ],
         "hurryCostModifier": 20
@@ -13250,7 +13250,7 @@
         "requiredTech": "Mobile Tactics",
         "promotions": ["Ignore terrain cost", "Drill II"],
         "uniques": [
-            "May Paradrop up to [6] tiles from inside friendly territory",
+            "May Paradrop to [Land] tiles up to [6] tiles away <in [{Friendly} {Land}] tiles>",
             "Never appears as a Barbarian unit",
             "No damage penalty for wounded units",
             "Heals [10] damage if it kills a unit",
@@ -21872,7 +21872,7 @@
         "requiredTech": "Mobile Tactics",
         "promotions": ["Amphibious"],
         "uniques": [
-            "May Paradrop up to [6] tiles from inside friendly territory",
+            "May Paradrop to [Land] tiles up to [6] tiles away <in [{Friendly} {Land}] tiles>",
             "Never appears as a Barbarian unit",
             "Can carry [1] [ATGM] units"
         ],
@@ -21993,7 +21993,7 @@
         "requiredTech": "Mobile Tactics",
         "promotions": ["Woodsman"],
         "uniques": [
-            "May Paradrop up to [7] tiles from inside friendly territory",
+            "May Paradrop to [Land] tiles up to [7] tiles away <in [{Friendly} {Land}] tiles>",
             "Never appears as a Barbarian unit",
             "Can carry [4] [ATGM] units"
         ],
@@ -22032,7 +22032,7 @@
         "uniques": [
             "Can see invisible [Submarine] units",
             "[100]% chance to intercept air attacks",
-            "May withdraw before melee ([80]%)",
+            "Withdraws before melee combat <with [80]% chance>",
             "[+100]% Strength <vs [Submarine] units>"
         ],
         "attackSound": "shipguns"
@@ -22452,7 +22452,7 @@
             "Can remove other religions from cities <[3] times> <after which this unit is consumed>",
             "Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
             "[+1] Sight",
-            "Hidden when religion is disabled",
+            "Only available <when religion is enabled>",
             "Unbuildable",
             "Religious Unit",
             "May enter foreign tiles without open borders"
@@ -22734,7 +22734,7 @@
 		"cost": 375	,	
 		"movement": 2,
 		"requiredTech": "Archaeology",
-		"uniques": ["Can construct [Excavation Site]","Uncapturable"],
+		"uniques": ["Can instantly construct a [Excavation Site] improvement <by consuming this unit>","Uncapturable"],
 	},
 	{
 		"name": "Recon",
@@ -22784,7 +22784,7 @@
 		"unitType": "Civilian",
 		"requiredTech": "Radio",
 		"movement": 2,
-		"uniques": ["Can construct [Concert Venue]","Uncapturable"],
+		"uniques": ["Can instantly construct a [Concert Venue] improvement <by consuming this unit>","Uncapturable"],
 		"cost": 500,
 	},
 	{
@@ -22792,7 +22792,7 @@
 		"unitType": "Civilian",
 		"requiredTech": "Corporations",
 		"movement": 2,
-		"uniques": ["Can construct [Industry]","Uncapturable"],
+		"uniques": ["Can instantly construct a [Industry] improvement <by consuming this unit>","Uncapturable"],
 		"cost": 500,
 		"civilopediaText": [
 			{"text": "Construct Industries on Luxury Resources you have copies of and cannot trade."}
@@ -22806,7 +22806,7 @@
 		"name": "Architect",
 		"unitType": "Civilian",
 		"movement": 2,
-		"uniques": ["Can build [Land] improvements on tiles","Can construct [Power Plant]","Can construct [Water Tower]","Can construct [Industrial Complex]","Can construct [Residential]"],
+		"uniques": ["Can build [Land] improvements on tiles","Can instantly construct a [Power Plant] improvement <by consuming this unit>","Can instantly construct a [Water Tower] improvement <by consuming this unit>","Can instantly construct a [Industrial Complex] improvement <by consuming this unit>","Can instantly construct a [Residential] improvement <by consuming this unit>"],
 		"requiredTech": "Infraestructure",
 		"cost": 540
 	},
@@ -22882,7 +22882,7 @@
 		"cost": 560,
 		"requiredTech": "Stealth",
 		"requiredResource": "Aluminum",
-		"uniques": ["Cyber","Hacker","+33% Strength for adjacent non-air Units vs Cyber units","25% Chance for Adjacent units to capture Killed Cyber unit","May withdraw before melee ([50]%)","Can see invisible [Military] units","Never appears as a Barbarian unit"],
+		"uniques": ["Cyber","Hacker","+33% Strength for adjacent non-air Units vs Cyber units","25% Chance for Adjacent units to capture Killed Cyber unit","Withdraws before melee combat <with [50]% chance>","Can see invisible [Military] units","Never appears as a Barbarian unit"],
 		"promotions": ["Stealth","Support Unit"]
 	},
 	
@@ -22919,7 +22919,7 @@
 		"strength": 85,
 		"cost": 500,
 		"requiredTech": "Lasers",
-		"uniques": ["May Paradrop up to [40] tiles from inside friendly territory", "No movement cost to pillage",
+		"uniques": ["May Paradrop to [Land] tiles up to [40] tiles away <in [{Friendly} {Land}] tiles>", "No movement cost to pillage",
 		"Never appears as a Barbarian unit"],
 		"promotions": ["Skirmish","Rocket Launcher"],
 		"attackSound": "energyshot"
@@ -23106,13 +23106,13 @@
     {
 		"name": "Great Spacefarer",
 		"unitType": "Civilian",
-		"uniques": ["Can start an [12]-turn golden age", "Can construct [Space Platform] <starting from the [Atomic era]>", "Great Person - [Spacefarer]", "Unbuildable", "Uncapturable"],
+		"uniques": ["Empire enters a [12]-turn Golden Age <by consuming this unit>", "Can instantly construct a [Space Platform] improvement <by consuming this unit> <starting from the [Atomic era]>", "Great Person - [Spacefarer]", "Unbuildable", "Uncapturable"],
 		"movement": 2
 	},
 	{
 		"name": "Great General",
 		"unitType": "Civilian",
-		"uniques": ["Can start an [8]-turn golden age","[+15]% Strength bonus for [Military] units within [2] tiles <before adopting [Propaganda]>","[+30]% Strength bonus for [Military] units within [2] tiles <after adopting [Propaganda]>", "Can construct [Citadel]",
+		"uniques": ["Empire enters a [8]-turn Golden Age <by consuming this unit>","[+15]% Strength bonus for [Military] units within [2] tiles <before adopting [Propaganda]>","[+30]% Strength bonus for [Military] units within [2] tiles <after adopting [Propaganda]>", "Can instantly construct a [Citadel] improvement <by consuming this unit>",
 			"Great Person - [War]", "Unbuildable", "Uncapturable"],
 		"movement": 2
 	},
@@ -23121,8 +23121,8 @@
 		"unitType": "Civilian",
 		"uniqueTo": "Mongolia",
 		"replaces": "Great General",
-		"uniques": ["Can start an [8]-turn golden age","[+15]% Strength bonus for [Military] units within [2] tiles <before adopting [Propaganda]>","[+30]% Strength bonus for [Military] units within [2] tiles <after adopting [Propaganda]>",
-		"All adjacent units heal [+15] HP when healing", "[+15] HP when healing", "Can construct [Citadel]", "Great Person - [War]", "Unbuildable", "Uncapturable"],
+		"uniques": ["Empire enters a [8]-turn Golden Age <by consuming this unit>","[+15]% Strength bonus for [Military] units within [2] tiles <before adopting [Propaganda]>","[+30]% Strength bonus for [Military] units within [2] tiles <after adopting [Propaganda]>",
+		"All adjacent units heal [+15] HP when healing", "[+15] HP when healing", "Can instantly construct a [Citadel] improvement <by consuming this unit>", "Great Person - [War]", "Unbuildable", "Uncapturable"],
 		"movement": 5
 	},
 //Time Machine Parts
@@ -24224,7 +24224,7 @@
 		"requiredTech": "Compass", 
 		"obsoleteTech": "Astronomy", 
 		"upgradesTo": "Caravel", 
-		"uniques": ["Cannot enter ocean tiles","May withdraw before melee ([40]%)",], 
+		"uniques": ["Cannot enter ocean tiles","Withdraws before melee combat <with [40]% chance>",], 
 		"attackSound": "metalhit" 
 	}, 
 	{ 
@@ -24543,7 +24543,7 @@
 		"requiredTech": "Astronomy", 
 		"upgradesTo": "Ironclad", 
 		"obsoleteTech": "Combustion", 
-		"uniques": ["[+1] Sight", "May withdraw before melee ([80]%)", "Can see invisible [Naval Raider] units"], 
+		"uniques": ["[+1] Sight", "Withdraws before melee combat <with [80]% chance>", "Can see invisible [Naval Raider] units"], 
 		"hurryCostModifier": 30, 
 		"attackSound": "cannon" 
 	}, 
@@ -24711,7 +24711,7 @@
 		"rangedStrength": 17, 
 		"range": 1, 
 		"cost": 135, 
-		"uniques": ["May withdraw before melee ([40]%)"], 
+		"uniques": ["Withdraws before melee combat <with [40]% chance>"], 
 		"requiredTech": "Navigation", 
 		"obsoleteTech": "Combustion", 
 		"upgradesTo": "Corvette", 
@@ -24726,7 +24726,7 @@
 		"rangedStrength": 28, 
 		"cost": 185, 
 		"requiredResource": "Iron", 
-		"uniques": ["May withdraw before melee ([20]%)"], 
+		"uniques": ["Withdraws before melee combat <with [20]% chance>"], 
 		"requiredTech": "Navigation", 
 		"obsoleteTech": "Combustion", 
 		"upgradesTo": "Armored Cruiser", 
@@ -25175,7 +25175,7 @@
 		"cost": 425, 
 		"requiredTech": "Steam Power", 
 		"obsoleteTech": "Combustion", 
-		"uniques": ["Normal vision when embarked", "Defense bonus when embarked", "No defensive terrain bonus", "Eliminates combat penalty for attacking across a coast", "Eliminates combat penalty for attacking over a river", "Ignores Zone of Control", "Consumes [3] [Coal]", "[+100]% maintenance costs", "Consumes [1] [Secret Project]", "Will not be displayed in Civilopedia", "Only available <with [Secret Project]>", "Never appears as a Barbarian unit"], 
+		"uniques": ["Normal vision when embarked", "[+100]% Strength <when defending> <when [Embarked]>", "No defensive terrain bonus", "Eliminates combat penalty for attacking across a coast", "Eliminates combat penalty for attacking over a river", "Ignores Zone of Control", "Consumes [3] [Coal]", "[+100]% maintenance costs", "Consumes [1] [Secret Project]", "Will not be displayed in Civilopedia", "Only available <with [Secret Project]>", "Never appears as a Barbarian unit"], 
 		"attackSound": "shipguns" 
 	}, 
 	{ 
@@ -25267,7 +25267,7 @@
 		"cost": 325, 
 		"requiredTech": "Refrigeration", 
 		"upgradesTo": "Nuclear Submarine", 
-		"uniques": ["[+75]% Strength <when attacking>", "Can only attack [Water] tiles", "Never appears as a Barbarian unit","May withdraw before melee ([20]%)"], 
+		"uniques": ["[+75]% Strength <when attacking>", "Can only attack [Water] tiles", "Never appears as a Barbarian unit","Withdraws before melee combat <with [20]% chance>"], 
 		"attackSound": "torpedo" 
 	}, 
 	{ 
@@ -25436,7 +25436,7 @@
 		"rangedStrength": 55, 
 		"cost": 375, 
 		"requiredTech": "Combustion", 
-		"uniques": ["[60]% chance to intercept air attacks","Never appears as a Barbarian unit","May withdraw before melee ([20]%)"], 
+		"uniques": ["[60]% chance to intercept air attacks","Never appears as a Barbarian unit","Withdraws before melee combat <with [20]% chance>"], 
 		"upgradesTo": "Missile Cruiser", 
 		"attackSound": "shipguns" 
 	}, 
@@ -25558,7 +25558,7 @@
 		"requiredTech": "Combustion", 
 		"upgradesTo": "Missile Frigate", 
 		"uniques": ["Can see invisible [Naval Submarine] units", "Can see invisible [Naval Raider] units", "[60]% chance to intercept air attacks", 
-			"May withdraw before melee ([70]%)", "[+100]% Strength <vs [Submarine] units>"], 
+			"Withdraws before melee combat <with [70]% chance>", "[+100]% Strength <vs [Submarine] units>"], 
 		"attackSound": "shipguns" 
 	}, 
 	{ 
@@ -25571,7 +25571,7 @@
 		"cost": 275, 
 		"requiredTech": "Combustion", 
 		"upgradesTo": "Escort Frigate", 
-		"uniques": ["[30]% chance to intercept air attacks","Never appears as a Barbarian unit","May withdraw before melee ([40]%)"], 
+		"uniques": ["[30]% chance to intercept air attacks","Never appears as a Barbarian unit","Withdraws before melee combat <with [40]% chance>"], 
 		"hurryCostModifier": 20, 
 		"attackSound": "cannon" 
 	}, 
@@ -25596,7 +25596,7 @@
 		"rangedStrength": 60, 
 		"range": 1, 
 		"cost": 300, 
-		"uniques": ["Can see over obstacles", "Normal vision when embarked", "May Paradrop up to [5] tiles from inside friendly territory", "Can move after attacking", "Never appears as a Barbarian unit"], 
+		"uniques": ["Can see over obstacles", "Normal vision when embarked", "May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>", "Can move after attacking", "Never appears as a Barbarian unit"], 
 		"requiredTech": "Radar", 
 		"attackSound": "machinegun" 
 	}, 
@@ -25807,7 +25807,7 @@
 		"strength": 65, 
 		"cost": 375, 
 		"requiredTech": "Radar", 
-		"uniques": ["May Paradrop up to [5] tiles from inside friendly territory", "Never appears as a Barbarian unit"], 
+		"uniques": ["May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>", "Never appears as a Barbarian unit"], 
 		"attackSound": "shot", 
 		"upgradesTo": "Modern Commando" 
 		// upgradesTo "XCOM Squad", "No Movement Cost to Pillage" in BNW 
@@ -26124,7 +26124,7 @@
 		"strength": 70, 
 		"cost": 425, 
 		"requiredTech": "Telecommunications", 
-		"uniques": ["[+100]% Strength <vs cities>", "All tiles cost 1 movement", "May Paradrop up to [7] tiles from inside friendly territory", "Never appears as a Barbarian unit"], 
+		"uniques": ["[+100]% Strength <vs cities>", "All tiles cost 1 movement", "May Paradrop to [Land] tiles up to [7] tiles away <in [{Friendly} {Land}] tiles>", "Never appears as a Barbarian unit"], 
 		"attackSound": "shot" 
 	}, 
 	{ 
@@ -26186,7 +26186,7 @@
 		"cost": 425, 
 		"requiredTech": "Advanced Ballistics", 
 		"uniques": ["[80]% chance to intercept air attacks", "Can see invisible [Naval Submarine] units", "Can see invisible [Naval Raider] units", 
-			"Can carry [3] [Air Missile] units", "Can carry [1] [Air Nuke Missile] units", "Never appears as a Barbarian unit","May withdraw before melee ([10]%)"], 
+			"Can carry [3] [Air Missile] units", "Can carry [1] [Air Nuke Missile] units", "Never appears as a Barbarian unit","Withdraws before melee combat <with [10]% chance>"], 
 		"promotions": ["Indirect Fire"], 
 		"attackSound": "missile" 
 	}, 
@@ -26203,7 +26203,7 @@
 		"cost": 425, 
 		"requiredTech": "Advanced Ballistics", 
 		"uniques": ["[100]% chance to intercept air attacks", "Can see invisible [Naval Submarine] units", "Can see invisible [Naval Raider] units", 
-			"Can carry [3] [Air Missile] units", "Can carry [1] [Air Nuke Missile] units", "Never appears as a Barbarian unit","May withdraw before melee ([30]%)"], 
+			"Can carry [3] [Air Missile] units", "Can carry [1] [Air Nuke Missile] units", "Never appears as a Barbarian unit","Withdraws before melee combat <with [30]% chance>"], 
 		"promotions": ["Indirect Fire"], 
 		"attackSound": "missile" 
 	}, 
@@ -26230,7 +26230,7 @@
 		"interceptRange": 1, 
 		"cost": 375, 
 		"requiredTech": "Robotics", 
-		"uniques": ["[80]% chance to intercept air attacks", "Can see invisible [Naval Submarine] units","May withdraw before melee ([60]%)", "Can see invisible [Naval Raider] units", "[+100]% Strength <vs [Naval Submarine] units>", "Never appears as a Barbarian unit"], 
+		"uniques": ["[80]% chance to intercept air attacks", "Can see invisible [Naval Submarine] units","Withdraws before melee combat <with [60]% chance>", "Can see invisible [Naval Raider] units", "[+100]% Strength <vs [Naval Submarine] units>", "Never appears as a Barbarian unit"], 
 		"attackSound": "missile" 
 	}, 
 { 
@@ -26242,7 +26242,7 @@
 		"range": 1, 
 		"cost": 425, 
 		"requiredTech": "Lasers", 
-		"uniques": ["Never appears as a Barbarian unit","[95]% chance to intercept air attacks", "Can see invisible [Naval Submarine] units", "Can see invisible [Naval Raider] units", "[+100]% Strength <vs [Naval Submarine] units>","May withdraw before melee ([60]%)"], 
+		"uniques": ["Never appears as a Barbarian unit","[95]% chance to intercept air attacks", "Can see invisible [Naval Submarine] units", "Can see invisible [Naval Raider] units", "[+100]% Strength <vs [Naval Submarine] units>","Withdraws before melee combat <with [60]% chance>"], 
 		"hurryCostModifier": 20, 
 		"attackSound": "cannon" 
 	}, 
@@ -26390,26 +26390,26 @@
 	{ 
 		"name": "Great Artist", 
 		"unitType": "Civilian", 
-		"uniques": ["Can start an [8]-turn golden age", "Can construct [Landmark]", "Great Person - [Culture]", "Unbuildable", "Uncapturable"], 
+		"uniques": ["Empire enters a [8]-turn Golden Age <by consuming this unit>", "Can instantly construct a [Landmark] improvement <by consuming this unit>", "Great Person - [Culture]", "Unbuildable", "Uncapturable"], 
 		"movement": 2 
 	}, 
 	{ 
 		"name": "Great Scientist", 
 		"unitType": "Civilian", 
-		"uniques": ["Can hurry technology research", "Can construct [Academy]", "Great Person - [Science]", "Unbuildable", "Uncapturable"], 
+		"uniques": ["Can hurry technology research", "Can instantly construct a [Academy] improvement <by consuming this unit>", "Great Person - [Science]", "Unbuildable", "Uncapturable"], 
 		"movement": 2 
 	}, 
 	{ 
 		"name": "Great Merchant", 
 		"unitType": "Civilian", 
 		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence", 
-			"Can construct [Customs house]", "Great Person - [Gold]", "Unbuildable", "Uncapturable"], 
+			"Can instantly construct a [Customs house] improvement <by consuming this unit>", "Great Person - [Gold]", "Unbuildable", "Uncapturable"], 
 		"movement": 2 
 	}, 
 	{ 
 		"name": "Great Engineer", 
 		"unitType": "Civilian", 
-		"uniques": ["Can speed up construction of a building", "Can construct [Manufactory]", "Great Person - [Production]", "Unbuildable", "Uncapturable"], 
+		"uniques": ["Can speed up construction of a building", "Can instantly construct a [Manufactory] improvement <by consuming this unit>", "Great Person - [Production]", "Unbuildable", "Uncapturable"], 
 		"movement": 2 
 	}, 
 	{ 
@@ -26422,7 +26422,7 @@
             "May found a religion <by consuming this unit> <if it hasn't used other actions yet>", 
             "May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>", 
 			"May enter foreign tiles without open borders", "[-1] Sight", "Great Person - [Faith]", 
-			"Unbuildable", "Religious Unit", "Hidden when religion is disabled", 
+			"Unbuildable", "Religious Unit", "Only available <when religion is enabled>", 
 			"Takes your religion over the one in their birth city"], 
 		"movement": 2, 
 		"religiousStrength": 1000 
@@ -26430,7 +26430,7 @@
 	{ 
 		"name": "Great General", 
 		"unitType": "Civilian", 
-		"uniques": ["Can start an [8]-turn golden age", "[+15]% Strength bonus for [Military] units within [2] tiles", "Can construct [Citadel]", 
+		"uniques": ["Empire enters a [8]-turn Golden Age <by consuming this unit>", "[+15]% Strength bonus for [Military] units within [2] tiles", "Can instantly construct a [Citadel] improvement <by consuming this unit>", 
 			"Great Person - [War]", "Unbuildable", "Uncapturable"], 
 		"movement": 2 
 	}, 
@@ -26439,14 +26439,14 @@
 		"unitType": "Civilian", 
 		"uniqueTo": "Mongolia", 
 		"replaces": "Great General", 
-		"uniques": ["Can start an [8]-turn golden age","[+15]% Strength bonus for [Military] units within [2] tiles", 
-			"All adjacent units heal [+15] HP when healing", "[+15] HP when healing", "Can construct [Citadel]", "Great Person - [War]", "Unbuildable", "Uncapturable"], 
+		"uniques": ["Empire enters a [8]-turn Golden Age <by consuming this unit>","[+15]% Strength bonus for [Military] units within [2] tiles", 
+			"All adjacent units heal [+15] HP when healing", "[+15] HP when healing", "Can instantly construct a [Citadel] improvement <by consuming this unit>", "Great Person - [War]", "Unbuildable", "Uncapturable"], 
 		"movement": 5 
 	}, 
 	{ 
 		"name": "Great Admiral", 
 		"unitType": "Civilian Water", 
-		"uniques": ["Can start an [8]-turn golden age","Can heal all adjacent units [+30] HP", "[+15]% Strength bonus for [Military] units within [2] tiles", "Great Person - [War]", "Unbuildable"], 
+		"uniques": ["Empire enters a [8]-turn Golden Age <by consuming this unit>","Can heal all adjacent units [+30] HP", "[+15]% Strength bonus for [Military] units within [2] tiles", "Great Person - [War]", "Unbuildable"], 
 		"movement": 3 
 	}, 
  
@@ -26459,7 +26459,7 @@
             "Can Spread Religion <for [4] movement> <[2] times> <after which this unit is consumed>", 
             "May enter foreign tiles without open borders, but loses [250] religious strength each turn it ends there", 
 			"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]", 
-			"[-1] Sight", "Unbuildable", "Religious Unit", "Hidden when religion is disabled"], 
+			"[-1] Sight", "Unbuildable", "Religious Unit", "Only available <when religion is enabled>"], 
 		"movement": 4, 
 		"religiousStrength": 1000 
 	}, 
@@ -26469,7 +26469,7 @@
 		"uniques": ["Prevents spreading of religion to the city it is next to", 
 			"Can remove other religions from cities <in [Friendly] tiles> <once> <after which this unit is consumed>", 
             "Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]", 
-			"[+1] Sight", "Hidden when religion is disabled", "Unbuildable", "Religious Unit" 
+			"[+1] Sight", "Only available <when religion is enabled>", "Unbuildable", "Religious Unit" 
 		], 
 		"movement": 3 
 	}
