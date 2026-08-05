@@ -980,8 +980,8 @@
             "[-75]% Gold cost of acquiring tiles [in all cities]",
             "Starts with [Commerce] adopted",
             "[+2 Gold] from every [Strategic resource]",
-            "Double quantity of [Coal] produced",
-            "Double quantity of [Aluminum] produced"
+            "[+100]% [Coal] resource production",
+            "[+100]% [Aluminum] resource production"
         ],
         "cities": [
             "Washington",
@@ -3881,7 +3881,7 @@
         "uniqueName": "New World Order",
         "uniqueText": "Unaffected by unhapiness penalties. This effect stops applying when below -10 Happiness.",
         "uniques": [
-            "[+75]% growth [in all cities] <when between [-10] and [0] Happiness>"
+            "[+75]% growth [in all cities] <when between [-10] and [0] [Happiness]>"
         ],
         "cities": [
             "Majesty",
@@ -9565,8 +9565,8 @@
 
         "uniqueName": "National Treasure",
         "uniques": [
-            "Double quantity of [Oil] produced",
-            "Double quantity of [Uranium] produced",
+            "[+100]% [Oil] resource production",
+            "[+100]% [Uranium] resource production",
             "[+100]% [Food] from every [Wheat]"
         ],
         "cities": [
@@ -9940,7 +9940,7 @@
         "uniqueName": "Biggest nation",
         "uniques": [
             "[+1 Production, +1 Food] in cities on [Snow] tiles",
-            "Double quantity of [Oil] produced"
+            "[+100]% [Oil] resource production"
         ],
 
         "cities": [
@@ -9996,8 +9996,8 @@
         "uniqueName": "8 лет бомбить Домбас",
         "uniques": [
             "[+25]% Strength <vs [City-States]>",
-            "Double quantity of [Iron] produced",
-            "Double quantity of [Coal] produced"
+            "[+100]% [Iron] resource production",
+            "[+100]% [Coal] resource production"
         ],
         "cities": [
             "Донецк",

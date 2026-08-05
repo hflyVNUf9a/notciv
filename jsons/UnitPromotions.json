@@ -2027,15 +2027,15 @@
         "uniques": [
             "Can only attack [Civilian] units",
             "Can only attack [Military] units",
-            "[+15]% Strength when stacked with [Worker]",
+            "[15]% Strength <when stacked with a [Worker] unit>",
             "Heals [25] damage if it kills a unit",
-            "This Unit upgrades for free including special upgrades <upon entering the [Classical era]> <with [25]% chance>",
-            "This Unit upgrades for free including special upgrades <upon entering the [Medieval era]> <with [25]% chance>",
-            "This Unit upgrades for free including special upgrades <upon entering the [Renaissance era]> <with [25]% chance>",
-            "This Unit upgrades for free including special upgrades <upon entering the [Industrial era]> <with [50]% chance>",
-            "This Unit upgrades for free including special upgrades <upon entering the [Modern era]> <with [50]% chance>",
-            "This Unit upgrades for free including special upgrades <upon entering the [Atomic era]> <with [75]% chance>",
-            "This Unit upgrades for free including special upgrades <upon entering the [Information era]> <with [100]% chance>"
+            "[This Unit] upgrades for free including special upgrades <upon entering the [Classical era]> <with [25]% chance>",
+            "[This Unit] upgrades for free including special upgrades <upon entering the [Medieval era]> <with [25]% chance>",
+            "[This Unit] upgrades for free including special upgrades <upon entering the [Renaissance era]> <with [25]% chance>",
+            "[This Unit] upgrades for free including special upgrades <upon entering the [Industrial era]> <with [50]% chance>",
+            "[This Unit] upgrades for free including special upgrades <upon entering the [Modern era]> <with [50]% chance>",
+            "[This Unit] upgrades for free including special upgrades <upon entering the [Atomic era]> <with [75]% chance>",
+            "[This Unit] upgrades for free including special upgrades <upon entering the [Information era]> <with [100]% chance>"
         ]
     },
     {
@@ -5898,7 +5898,7 @@
     },
     { 
 		"name": "Heal Instantly", 
-		"uniques": ["Heal this unit by [50] HP", "Doing so will consume this opportunity to choose a Promotion"], 
+		"uniques": ["[This Unit] heals [50] HP", "Doing so will consume this opportunity to choose a Promotion"], 
 		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine","Support","Land Carrier"] 
 	}, 
 //Effects 
@@ -5908,7 +5908,7 @@
 	}, 
 	{ 
 		"name": "Amphibious", 
-		"uniques": ["Normal vision when embarked", "Defense bonus when embarked"] 
+		"uniques": ["Normal vision when embarked", "[+100]% Strength <when defending> <when [Embarked]>"] 
 	}, 
 	{ 
 		"name": "Hovering", 
@@ -5952,7 +5952,7 @@
 	}, 
 	{ 
 		"name": "Teleportation", 
-		"uniques": ["May Paradrop up to [100] tiles from inside friendly territory","May withdraw before melee ([20]%)"] 
+		"uniques": ["May Paradrop to [Land] tiles up to [100] tiles away <in [{Friendly} {Land}] tiles>","Withdraws before melee combat <with [20]% chance>"] 
 	}, 
 	{ 
 		"name": "Support Unit", 
@@ -5960,7 +5960,7 @@
 	}, 
 	{ 
 		"name": "Skirmish", 
-		"uniques": ["May withdraw before melee ([33]%)"] 
+		"uniques": ["Withdraws before melee combat <with [33]% chance>"] 
 	}, 
  
  
@@ -6014,7 +6014,7 @@
 	}, 
 	{ 
 		"name": "Offshore Operation", 
-		"uniques": ["Defense bonus when embarked"], 
+		"uniques": ["[+100]% Strength <when defending> <when [Embarked]>"], 
 		"unitTypes": ["Marines"] 
 	}, 
 	{ 
@@ -6122,7 +6122,7 @@
 	}, 
 	{ 
 		"name": "Battle Recon", 
-		"uniques": ["Ignores Zone of Control", "May withdraw before melee ([50]%)"], 
+		"uniques": ["Ignores Zone of Control", "Withdraws before melee combat <with [50]% chance>"], 
 		"prerequisites": ["Infiltration"], 
 		"unitTypes": ["Recon"] 
 	}, 
@@ -6158,7 +6158,7 @@
 	}, 
 	{ 
 		"name": "Special Promotion", 
-		"uniques": ["This Unit upgrades for free including special upgrades"], 
+		"uniques": ["[This Unit] upgrades for free including special upgrades"], 
 		"prerequisites": ["Battlefield Survival II", "Defender II"], 
 		"unitTypes": ["Militia"] 
 	}, 
@@ -6278,7 +6278,7 @@
 	}, 
 	{ 
 		"name": "Skirmisher Tactics", 
-		"uniques": ["May withdraw before melee ([40]%)"], 
+		"uniques": ["Withdraws before melee combat <with [40]% chance>"], 
 		"prerequisites": ["Mantlet"], 
 		"unitTypes": ["Ranged Support"] 
 	}, 
@@ -6410,7 +6410,7 @@
 	}, 
 	{ 
 		"name": "Commando Cavalry", 
-		"uniques": ["Ignores Zone of Control", "May withdraw before melee ([40]%)"], 
+		"uniques": ["Ignores Zone of Control", "Withdraws before melee combat <with [40]% chance>"], 
 		"prerequisites": ["Pursuit", "Outmaneuvering"], 
 		"unitTypes": ["Light Cavalry"] 
 	}, 
@@ -6470,7 +6470,7 @@
 	}, 
 	{ 
 		"name": "Evasive Tactic", 
-		"uniques": ["May withdraw before melee ([40]%)"], 
+		"uniques": ["Withdraws before melee combat <with [40]% chance>"], 
 		"prerequisites": ["Harassing Fire"], 
 		"unitTypes": ["Ranged Cavalry"] 
 	}, 
@@ -6750,7 +6750,7 @@
 	}, 
 	{ 
 		"name": "Veteran Raider", 
-		"uniques": ["May withdraw before melee ([35]%)", "[+35]% Strength <when attacking>"], 
+		"uniques": ["Withdraws before melee combat <with [35]% chance>", "[+35]% Strength <when attacking>"], 
 		"prerequisites": ["Weakpoint Exploitation", "Silent Running"], 
 		"unitTypes": ["Naval Raider", "Naval Submarine"] 
 	}, 
@@ -7051,7 +7051,7 @@
  
 	{ 
 		"name": "Heal Instantly", 
-		"uniques": ["Heal this unit by [50] HP", "Doing so will consume this opportunity to choose a Promotion"], 
+		"uniques": ["[This Unit] heals [50] HP", "Doing so will consume this opportunity to choose a Promotion"], 
 		"unitTypes": ["Infantry", "Marines", "Anti Cavalry", "Recon", "Paratrooper", "Ranged Heavy", "Ranged Support", "Siege Melee", "Siege Ranged", "Heavy Cavalry", "Light Cavalry", "Ranged Cavalry", "Counter Cavalry", "Anti Air", "Naval Melee", "Naval Ranged", "Naval Siege", "Naval Carrier", "Naval Raider", "Naval Submarine", "Air Fighter", "Air Bomber", "Air Close Air Support", "Air Helicopter", "Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine", "Militia"] 
 	}, 
 	{ 
@@ -7110,7 +7110,7 @@
 	}, 
 	{ 
 		"name": "Offshore Operation", 
-		"uniques": ["Defense bonus when embarked"], 
+		"uniques": ["[+100]% Strength <when defending> <when [Embarked]>"], 
 		"unitTypes": ["Marines"] 
 	}, 
 	{ 
@@ -7218,7 +7218,7 @@
 	}, 
 	{ 
 		"name": "Battle Recon", 
-		"uniques": ["Ignores Zone of Control", "May withdraw before melee ([50]%)"], 
+		"uniques": ["Ignores Zone of Control", "Withdraws before melee combat <with [50]% chance>"], 
 		"prerequisites": ["Infiltration"], 
 		"unitTypes": ["Recon"] 
 	}, 
@@ -7254,7 +7254,7 @@
 	}, 
 	{ 
 		"name": "Special Promotion", 
-		"uniques": ["This Unit upgrades for free including special upgrades"], 
+		"uniques": ["[This Unit] upgrades for free including special upgrades"], 
 		"prerequisites": ["Battlefield Survival II", "Defender II"], 
 		"unitTypes": ["Militia"] 
 	}, 
@@ -7374,7 +7374,7 @@
 	}, 
 	{ 
 		"name": "Skirmisher Tactics", 
-		"uniques": ["May withdraw before melee ([40]%)"], 
+		"uniques": ["Withdraws before melee combat <with [40]% chance>"], 
 		"prerequisites": ["Mantlet"], 
 		"unitTypes": ["Ranged Support"] 
 	}, 
@@ -7506,7 +7506,7 @@
 	}, 
 	{ 
 		"name": "Commando Cavalry", 
-		"uniques": ["Ignores Zone of Control", "May withdraw before melee ([40]%)"], 
+		"uniques": ["Ignores Zone of Control", "Withdraws before melee combat <with [40]% chance>"], 
 		"prerequisites": ["Pursuit", "Outmaneuvering"], 
 		"unitTypes": ["Light Cavalry"] 
 	}, 
@@ -7566,7 +7566,7 @@
 	}, 
 	{ 
 		"name": "Evasive Tactic", 
-		"uniques": ["May withdraw before melee ([40]%)"], 
+		"uniques": ["Withdraws before melee combat <with [40]% chance>"], 
 		"prerequisites": ["Harassing Fire"], 
 		"unitTypes": ["Ranged Cavalry"] 
 	}, 
@@ -7888,7 +7888,7 @@
 	}, 
 	{ 
 		"name": "Veteran Raider", 
-		"uniques": ["May withdraw before melee ([35]%)", "[+35]% Strength <when attacking>"], 
+		"uniques": ["Withdraws before melee combat <with [35]% chance>", "[+35]% Strength <when attacking>"], 
 		"prerequisites": ["Weakpoint Exploitation", "Silent Running"], 
 		"unitTypes": ["Naval Raider", "Naval Submarine"] 
 	}, 
@@ -8219,7 +8219,7 @@
 	}, 
 	{ 
 		"name": "Slinger Withdraw", // only for Slinger and subsequent upgrades 
-		"uniques": ["May withdraw before melee ([80]%)"] 
+		"uniques": ["Withdraws before melee combat <with [80]% chance>"] 
 	}, 
 	{ 
 		"name": "Ignore terrain cost", 
@@ -8247,7 +8247,7 @@
 	}, 
 	{ 
 		"name": "[Conquistador] ability", 
-		"uniques": ["Defense bonus when embarked"] 
+		"uniques": ["[+100]% Strength <when defending> <when [Embarked]>"] 
 	}, 
 	{ 
 		"name": "[Janissary] ability", 
@@ -8300,7 +8300,7 @@
 	}, 
 	{ 
 		"name": "[Hakkapeliitta] ability", 
-		"uniques": ["Transfer Movement to [Great General]", "[+15]% Strength when stacked with [Great General]"] 
+		"uniques": ["Transfer Movement to [Great General]", "[15]% Strength <when stacked with a [Great General] unit>"] 
 	}, 
 	{ 
 		"name": "[B17] ability", 
@@ -8312,7 +8312,7 @@
 	}, 
 	{ 
 		"name": "UAV", 
-		"uniques": ["[-50]% maintenance costs", "Damage taken from interception reduced by [50]%", "[+20]% Strength when stacked with [Siege Carrier]"] 
+		"uniques": ["[-50]% maintenance costs", "Damage taken from interception reduced by [50]%", "[20]% Strength <when stacked with a [Siege Carrier] unit>"] 
 	}, 
 	{ 
 		"name": "Drill", 
