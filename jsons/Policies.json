@@ -1553,7 +1553,7 @@
 			"Scientific":0 
 			}, 
 		"uniques":[ 
-			"New [Melee] units start with [10] Experience [in capital]",  "Only available <before adopting [West]>" 
+			"New [Melee] units start with [10] XP [in capital]",  "Only available <before adopting [West]>" 
 			], 
 			"policies": [ 
 				{ 

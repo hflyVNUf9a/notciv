@@ -1377,7 +1377,7 @@
     },
     {
         "name": "Militia",
-	"uniques": ["[+50]% to Flank Attack bonuses", "Can build [Trench] improvements on tiles", "Can build [Fort] improvements on tiles", "[+50]% Strength when stacked with [Civilian]"],
+	"uniques": ["[+50]% to Flank Attack bonuses", "Can build [Trench] improvements on tiles", "Can build [Fort] improvements on tiles", "[50]% Strength <when stacked with a [Civilian] unit>"],
         "movementType": "Land"
     },
 
@@ -1693,7 +1693,7 @@
     }, 
     { 
         "name": "Militia", 
-	"uniques": ["[+50]% to Flank Attack bonuses", "Can build [Trench] improvements on tiles", "Can build [Fort] improvements on tiles", "[+50]% Strength when stacked with [Civilian]"], 
+	"uniques": ["[+50]% to Flank Attack bonuses", "Can build [Trench] improvements on tiles", "Can build [Fort] improvements on tiles", "[50]% Strength <when stacked with a [Civilian] unit>"], 
         "movementType": "Land" 
     }, 
  
@@ -1779,7 +1779,7 @@
     }, 
  { 
         "name": "Naval Escort", 
-	"uniques": ["[-40]% Strength <vs [Land] units>","Cannot intercept [Ballistic] units", "Cannot intercept [Satellite] units","[5] Movement for [Civilian] units within [1] tiles","[+20]% Strength when stacked with [Civilian]","[+1] Sight when stacked with [Civilian]"], 
+	"uniques": ["[-40]% Strength <vs [Land] units>","Cannot intercept [Ballistic] units", "Cannot intercept [Satellite] units","[5] Movement for [Civilian] units within [1] tiles","[20]% Strength <when stacked with a [Civilian] unit>","[+1] Sight when stacked with [Civilian]"], 
         "movementType": "Water" 
     }, 
     { 
