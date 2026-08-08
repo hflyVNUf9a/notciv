@@ -1,0 +1,391 @@
+[
+    {
+        "name":"Tutorial Task: [Move unit]",
+        "presentation":"Floating",
+        "civilopediaText":[
+			{"text":"Move a unit!", "centered":true},
+            {"extraImage":"Tutorials/Move unit", "imageSize":140},
+            {"text":"Click on a unit → Click on a destination → Click the arrow popup."},
+		],
+        "uniques": [
+            "Only available <if tutorials are enabled> <when number of [Units] is more than [0]>",
+            "Unavailable <if tutorial [Move unit] is completed>"
+        ]
+    },
+    {
+        "name":"Tutorial Task: [Found city]",
+        "presentation":"Floating",
+        "civilopediaText":[
+			{"text":"Found a city!", "centered":true},
+            {"extraImage":"Tutorials/Found city", "imageSize":140},
+            {"text":"Select the Settler → Click on 'Found city'."},
+		],
+        "uniques": [
+            "Only available <if tutorials are enabled> <when number of [[Settler] Units] is more than [0]>",
+            "Unavailable <if tutorial [Found city] is completed>"
+        ]
+    },
+    {
+        "name":"Tutorial Task: [Enter city screen]",
+        "presentation":"Floating",
+        "civilopediaText":[
+			{"text":"Enter the city screen!", "centered":true},
+            {"extraImage":"Tutorials/Enter city screen", "imageSize":100},
+            {"text":"Click the city button twice."},
+		],
+        "uniques": [
+            "Only available <if tutorials are enabled> <when number of [Cities] is more than [0]>",
+            "Unavailable <if tutorial [Enter city screen] is completed>"
+        ]
+    },
+    {
+        "name":"Tutorial Task: [Pick technology]",
+        "presentation":"Floating",
+        "civilopediaText":[
+			{"text":"Pick a technology to research!", "centered":true},
+            {"extraImage":"Tutorials/Pick technology", "imageSize":180},
+            {"text":"Click on the tech button → Select technology → Click 'Research' (bottom right)."},
+		],
+        "uniques": [
+            "Only available <if tutorials are enabled> <if tutorial [Found city] is completed>",
+            "Unavailable <if tutorial [Pick technology] is completed>"
+        ]
+    },
+    {
+        "name":"Tutorial Task: [Pick construction]",
+        "presentation":"Floating",
+        "civilopediaText":[
+			{"text":"Pick a construction!", "centered":true},
+            {"extraImage":"Tutorials/Pick construction", "imageSize":120},
+            {"text":"Enter city screen → Click on a unit or building → Click 'add to queue'."},
+		],
+        "uniques": [
+            "Only available <if tutorials are enabled> <when number of [Cities] is more than [0]>",
+            "Unavailable <if tutorial [Pick construction] is completed>"
+        ]
+    },
+    {
+        "name":"Tutorial Task: [Pass a turn]",
+        "presentation":"Floating",
+        "civilopediaText":[
+			{"text":"Pass a turn!", "centered":true},
+            {"extraImage":"Tutorials/Pass a turn", "imageSize":180},
+            {"text":"Cycle through units with 'Next unit' → Click 'Next turn'."},
+		],
+        "uniques": [
+            "Only available <if tutorials are enabled> <when number of [turns] is less than [3]>",
+            "Unavailable <if tutorial [Pass a turn] is completed>"
+        ]
+    },
+    {
+        "name":"Tutorial Task: [Reassign worked tiles]",
+        "presentation":"Floating",
+        "civilopediaText":[
+			{"text":"Reassign worked tiles!", "centered":true},
+            {"extraImage":"Tutorials/Reassign worked tiles", "imageSize":140},
+            {"text":"Enter city screen → Click the assigned tile to unassign → Click an unassigned tile to assign population."},
+		],
+        "uniques": [
+            "Only available <if tutorials are enabled> <when number of [Cities] is more than [0]>",
+            "Unavailable <if tutorial [Reassign worked tiles] is completed>"
+        ]
+    },
+    {
+        "name":"Tutorial Task: [Meet another civilization]",
+        "presentation":"Floating",
+        "civilopediaText":[
+			{"text":"Meet another civilization!", "centered": true},
+            {"extraImage":"Tutorials/Meet another civilization", "imageSize":160},
+            {"text":"Explore the map until you encounter another civilization!"},
+		],
+        "uniques": [
+            "Only available <if tutorials are enabled> <when number of [turns] is more than [1]>",
+            "Unavailable <if tutorial [Meet another civilization] is completed>"
+        ],
+        "choices": [
+            {
+                "text":"Got it",
+                "uniques": ["Mark tutorial [Meet another civilization] complete"],
+            },
+        ]
+    },
+    {
+        "name":"Tutorial Task: [Open the options table]",
+        "presentation":"Floating",
+        "civilopediaText":[
+			{"text":"Open the options dialog!", "centered":true},
+            {"extraImage":"Tutorials/Open the options table", "imageSize":130},
+            {"text":"Click the menu button (top left) → Click 'Options'."},
+		],
+        "uniques": [
+            "Only available <if tutorials are enabled>",
+            "Unavailable <if tutorial [Open the options table] is completed>"
+        ]
+    },
+    {
+        "name":"Tutorial Task: [Construct an improvement]",
+        "presentation":"Floating",
+        "civilopediaText":[
+			{"text":"Construct an improvement!", "centered":true},
+            {"extraImage":"Tutorials/Construct an improvement", "imageSize":150},
+            {"text":"Construct a Worker unit → Move it to a Plains or Grassland tile → Click 'Construct improvement' → Choose the farm → Leave the worker there until it's finished."},
+		],
+        "uniques": [
+            "Only available <if tutorials are enabled> <when number of [Cities] is more than [0]>",
+            "Unavailable <if tutorial [Construct an improvement] is completed>"
+        ]
+    },
+    {
+        "name":"Tutorial Task: [Create a trade route]",
+        "presentation":"Floating",
+        "civilopediaText":[
+			{"text":"Create a trade route!", "centered":true},
+            {"extraImage":"Tutorials/Create a trade route", "imageSize":120},
+            {"text":"Construct roads between your capital and another city. Or, automate your worker and let him get to that eventually."},
+		],
+        "uniques": [
+            "Only available <if tutorials are enabled> <when number of [Cities] is more than [1]>",
+            "Unavailable <if tutorial [Create a trade route] is completed>"
+        ]
+    },
+    {
+        "name":"Tutorial Task: [Conquer a city]",
+        "presentation":"Floating",
+        "civilopediaText":[
+			{"text":"Conquer a city!", "centered":true},
+            {"extraImage":"Tutorials/Conquer a city", "imageSize":160},
+            {"text":"Bring an enemy city down to low health → Enter the city with a melee unit."},
+		],
+        "uniques": [
+            "Only available <if tutorials are enabled> <when at war>",
+            "Unavailable <if tutorial [Conquer a city] is completed>"
+        ]
+    },
+    {
+        "name":"Tutorial Task: [Move an air unit]",
+        "presentation":"Floating",
+        "civilopediaText":[
+			{"text":"Move an air unit!", "centered":true},
+            {"extraImage":"Tutorials/Move an air unit", "imageSize":140},
+            {"text":"Select an air unit → Select another city within range → Move the unit to the other city."},
+		],
+        "uniques": [
+            "Only available <if tutorials are enabled> <when number of [[Air] Units] is more than [0]>",
+            "Unavailable <if tutorial [Move an air unit] is completed>"
+        ]
+    },
+    {
+        "name":"Tutorial Task: [See your stats breakdown]",
+        "presentation":"Floating",
+        "civilopediaText":[
+			{"text":"See your stats breakdown!", "centered":true},
+            {"extraImage":"Tutorials/See your stats breakdown", "imageSize":140},
+            {"text":"Enter the Overview screen (top right corner) → Click on 'Stats'."},
+		],
+        "uniques": [
+            "Only available <if tutorials are enabled>",
+            "Unavailable <if tutorial [See your stats breakdown] is completed>"
+        ]
+    },{
+        "name": "Classical era",
+        "presentation": "Alert",
+        "civilopediaText": [
+            { "extraImage": "Eras/Classical", "centered": true },
+            {},
+            { "text": "Welcome to the [Classical era]!", "centered": true }
+        ],
+        "choices": [{"text": "Close", "uniques": []}]
+    },
+    {
+        "name": "Medieval era",
+        "presentation": "Alert",
+        "civilopediaText": [
+            { "extraImage": "Eras/Medieval", "centered": true },
+            {},
+            { "text": "Welcome to the [Medieval era]!", "centered": true }
+        ],
+        "choices": [{"text": "Close", "uniques": []}]
+    },
+    {
+        "name": "Renaissance era",
+        "presentation": "Alert",
+        "civilopediaText": [
+            { "extraImage": "Eras/Renaissance", "centered": true },
+            {},
+            { "text": "Welcome to the [Renaissance era]!", "centered": true }
+        ],
+        "choices": [{"text": "Close", "uniques": []}]
+    },
+    {
+        "name": "Industrial era",
+        "presentation": "Alert",
+        "civilopediaText": [
+            { "extraImage": "Eras/Industrial", "centered": true },
+            {},
+            { "text": "Welcome to the [Industrial era]!", "centered": true }
+        ],
+        "choices": [{"text": "Close", "uniques": []}]
+    },
+    {
+        "name": "Modern era",
+        "presentation": "Alert",
+        "civilopediaText": [
+            { "extraImage": "Eras/Modern", "centered": true },
+            {},
+            { "text": "Welcome to the [Modern era]!", "centered": true }
+        ],
+        "choices": [{"text": "Close", "uniques": []}]
+    },
+    {
+        "name": "Atomic era",
+        "presentation": "Alert",
+        "civilopediaText": [
+            { "extraImage": "Eras/Atomic", "centered": true },
+            {},
+            { "text": "Welcome to the [Atomic era]!", "centered": true }
+        ],
+        "choices": [{"text": "Close", "uniques": []}]
+    },
+    {
+        "name": "Information era",
+        "presentation": "Alert",
+        "civilopediaText": [
+            { "extraImage": "Eras/Information", "centered": true },
+            {},
+            { "text": "Welcome to the [Information era]!", "centered": true }
+        ],
+        "choices": [{"text": "Close", "uniques": []}]
+    },
+    {
+        "name": "Future era",
+        "presentation": "Alert",
+        "civilopediaText": [
+            { "extraImage": "Eras/Future", "centered": true },
+            {},
+            { "text": "Welcome to the [Future era]!", "centered": true }
+        ],
+        "choices": [{"text": "Close", "uniques": []}]},	{
+		"name": "Scouting Wave",
+		"text": "Tonight, a once-in-a-lifetime metor shower descends from the heavens. Some look up at the night sky and marvel, while others recoil and warn others of impending doom. The fearmongers overcome the population, and many fear that this nightime display is a sign of the future. You can't help but wonder though...",
+		"presentation": "Alert",
+		"choices": [
+			{
+				"text": "What could this mean?",
+				"uniques": [
+					"Comment [Look to the sky]",
+					"[+10]% Unhappiness from [Population] [in all cities] <for [20] turns>",
+					"Free [Unophage] appears <for [Barbarians] Civilizations> <hidden from users>",
+					"Free [FarCrawler] appears <for [Barbarians] Civilizations> <hidden from users>",
+				],
+			}
+		]
+	},
+	{
+		"name": "Probing Wave",
+		"text": "Tonight, a once-in-a-lifetime metor shower descends from the heavens. While some look up at the night sky and marvel, others recall attacks from unholy forces. A meteor shower like this one has happened before, so whatever happens, you feel prepared for what comes next.",
+		"presentation": "Alert",
+		"choices": [
+			{
+				"text": "But can we really be sure?",
+				"uniques": [
+					"Comment [Never too late]",
+					"[+10]% Unhappiness from [Population] [in all cities] <for [20] turns>",
+					"Free [Heron] appears <for [Barbarians] Civilizations> <hidden from users>", 
+					"Free [Unophage] appears <for [Barbarians] Civilizations> <hidden from users>"
+				],
+			}
+		]
+	},
+	{
+		"name": "Invasion Wave",
+		"text": "No meteor shower can outpreform the warning that is a rumbling upon the earth.",
+		"presentation": "Alert",
+		"choices": [
+			{
+				"text": "We must end them, here and now!",
+				"uniques": [
+					"Comment [Nowhere to run]",
+					"[+10]% Unhappiness from [Population] [in all cities] <for [20] turns>",
+					"[5] free [Heron] units appear <for [Barbarians] Civilizations>"
+				]
+			}
+		]
+	},
+	{
+		"name": "Fallen",
+		"text": "",
+		"presentation": "None",
+		"choices": [
+			{
+				"text": "Incident #1",
+				"uniques": [
+					"Free [Young Unophage] appears <for [Barbarians] Civilizations>"
+				],
+			},
+			{
+				"text": "Incident #1-1",
+				"uniques": [
+					"[2] free [Young Unophage] units appear <for [Barbarians] Civilizations>"
+				],
+			},
+			{
+				"text": "Incident #1-2",
+				"uniques": [
+					"[3] free [Young Unophage] units appear <for [Barbarians] Civilizations>"
+				],
+			},
+			{
+				"text": "Incident #3",
+				"uniques": [
+					"Free [FarCrawler] appears <for [Barbarians] Civilizations>"
+				],
+			},
+			{
+				"text": "Incident #3-1",
+				"uniques": [
+					"[2] free [FarCrawler] units appear <for [Barbarians] Civilizations>"
+				],
+			},
+			{
+				"text": "Incident #3-2",
+				"uniques": [
+					"[3] free [FarCrawler] units appear <for [Barbarians] Civilizations>"
+				],
+			},
+		]
+	},
+	{
+		"name": "Reinforcements",
+		"text": "",
+		"presentation": "None",
+		"choices": [
+			{
+				"text": "Unophage Crater",
+				"uniques": [
+					"Free [Unophage] appears <for [Barbarians] Civilizations>",
+					"[3] free [Residual Form] units appear <for [Barbarians] Civilizations>"
+				],
+			},
+			{
+				"text": "Squad Arrival",
+				"uniques": [
+					"Free [Heron] appears <for [Barbarians] Civilizations>",
+					"[3] free [Tripod] units appear <for [Barbarians] Civilizations>"
+				],
+			},
+		]
+	},
+	{
+		"name": "Uprising",
+		"text": "A revolt has broken out! Some of those among them seem to be making a racket, as if to call down the enemy from above!",
+		"presentation": "Alert",
+		"choices": [
+			{
+				"text": "Bring them down, quickly!",
+				"uniques": [
+					"Rebel units may spawn <with [100]% chance> <for [10] turns>",
+				],
+			}
+		]
+	},
+]

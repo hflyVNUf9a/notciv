@@ -1,0 +1,20 @@
+{	"isBaseRuleset": true,
+	"uniques": [
+		"Cannot be used as permanent audiovisual mod", "Allow raze capital",
+        "Allow raze holy city",
+
+        // Ignore warning about ExtraImages
+        "Suppress warning [(Event) Atomic era's civilopediaText line 1: extraImage not found as either atlas texture or in ExtraImages folder]",
+        "Suppress warning [(Event) Classical era's civilopediaText line 1: extraImage not found as either atlas texture or in ExtraImages folder]",
+        "Suppress warning [(Event) Future era's civilopediaText line 1: extraImage not found as either atlas texture or in ExtraImages folder]",
+        "Suppress warning [(Event) Industrial era's civilopediaText line 1: extraImage not found as either atlas texture or in ExtraImages folder]",
+        "Suppress warning [(Event) Information era's civilopediaText line 1: extraImage not found as either atlas texture or in ExtraImages folder]",
+        "Suppress warning [(Event) Medieval era's civilopediaText line 1: extraImage not found as either atlas texture or in ExtraImages folder]",
+        "Suppress warning [(Event) Modern era's civilopediaText line 1: extraImage not found as either atlas texture or in ExtraImages folder]",
+        "Suppress warning [(Event) Renaissance era's civilopediaText line 1: extraImage not found as either atlas texture or in ExtraImages folder]","Allow City States to spawn with additional units",
+        "Suppress warning [Artillery is supposed to automatically upgrade at tech Nanotechnology, and therefore Rocketry for its upgrade Rocket Artillery may not yet be researched!]",
+        "Suppress warning [Caravel is supposed to automatically upgrade at tech Combustion, and therefore Navigation for its upgrade Privateer may not yet be researched!","Can trade civilization introductions for [200] Gold",
+	"Suppress warning [is supposed to automatically upgrade]",
+	],"constants": {
+        "maxXPfromBarbarians":1000,
+    }}

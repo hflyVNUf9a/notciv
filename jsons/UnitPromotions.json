@@ -1,0 +1,3929 @@
+[
+  // ============================================================
+  // HEAL INSTANTLY
+  // ============================================================
+
+  {
+    name: "Heal Instantly",
+    uniques: [
+      "[This Unit] heals [50] HP",
+      "Doing so will consume this opportunity to choose a Promotion",
+    ],
+    unitTypes: [
+      "Sword", "Gunpowder", "Mounted", "Scout", "Siege", "Archery",
+      "Ranged Gunpowder", "Armored", "Melee Water", "Ranged Water", "Submarine",
+      "Support", "Land Carrier", "Anti Air", "Archery Mounted",
+      "Ranged Gunpowder Mounted", "Ranged Gunpowder Armored",
+      "Archery Light", "Ranged Gunpowder Light", "Ranged Gunpowder Emplacement",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor", "GDR",
+      "Infantry", "Marines", "Anti Cavalry", "Mercenary", "Recon", "Paratrooper",
+      "Ranged Heavy", "Ranged Support", "Siege Melee", "Siege Ranged",
+      "Siege Carrier", "Siege Nuke", "Heavy Cavalry", "Light Cavalry",
+      "Ranged Cavalry", "Counter Cavalry", "Missile Defense",
+      "Naval Melee", "Naval Ranged", "Naval Escort", "Naval Siege",
+      "Naval Carrier", "Naval Raider", "Naval Submarine",
+      "Air Fighter", "Air Bomber", "Air Naval Bomber", "Air Close Air Support",
+      "Air Drone", "Air Atomic Bomber", "Air Missile", "Air Nuke Missile",
+      "Air Helicopter", "Militia",
+    ],
+    column: 0, row: 0,
+  },
+  {
+    name: "Heal Instantly II",
+    uniques: [
+      "[This Unit] heals [75] HP",
+      "Doing so will consume this opportunity to choose a Promotion",
+      "Will not be displayed in Civilopedia",
+    ],
+    unitTypes: ["Asylbewerber", "Phage"],
+    innerColor: [253, 236, 234],
+    outerColor: [195, 53, 43],
+    column: 15, row: 0,
+  },
+
+  // ============================================================
+  // RANGED & SIEGE PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Accuracy I",
+    uniques: [
+      "[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>",
+      "[-90]% weight to this choice for AI decisions",
+    ],
+    unitTypes: [
+      "Siege", "Archery", "Archery Mounted", "Ranged Gunpowder",
+      "Ranged Gunpowder Mounted", "Ranged Gunpowder Armored",
+      "Archery Light", "Ranged Gunpowder Light", "Ranged Gunpowder Emplacement",
+    ],
+    column: 1, row: 1,
+  },
+  {
+    name: "Accuracy II",
+    prerequisites: ["Accuracy I"],
+    uniques: ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+    unitTypes: [
+      "Siege", "Archery", "Archery Mounted", "Ranged Gunpowder",
+      "Ranged Gunpowder Mounted", "Ranged Gunpowder Armored",
+      "Archery Light", "Ranged Gunpowder Light", "Ranged Gunpowder Emplacement",
+    ],
+    column: 2, row: 1,
+  },
+  {
+    name: "Accuracy III",
+    prerequisites: ["Accuracy II"],
+    uniques: ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+    unitTypes: [
+      "Siege", "Archery", "Archery Mounted", "Ranged Gunpowder",
+      "Ranged Gunpowder Mounted", "Ranged Gunpowder Armored",
+      "Archery Light", "Ranged Gunpowder Light", "Ranged Gunpowder Emplacement",
+    ],
+    column: 3, row: 1,
+  },
+
+  {
+    name: "Barrage I",
+    uniques: [
+      "[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>",
+      "[-90]% weight to this choice for AI decisions",
+    ],
+    unitTypes: [
+      "Siege", "Archery", "Archery Mounted", "Ranged Gunpowder",
+      "Ranged Gunpowder Mounted", "Ranged Gunpowder Armored",
+      "Archery Light", "Ranged Gunpowder Light", "Ranged Gunpowder Emplacement",
+    ],
+    column: 1, row: 2,
+  },
+  {
+    name: "Barrage II",
+    prerequisites: ["Barrage I"],
+    uniques: ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+    unitTypes: [
+      "Siege", "Archery", "Archery Mounted", "Ranged Gunpowder",
+      "Ranged Gunpowder Mounted", "Ranged Gunpowder Armored",
+      "Archery Light", "Ranged Gunpowder Light", "Ranged Gunpowder Emplacement",
+    ],
+    column: 2, row: 2,
+  },
+  {
+    name: "Barrage III",
+    prerequisites: ["Barrage II"],
+    uniques: ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+    unitTypes: [
+      "Siege", "Archery", "Archery Mounted", "Ranged Gunpowder",
+      "Ranged Gunpowder Mounted", "Ranged Gunpowder Armored",
+      "Archery Light", "Ranged Gunpowder Light", "Ranged Gunpowder Emplacement",
+    ],
+    column: 3, row: 2,
+  },
+
+  // Volley — two distinct promotions sharing a name:
+  //   1) Siege units: +50% vs cities
+  //   2) Ranged Heavy units: +20% vs Infantry
+  {
+    name: "Volley",
+    prerequisites: ["Accuracy I", "Barrage I"],
+    uniques: ["[+50]% Strength <vs cities>"],
+    unitTypes: ["Siege"],
+    column: 2, row: 3,
+  },
+  {
+    name: "Volley",
+    uniques: ["[+20]% Strength <vs [Infantry] units>"],
+    unitTypes: ["Ranged Heavy"],
+  },
+
+  {
+    name: "Extended Range",
+    prerequisites: [
+      "Accuracy III", "Barrage III", "Targeting II",
+      "Bombardment II", "Wolfpack II",
+    ],
+    uniques: ["[+1] Range"],
+    unitTypes: [
+      "Archery", "Ranged Gunpowder", "Siege", "Ranged Water", "Submarine",
+    ],
+    column: 3, row: 3,
+  },
+  {
+    name: "Extended Range",
+    prerequisites: ["Patrol Aircraft"],
+    uniques: ["[+2] Range"],
+    unitTypes: ["Air Naval Bomber"],
+  },
+
+  {
+    name: "Indirect Fire",
+    prerequisites: [
+      "Accuracy III", "Barrage III", "Bombardment II", "Targeting II",
+    ],
+    uniques: ["Ranged attacks may be performed over obstacles"],
+    unitTypes: [
+      "Siege", "Archery", "Archery Mounted", "Ranged Gunpowder",
+      "Ranged Gunpowder Mounted", "Ranged Gunpowder Armored", "Ranged Water",
+    ],
+    column: 4, row: 3,
+  },
+
+  {
+    name: "Suppressive Fire",
+    prerequisites: ["Accuracy II", "Barrage II"],
+    uniques: [
+      "[+25]% Strength <vs [Sword] units>",
+      "[+25]% Strength <vs [Gunpowder] units>",
+    ],
+    unitTypes: [
+      "Archery Light", "Ranged Gunpowder Light", "Ranged Gunpowder Emplacement",
+    ],
+    column: 2, row: 30,
+  },
+  {
+    name: "Suppressive Fire",
+    uniques: ["[+15]% Strength <vs [Infantry] units>"],
+    unitTypes: ["Ranged Support"],
+  },
+
+  {
+    name: "Fire Support",
+    prerequisites: ["Accuracy III", "Barrage III"],
+    uniques: [
+      "[+10]% Strength bonus for [Melee] units within [1] tiles",
+      "[-10]% Strength for enemy [Melee] units in adjacent [Land] tiles",
+    ],
+    unitTypes: ["Ranged Gunpowder Emplacement"],
+    column: 3, row: 30,
+  },
+  {
+    name: "Fire Support",
+    prerequisites: ["Marksman"],
+    uniques: ["[+10]% Strength bonus for [Melee] units within [1] tiles"],
+    unitTypes: ["Ranged Support"],
+  },
+
+  {
+    name: "Fire and Maneuver",
+    prerequisites: ["Accuracy III", "Barrage III"],
+    uniques: [
+      "Withdraws before melee combat <with [40]% chance>",
+      "Can move after attacking",
+    ],
+    unitTypes: ["Archery Light", "Ranged Gunpowder Light"],
+    column: 4, row: 30,
+  },
+  {
+    name: "Fire and Maneuver",
+    prerequisites: ["Fire Support", "Skirmisher Tactics"],
+    uniques: ["[+1] Movement", "Can move after attacking"],
+    unitTypes: ["Ranged Support"],
+  },
+
+  {
+    name: "Counter Battery I",
+    uniques: ["[+25]% Strength <vs [Ranged] units>"],
+    unitTypes: [
+      "Archery", "Ranged Gunpowder", "Archery Mounted",
+      "Ranged Gunpowder Mounted", "Ranged Gunpowder Armored",
+      "Archery Light", "Ranged Gunpowder Light",
+    ],
+    column: 1, row: 27,
+  },
+  {
+    name: "Counter Battery II",
+    prerequisites: ["Counter Battery I"],
+    uniques: ["[+25]% Strength <vs [Ranged] units> <when defending>"],
+    unitTypes: [
+      "Archery", "Ranged Gunpowder", "Archery Mounted",
+      "Ranged Gunpowder Mounted", "Ranged Gunpowder Armored",
+      "Archery Light", "Ranged Gunpowder Light",
+    ],
+    column: 2, row: 27,
+  },
+
+  // ============================================================
+  // MELEE / MOUNTED / ARMOR PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Shock I",
+    uniques: ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+    unitTypes: [
+      "Sword", "Gunpowder", "Mounted", "Armored",
+      "Siege Gunpowder", "Siege Sword",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 1, row: 4,
+  },
+  {
+    name: "Shock II",
+    prerequisites: ["Shock I"],
+    uniques: ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+    unitTypes: [
+      "Sword", "Gunpowder", "Mounted", "Armored",
+      "Siege Gunpowder", "Siege Sword",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 2, row: 4,
+  },
+  {
+    name: "Shock III",
+    prerequisites: ["Shock II"],
+    uniques: ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+    unitTypes: [
+      "Sword", "Gunpowder", "Mounted", "Armored",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 3, row: 4,
+  },
+
+  {
+    name: "Drill I",
+    uniques: ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+    unitTypes: [
+      "Sword", "Gunpowder", "Mounted", "Armored",
+      "Siege Gunpowder", "Siege Sword",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 1, row: 5,
+  },
+  {
+    name: "Drill II",
+    prerequisites: ["Drill I"],
+    uniques: ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+    unitTypes: [
+      "Sword", "Gunpowder", "Mounted", "Armored",
+      "Siege Gunpowder", "Siege Sword",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 2, row: 5,
+  },
+  {
+    name: "Drill III",
+    prerequisites: ["Drill II"],
+    uniques: ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+    unitTypes: [
+      "Sword", "Gunpowder", "Mounted", "Armored",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 3, row: 5,
+  },
+
+  {
+    name: "Charge",
+    prerequisites: ["Shock II", "Drill II"],
+    uniques: [
+      "[+33]% Strength <vs [Wounded] units>",
+      "[+200]% weight to this choice for AI decisions",
+    ],
+    unitTypes: [
+      "Mounted", "Armored", "Sword", "Gunpowder",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 2, row: 6,
+  },
+
+  {
+    name: "Besiege", // Not "Siege" to avoid conflict with siege unit type
+    prerequisites: ["Shock II", "Drill II"],
+    uniques: ["[+50]% Strength <vs cities>"],
+    unitTypes: [
+      "Sword", "Gunpowder", "Siege Gunpowder", "Siege Sword",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 3, row: 6,
+  },
+
+  {
+    name: "Formation I",
+    prerequisites: ["Shock II", "Drill II"],
+    uniques: [
+      "[+33]% Strength <vs [Mounted] units>",
+      "[-50]% weight to this choice for AI decisions",
+    ],
+    unitTypes: [
+      "Sword", "Gunpowder", "Mounted",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry",
+    ],
+    column: 2, row: 7,
+  },
+  {
+    name: "Formation II",
+    prerequisites: ["Formation I"],
+    uniques: ["[+33]% Strength <vs [Mounted] units>"],
+    unitTypes: [
+      "Sword", "Gunpowder", "Mounted",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry",
+    ],
+    column: 3, row: 7,
+  },
+
+  {
+    name: "Blitz",
+    prerequisites: ["Shock III", "Drill III"],
+    uniques: ["[1] additional attacks per turn"],
+    unitTypes: ["Sword", "Gunpowder", "Mounted", "Armored"],
+    column: 4, row: 6,
+  },
+
+  {
+    name: "Woodsman",
+    prerequisites: ["Shock III", "Drill III"],
+    uniques: ["Double movement in [Forest]", "Double movement in [Jungle]"],
+    unitTypes: [
+      "Sword", "Gunpowder", "Siege Gunpowder",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 5, row: 6,
+  },
+
+  // Amphibious — two distinct definitions:
+  //   1) Melee: removes river/coast attack penalties (+ embarked healing)
+  //   2) Embarked defense: sight + defense bonus when embarked
+  {
+    name: "Amphibious",
+    prerequisites: ["Shock I", "Drill I"],
+    uniques: [
+      "Eliminates combat penalty for attacking over a river",
+      "Eliminates combat penalty for attacking across a coast",
+      "[This Unit] heals [5] HP <upon ending a turn in a [Coast] tile> <before discovering [Navigation]> <hidden from users>",
+      "[This Unit] heals [5] HP <upon ending a turn in a [Ocean] tile> <before discovering [Radar]> <hidden from users>",
+    ],
+    unitTypes: [
+      "Sword", "Gunpowder", "Siege Gunpowder",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 1, row: 6,
+  },
+  {
+    name: "Amphibious",
+    uniques: [
+      "[+1] Sight <for [Embarked] units>",
+      "[+1] Sight <when [Embarked]>",
+      "[+100]% Strength <when defending> <when [Embarked]>",
+    ],
+  },
+
+  {
+    name: "Forced Breakthrough",
+    prerequisites: ["Shock II", "Drill II"],
+    uniques: ["Ignores Zone of Control"],
+    unitTypes: ["Siege Gunpowder", "Siege Sword"],
+    column: 4, row: 7,
+  },
+  {
+    name: "Forced Breakthrough",
+    prerequisites: ["Escort Team"],
+    uniques: ["Ignores Zone of Control"],
+    unitTypes: ["Siege Melee"],
+  },
+
+  // ============================================================
+  // MEDIC PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Medic",
+    prerequisites: [
+      "Shock I", "Drill I", "Scouting II", "Survivalism II",
+    ],
+    uniques: [
+      "All adjacent units heal [+5] HP when healing",
+      "[-50]% weight to this choice for AI decisions",
+    ],
+    unitTypes: [
+      "Sword", "Gunpowder", "Mounted", "Scout",
+      "Siege Gunpowder", "Siege Sword", "Ranged Gunpowder Emplacement",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 2, row: 11,
+  },
+  {
+    name: "Medic II",
+    prerequisites: ["Medic"],
+    uniques: [
+      "[+5] HP when healing <in [Foreign Land] tiles>",
+      "All adjacent units heal [+5] HP when healing",
+    ],
+    unitTypes: [
+      "Sword", "Gunpowder", "Mounted", "Scout",
+      "Siege Gunpowder", "Siege Sword", "Ranged Gunpowder Emplacement",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 3, row: 11,
+  },
+
+  // ============================================================
+  // COVER PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Cover I",
+    uniques: [
+      "[+33]% Strength <vs [Ranged] units> <when defending>",
+      "[-100]% weight to this choice for AI decisions",
+    ],
+    unitTypes: [
+      "Sword", "Gunpowder", "Siege", "Siege Gunpowder", "Siege Sword",
+      "Ranged Gunpowder Emplacement",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 1, row: 26,
+  },
+  {
+    name: "Cover II",
+    prerequisites: ["Cover I"],
+    uniques: ["[+33]% Strength <vs [Ranged] units> <when defending>"],
+    unitTypes: [
+      "Sword", "Gunpowder", "Siege", "Siege Gunpowder", "Siege Sword",
+      "Ranged Gunpowder Emplacement",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 2, row: 26,
+  },
+  {
+    name: "Cover III",
+    prerequisites: ["Cover II"],
+    uniques: ["[+33]% Strength <vs [Ranged] units> <when defending>"],
+    unitTypes: ["Siege Gunpowder", "Siege Sword"],
+    column: 3, row: 26,
+  },
+
+  // ============================================================
+  // MIXED / UNIVERSAL PROMOTIONS
+  // ============================================================
+
+  {
+    name: "March",
+    prerequisites: ["Accuracy II", "Barrage II", "Shock II", "Drill II"],
+    uniques: ["Unit will heal every turn, even if it performs an action"],
+    unitTypes: [
+      "Sword", "Gunpowder", "Archery", "Ranged Gunpowder", "Siege", "Mounted",
+      "Siege Gunpowder", "Siege Sword",
+      "Archery Light", "Ranged Gunpowder Light", "Ranged Gunpowder Emplacement",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 3, row: 10,
+  },
+
+  {
+    name: "Mobility",
+    prerequisites: [
+      "Shock II", "Drill II", "Accuracy II", "Barrage II",
+      "Targeting I", "Bombardment I", "Boarding Party I",
+      "Coastal Raider I", "Wolfpack I",
+    ],
+    uniques: ["[+1] Movement"],
+    unitTypes: [
+      "Mounted", "Melee Water", "Ranged Water", "Armored", "Submarine",
+      "Siege Gunpowder", "Siege Sword",
+      "Archery Light", "Ranged Gunpowder Light",
+    ],
+    column: 3, row: 27,
+  },
+
+  {
+    name: "Sentry",
+    prerequisites: [
+      "Accuracy I", "Barrage I", "Shock II", "Drill II",
+      "Bombardment I", "Targeting I", "Boarding Party I", "Coastal Raider I",
+    ],
+    uniques: ["[+1] Sight"],
+    unitTypes: [
+      "Sword", "Gunpowder", "Mounted", "Ranged Water", "Armored", "Melee Water",
+      "Siege Gunpowder", "Siege Sword",
+      "Archery Light", "Ranged Gunpowder Light", "Ranged Gunpowder Emplacement",
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 4, row: 27,
+  },
+
+  {
+    name: "Logistics",
+    prerequisites: [
+      "Accuracy III", "Barrage III", "Targeting III", "Wolfpack III",
+      "Dogfighting III", "Bombardment III", "Air Targeting II",
+      "Coastal Raider III", "Boarding Party III", "Siege III",
+      "Mobility II", "Anti-Armor II", "Thermal Protection III",
+    ],
+    uniques: [
+      "[1] additional attacks per turn",
+      "Can move after attacking",
+    ],
+    unitTypes: [
+      "Archery", "Ranged Gunpowder", "Siege",
+      "Melee Water", "Ranged Water", "Submarine",
+      "Fighter", "Bomber", "Helicopter",
+      "CAS", "Ranged Gunpowder Armored", "Ranged Gunpowder Mounted",
+      "Archery Mounted", "Ranged Gunpowder Emplacement",
+      "Carrier-Cruiser", "Icebreaker",
+    ],
+    column: 5, row: 27,
+  },
+
+  {
+    name: "Ambush I",
+    uniques: [
+      "[+33]% Strength <vs [Armored] units>",
+      "[-100]% weight to this choice for AI decisions",
+    ],
+    unitTypes: ["Sword", "Gunpowder", "CAS", "Bomber", "Anti Armor"],
+    column: 1, row: 28,
+  },
+  {
+    name: "Ambush II",
+    prerequisites: ["Ambush I"],
+    uniques: ["[+33]% Strength <vs [Armored] units>"],
+    unitTypes: ["Sword", "Gunpowder", "CAS", "Bomber", "Anti Armor"],
+    column: 2, row: 28,
+  },
+
+  {
+    name: "Bombardment I",
+    uniques: ["[+33]% Strength <vs [Land] units>"],
+    unitTypes: ["Ranged Water", "Fighter", "Bomber", "CAS", "Carrier-Cruiser"],
+    column: 1, row: 29,
+  },
+  {
+    name: "Bombardment II",
+    prerequisites: ["Bombardment I"],
+    uniques: ["[+33]% Strength <vs [Land] units>"],
+    unitTypes: ["Ranged Water", "Fighter", "Bomber", "CAS", "Carrier-Cruiser"],
+    column: 2, row: 29,
+  },
+  {
+    name: "Bombardment III",
+    prerequisites: ["Bombardment II"],
+    uniques: ["[+34]% Strength <vs [Land] units>"],
+    unitTypes: ["Ranged Water", "Fighter", "Bomber", "CAS", "Carrier-Cruiser"],
+    column: 3, row: 29,
+  },
+
+  {
+    name: "Caltrops",
+    prerequisites: ["Shock III", "Drill III", "Formation II", "Ambush II"],
+    uniques: [
+      "[-10]% Strength for enemy [Mounted] units in adjacent [Land] tiles",
+      "[-10]% Strength for enemy [Armored] units in adjacent [Land] tiles",
+    ],
+    unitTypes: [
+      "Sword Anti Cavalry", "Gunpowder Anti Cavalry", "Anti Armor",
+    ],
+    column: 28, row: 3,
+  },
+  // Caltrops for Anti Cavalry unit class — FIXED circular dependency
+  // Original had Caltrops requiring Chokepoint, and Chokepoint requiring Caltrops
+  {
+    name: "Caltrops",
+    prerequisites: ["Formation", "Thrust"],
+    uniques: [
+      "[+25]% Strength <when defending> <vs [Light Cavalry] units>",
+      "[+25]% Strength <when defending> <vs [Heavy Cavalry] units>",
+      "[+25]% Strength <when defending> <vs [Counter Cavalry] units>",
+    ],
+    unitTypes: ["Anti Cavalry"],
+  },
+
+  // ============================================================
+  // SCOUT / RECON PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Scouting I",
+    uniques: ["[+1] Sight"],
+    unitTypes: ["Scout"],
+    column: 8, row: 1,
+  },
+  {
+    name: "Scouting II",
+    prerequisites: ["Scouting I"],
+    uniques: ["[+1] Sight"],
+    unitTypes: ["Scout"],
+    column: 8, row: 2,
+  },
+  {
+    name: "Scouting III",
+    prerequisites: ["Scouting II"],
+    uniques: ["[+1] Movement", "May enter foreign tiles without open borders"],
+    unitTypes: ["Scout"],
+    column: 3, row: 8,
+  },
+
+  {
+    name: "Survivalism I",
+    uniques: [
+      "[+5] HP when healing <in [Foreign Land] tiles>",
+      "[+25]% Strength <when defending>",
+    ],
+    unitTypes: ["Scout"],
+    column: 9, row: 1,
+  },
+  {
+    name: "Survivalism II",
+    prerequisites: ["Survivalism I"],
+    uniques: [
+      "[+5] HP when healing <in [Foreign Land] tiles>",
+      "[+25]% Strength <when defending>",
+    ],
+    unitTypes: ["Scout"],
+    column: 9, row: 2,
+  },
+  {
+    name: "Survivalism III",
+    prerequisites: ["Survivalism II"],
+    uniques: [
+      "Unit will heal every turn, even if it performs an action",
+      "Withdraws before melee combat <with [75]% chance>",
+      "Ignores Zone of Control",
+    ],
+    unitTypes: ["Scout"],
+    column: 3, row: 9,
+  },
+
+  {
+    name: "Camouflage",
+    prerequisites: ["Scouting II", "Survivalism II"],
+    uniques: ["Invisible to non-adjacent units"],
+    unitTypes: ["Scout"],
+    column: 4, row: 9,
+  },
+
+  {
+    name: "Infiltrater I",
+    prerequisites: ["Rank I"],
+    uniques: ["Can pass through impassable tiles"],
+    unitTypes: ["Scout"],
+  },
+  {
+    name: "Infiltrater II",
+    prerequisites: ["Infiltrater I"],
+    uniques: ["May enter foreign tiles without open borders"],
+    unitTypes: ["Scout"],
+  },
+  {
+    name: "Infiltrater III",
+    prerequisites: ["Infiltrater I"],
+    uniques: ["Unable to capture cities", "Invisible to others"],
+    unitTypes: ["Scout"],
+  },
+
+  // ============================================================
+  // NAVAL PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Boarding Party I",
+    uniques: ["[+15]% Strength <vs [Water] units>"],
+    unitTypes: ["Melee Water"],
+    column: 11, row: 1,
+  },
+  {
+    name: "Boarding Party II",
+    prerequisites: ["Boarding Party I"],
+    uniques: ["[+15]% Strength <vs [Water] units>"],
+    unitTypes: ["Melee Water"],
+    column: 11, row: 2,
+  },
+  {
+    name: "Boarding Party III",
+    prerequisites: ["Boarding Party II"],
+    uniques: ["[+15]% Strength <vs [Water] units>"],
+    unitTypes: ["Melee Water"],
+    column: 11, row: 3,
+  },
+
+  {
+    name: "Coastal Raider I",
+    uniques: [
+      "[+20]% Strength <vs cities>",
+      "Earn [33]% of the damage done to [City] units as [Gold]",
+    ],
+    unitTypes: ["Melee Water"],
+    column: 12, row: 1,
+  },
+  {
+    name: "Coastal Raider II",
+    prerequisites: ["Coastal Raider I"],
+    uniques: [
+      "[+20]% Strength <vs cities>",
+      "Earn [33]% of the damage done to [City] units as [Gold]",
+    ],
+    unitTypes: ["Melee Water"],
+    column: 12, row: 2,
+  },
+  {
+    name: "Coastal Raider III",
+    prerequisites: ["Coastal Raider II"],
+    uniques: [
+      "[+20]% Strength <vs cities>",
+      "Earn [33]% of the damage done to [City] units as [Gold]",
+    ],
+    unitTypes: ["Melee Water"],
+    column: 12, row: 3,
+  },
+  {
+    name: "Landing Party",
+    uniques: ["Eliminates combat penalty for attacking across a coast"],
+    unitTypes: ["Melee Water"],
+    column: 12, row: 5,
+  },
+
+  {
+    name: "Targeting I",
+    uniques: ["[+15]% Strength <vs [Water] units>"],
+    unitTypes: ["Ranged Water", "Carrier-Cruiser"],
+    column: 13, row: 1,
+  },
+  {
+    name: "Targeting II",
+    prerequisites: ["Targeting I"],
+    uniques: ["[+15]% Strength <vs [Water] units>"],
+    unitTypes: ["Ranged Water", "Carrier-Cruiser"],
+    column: 13, row: 2,
+  },
+  {
+    name: "Targeting III",
+    prerequisites: ["Targeting II"],
+    uniques: ["[+15]% Strength <vs [Water] units>"],
+    unitTypes: ["Ranged Water", "Carrier-Cruiser"],
+    column: 13, row: 3,
+  },
+
+  {
+    name: "Wolfpack I",
+    uniques: ["[+25]% Strength <when attacking>"],
+    unitTypes: ["Submarine"],
+    column: 14, row: 1,
+  },
+  {
+    name: "Wolfpack II",
+    prerequisites: ["Wolfpack I"],
+    uniques: ["[+25]% Strength <when attacking>"],
+    unitTypes: ["Submarine"],
+    column: 14, row: 2,
+  },
+  {
+    name: "Wolfpack III",
+    prerequisites: ["Wolfpack II"],
+    uniques: ["[+25]% Strength <when attacking>"],
+    unitTypes: ["Submarine"],
+    column: 14, row: 3,
+  },
+
+  {
+    name: "Supply",
+    prerequisites: [
+      "Bombardment III", "Targeting III",
+      "Boarding Party III", "Coastal Raider III",
+    ],
+    uniques: [
+      "May heal outside of friendly territory",
+      "[+15] HP when healing <in [Foreign Land] tiles>",
+    ],
+    unitTypes: [
+      "Melee Water", "Ranged Water", "Carrier-Cruiser", "Icebreaker",
+    ],
+    column: 16, row: 4,
+  },
+
+  // ============================================================
+  // AIRCRAFT CARRIER / CARRIER PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Armor Plating I",
+    uniques: ["[+25]% Strength <when defending>"],
+    unitTypes: [
+      "Aircraft Carrier", "Air Base", "Land Carrier",
+      "HeliCarrier", "Carrier-Cruiser",
+    ],
+    column: 15, row: 1,
+  },
+  {
+    name: "Armor Plating II",
+    prerequisites: ["Armor Plating I"],
+    uniques: ["[+25]% Strength <when defending>"],
+    unitTypes: [
+      "Aircraft Carrier", "Air Base", "Land Carrier",
+      "HeliCarrier", "Carrier-Cruiser",
+    ],
+    column: 15, row: 2,
+  },
+  {
+    name: "Armor Plating III",
+    prerequisites: ["Armor Plating II"],
+    uniques: ["[+25]% Strength <when defending>"],
+    unitTypes: [
+      "Aircraft Carrier", "Air Base", "Land Carrier",
+      "HeliCarrier", "Carrier-Cruiser",
+    ],
+    column: 15, row: 3,
+  },
+
+  {
+    name: "Flight Deck I",
+    uniques: ["Can carry [1] extra [Aircraft] units"],
+    unitTypes: [
+      "Aircraft Carrier", "Air Base", "Land Carrier",
+      "HeliCarrier", "Carrier-Cruiser",
+    ],
+    column: 16, row: 1,
+  },
+  {
+    name: "Flight Deck II",
+    prerequisites: ["Flight Deck I"],
+    uniques: ["Can carry [1] extra [Aircraft] units"],
+    unitTypes: [
+      "Aircraft Carrier", "Air Base", "Land Carrier",
+      "HeliCarrier", "Carrier-Cruiser",
+    ],
+    column: 16, row: 2,
+  },
+  {
+    name: "Flight Deck III",
+    prerequisites: ["Flight Deck II"],
+    uniques: ["Can carry [1] extra [Aircraft] units"],
+    unitTypes: [
+      "Aircraft Carrier", "Air Base", "Land Carrier",
+      "HeliCarrier", "Carrier-Cruiser",
+    ],
+    column: 16, row: 3,
+  },
+
+  // ============================================================
+  // BOMBER PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Siege I",
+    uniques: [
+      "[+33]% Strength <vs cities>",
+      "[-100]% weight to this choice for AI decisions",
+    ],
+    unitTypes: ["Bomber", "CAS"],
+    column: 1, row: 17,
+  },
+  {
+    name: "Siege II",
+    prerequisites: ["Siege I"],
+    uniques: ["[+33]% Strength <vs cities>"],
+    unitTypes: ["Bomber"],
+    column: 2, row: 17,
+  },
+  {
+    name: "Siege III",
+    prerequisites: ["Siege II"],
+    uniques: ["[+34]% Strength <vs cities>"],
+    unitTypes: ["Bomber"],
+    column: 3, row: 17,
+  },
+  {
+    name: "Evasion",
+    prerequisites: ["Siege II", "Bombardment II"],
+    uniques: [
+      "Damage taken from interception reduced by [50]%",
+      "[+200]% weight to this choice for AI decisions",
+    ],
+    unitTypes: ["Bomber", "CAS"],
+    column: 4, row: 17,
+  },
+
+  // ============================================================
+  // FIGHTER PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Interception I",
+    uniques: ["[+33]% Damage when intercepting"],
+    unitTypes: ["Fighter", "Interceptor"],
+    column: 1, row: 18,
+  },
+  {
+    name: "Interception II",
+    prerequisites: ["Interception I"],
+    uniques: ["[+33]% Damage when intercepting"],
+    unitTypes: ["Fighter", "Interceptor"],
+    column: 2, row: 18,
+  },
+  {
+    name: "Interception III",
+    prerequisites: ["Interception II"],
+    uniques: ["[+34]% Damage when intercepting"],
+    unitTypes: ["Interceptor"],
+    column: 3, row: 18,
+  },
+
+  {
+    name: "Dogfighting I",
+    uniques: ["[+33]% Strength when performing Air Sweep"],
+    unitTypes: ["Fighter", "Interceptor"],
+    column: 1, row: 19,
+  },
+  {
+    name: "Dogfighting II",
+    prerequisites: ["Dogfighting I"],
+    uniques: ["[+33]% Strength when performing Air Sweep"],
+    unitTypes: ["Fighter", "Interceptor"],
+    column: 2, row: 19,
+  },
+  {
+    name: "Dogfighting III",
+    prerequisites: ["Dogfighting II"],
+    uniques: ["[+34]% Strength when performing Air Sweep"],
+    unitTypes: ["Fighter"],
+    column: 3, row: 19,
+  },
+
+  {
+    name: "Air Targeting I",
+    prerequisites: [
+      "Interception I", "Siege I", "Bombardment I", "Dogfighting I",
+    ],
+    uniques: [
+      "[+33]% Strength <vs [Water] units>",
+      "[-100]% weight to this choice for AI decisions",
+    ],
+    unitTypes: ["CAS", "Bomber"],
+    column: 1, row: 20,
+  },
+  {
+    name: "Air Targeting II",
+    prerequisites: ["Air Targeting I"],
+    uniques: ["[+33]% Strength <vs [Water] units>"],
+    unitTypes: ["CAS", "Bomber"],
+    column: 2, row: 20,
+  },
+
+  {
+    name: "Sortie",
+    prerequisites: ["Interception II", "Dogfighting II"],
+    uniques: [
+      "[1] extra interceptions may be made per turn",
+      "[-100]% weight to this choice for AI decisions",
+    ],
+    unitTypes: ["Fighter", "Interceptor"],
+    column: 2, row: 21,
+  },
+
+  {
+    name: "Operational Range",
+    prerequisites: [
+      "Interception I", "Dogfighting I", "Siege I", "Bombardment I",
+    ],
+    uniques: [
+      "[+2] Range",
+      "[-90]% weight to this choice for AI decisions",
+    ],
+    unitTypes: ["Fighter", "Interceptor", "CAS", "Bomber"],
+    column: 1, row: 21,
+  },
+
+  {
+    name: "Air Repair",
+    prerequisites: [
+      "Interception II", "Dogfighting II", "Siege II", "Bombardment II",
+      "Mobility II", "Anti-Armor II",
+    ],
+    uniques: ["Unit will heal every turn, even if it performs an action"],
+    unitTypes: ["Fighter", "Interceptor", "Bomber", "Helicopter", "CAS"],
+    column: 3, row: 21,
+  },
+
+  // ============================================================
+  // HELICOPTER PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Mobility I",
+    uniques: ["[+1] Movement"],
+    unitTypes: ["Helicopter"],
+    column: 22, row: 1,
+  },
+  {
+    name: "Mobility II",
+    prerequisites: ["Mobility I"],
+    uniques: ["[+1] Movement"],
+    unitTypes: ["Helicopter"],
+    column: 22, row: 2,
+  },
+  {
+    name: "Anti-Armor I",
+    uniques: ["[+25]% Strength <vs [Armored] units>"],
+    unitTypes: ["Helicopter"],
+    column: 23, row: 1,
+  },
+  {
+    name: "Anti-Armor II",
+    prerequisites: ["Anti-Armor I"],
+    uniques: ["[+25]% Strength <vs [Armored] units>"],
+    unitTypes: ["Helicopter"],
+    column: 23, row: 2,
+  },
+
+  {
+    name: "Head First",
+    uniques: ["[+15]% Strength <when attacking>"],
+    unitTypes: ["Helicopter"],
+  },
+  {
+    name: "Organized Offense",
+    prerequisites: ["Head First"],
+    uniques: ["[+40]% Strength <when attacking>"],
+    unitTypes: ["Helicopter"],
+  },
+  {
+    name: "Brace Yourself",
+    uniques: ["[+50]% Strength <vs [Anti Air] units> <when defending>"],
+    unitTypes: ["Helicopter"],
+  },
+
+  // ============================================================
+  // ANTI-AIR PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Defense Crew",
+    uniques: ["[+15]% Strength <when defending>"],
+    unitTypes: ["Anti Air"],
+    column: 1, row: 33,
+  },
+  {
+    name: "Anti Air Barrage",
+    uniques: [
+      "[+20]% Strength <vs [Air Helicopter] units>",
+      "[+20]% Damage when intercepting",
+    ],
+    unitTypes: ["Anti Air"],
+    column: 1, row: 34,
+  },
+  {
+    name: "Ground Fire Support",
+    prerequisites: ["Defense Crew"],
+    uniques: ["[+20]% Strength <vs [Land] units>"],
+    unitTypes: ["Anti Air"],
+    column: 2, row: 33,
+  },
+  {
+    name: "Proximity Air Defense",
+    prerequisites: ["Anti Air Barrage"],
+    uniques: [
+      "[+20]% Strength <vs [Air Helicopter] units>",
+      "[+20]% Strength <vs [Air] units> <when defending>",
+    ],
+    unitTypes: ["Anti Air"],
+    column: 2, row: 34,
+  },
+  {
+    name: "Mobile Battery",
+    prerequisites: ["Ground Fire Support"],
+    uniques: ["[+1] Movement"],
+    unitTypes: ["Anti Air"],
+    column: 3, row: 33,
+  },
+  {
+    name: "Continuous AA Protection",
+    prerequisites: ["Proximity Air Defense"],
+    uniques: ["[1] extra interceptions may be made per turn"],
+    unitTypes: ["Anti Air"],
+    column: 3, row: 34,
+  },
+  {
+    name: "Early Warning System",
+    prerequisites: ["Continuous AA Protection", "Mobile Battery"],
+    uniques: ["[+1] Sight", "[+1] Range"],
+    unitTypes: ["Anti Air"],
+    column: 4, row: 34,
+  },
+
+  // ============================================================
+  // ATOMIC BOMBER / NUKE MISSILE PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Nuclear Strike Reserve",
+    uniques: ["[-50]% maintenance costs"],
+    unitTypes: ["Atomic Bomber", "Nuke Missile", "Air Atomic Bomber", "Air Nuke Missile"],
+    column: 1, row: 35,
+  },
+  {
+    name: "Strategic Nuclear Bomber",
+    uniques: ["[+5] Range"],
+    unitTypes: ["Atomic Bomber", "Air Atomic Bomber"],
+    column: 2, row: 35,
+  },
+  {
+    name: "Advanced Nuclear Bomber",
+    prerequisites: ["Strategic Nuclear Bomber"],
+    uniques: ["Damage taken from interception reduced by [20]%"],
+    unitTypes: ["Atomic Bomber"],
+    column: 3, row: 35,
+  },
+
+  // ============================================================
+  // MISSILE PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Multistage Thrusters",
+    uniques: ["[+5] Range"],
+    unitTypes: ["Missile", "Nuke Missile", "Air Missile", "Air Nuke Missile"],
+    column: 1, row: 36,
+  },
+  {
+    name: "Heavy Payload",
+    uniques: ["[+50]% Strength"],
+    unitTypes: ["Missile", "Air Missile"],
+    column: 2, row: 36,
+  },
+  {
+    name: "Penetration Bomb",
+    uniques: ["[+100]% Strength <vs cities>"],
+    unitTypes: ["Missile", "Air Missile"],
+    column: 3, row: 36,
+  },
+  {
+    name: "AA Buster",
+    uniques: ["[+100]% Strength <vs [Anti Air] units>"],
+    unitTypes: ["Missile", "Air Missile"],
+    column: 4, row: 36,
+  },
+
+  // ============================================================
+  // AIR DRONE PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Recon UAV",
+    uniques: ["[+4] Sight"],
+    unitTypes: ["Air Drone"],
+    column: 1, row: 37,
+  },
+  {
+    name: "Attack UAV",
+    uniques: ["[+30]% Strength <vs [non-air] units>"],
+    unitTypes: ["Air Drone"],
+    column: 1, row: 38,
+  },
+  {
+    name: "UAV Support",
+    prerequisites: ["Recon UAV"],
+    uniques: ["[+15]% Strength bonus for [Military] units within [2] tiles"],
+    unitTypes: ["Air Drone"],
+    column: 2, row: 37,
+  },
+  {
+    name: "Extra Hardpoints",
+    prerequisites: ["Attack UAV"],
+    uniques: ["[+50]% Strength <vs [non-air] units>"],
+    unitTypes: ["Air Drone"],
+    column: 2, row: 38,
+  },
+  {
+    name: "Air Cover Support",
+    prerequisites: ["UAV Support"],
+    uniques: [
+      "[70]% chance to intercept air attacks",
+      "[+50]% Damage when intercepting",
+    ],
+    unitTypes: ["Air Drone"],
+  },
+  {
+    name: "Stealth Coating",
+    prerequisites: ["Extra Hardpoints"],
+    uniques: ["Cannot be intercepted"],
+    unitTypes: ["Air Drone"],
+    column: 3, row: 37,
+  },
+  {
+    name: "Enhanced AI Control",
+    prerequisites: ["Air Cover Support", "Stealth Coating"],
+    uniques: ["[+30]% Strength", "[+4] Range"],
+    unitTypes: ["Air Drone"],
+    column: 3, row: 38,
+  },
+
+  // ============================================================
+  // AIR HELICOPTER PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Rocket Bombardment",
+    uniques: ["[+20]% Strength <vs [Land] units>"],
+    unitTypes: ["Air Helicopter"],
+    column: 1, row: 24,
+  },
+  {
+    name: "Armor Piercing Rounds",
+    uniques: [
+      "[+30]% Strength <vs [Heavy Cavalry] units>",
+      "[+30]% Strength <vs [Light Cavalry] units>",
+      "[+30]% Strength <vs [Ranged Cavalry] units> <when attacking>",
+      "[+30]% Strength <vs [Counter Cavalry] units>",
+    ],
+    unitTypes: ["Air Helicopter"],
+    column: 1, row: 25,
+  },
+  {
+    name: "Anti-Submarine Warfare",
+    uniques: [
+      "[+33]% Strength <vs [Submarine] units>",
+      "Can see invisible [Submarine] units",
+    ],
+    unitTypes: ["Air Helicopter"],
+    column: 1, row: 39,
+  },
+  {
+    name: "Reinforced Frame",
+    prerequisites: ["Armor Piercing Rounds", "Rocket Bombardment"],
+    uniques: ["[+20]% Strength <when defending>"],
+    unitTypes: ["Air Helicopter"],
+    column: 2, row: 24,
+  },
+  {
+    name: "Anti Tank Missile",
+    prerequisites: ["Armor Piercing Rounds", "Rocket Bombardment"],
+    uniques: [
+      "[+30]% Strength <vs [Heavy Cavalry] units>",
+      "[+30]% Strength <vs [Light Cavalry] units>",
+      "[+30]% Strength <vs [Ranged Cavalry] units> <when attacking>",
+      "[+30]% Strength <vs [Counter Cavalry] units>",
+    ],
+    unitTypes: ["Air Helicopter"],
+    column: 2, row: 25,
+  },
+  {
+    name: "Anti Ship Missile",
+    prerequisites: ["Anti-Submarine Warfare"],
+    uniques: ["[+33]% Strength <vs [Water] units>"],
+    unitTypes: ["Air Helicopter"],
+    column: 2, row: 39,
+  },
+  {
+    name: "Air to Air Weapon",
+    prerequisites: ["Reinforced Frame", "Anti Tank Missile"],
+    uniques: [
+      "[+10]% Strength <vs [Air] units> <when defending>",
+      "[+20]% Strength <vs [Air Helicopter] units>",
+    ],
+    unitTypes: ["Air Helicopter"],
+    column: 3, row: 24,
+  },
+  {
+    name: "NOE Maneuver",
+    prerequisites: ["Reinforced Frame", "Anti Tank Missile"],
+    uniques: ["[+30]% Strength <vs [Anti Air] units>"],
+    unitTypes: ["Air Helicopter"],
+    column: 3, row: 25,
+  },
+  {
+    name: "Hunter Killer",
+    prerequisites: ["Air to Air Weapon", "NOE Maneuver"],
+    uniques: [
+      "[+20]% Strength <vs [Wounded] units>",
+      "[+20]% Strength <when attacking>",
+    ],
+    unitTypes: ["Air Helicopter"],
+    column: 4, row: 25,
+  },
+
+  // ============================================================
+  // GDR PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Adaptive Armor",
+    uniques: ["[+30]% Strength <when defending>"],
+    unitTypes: ["GDR"],
+    column: 1, row: 40,
+  },
+  {
+    name: "Jet-Chute",
+    uniques: ["May Paradrop to [Land] tiles up to [7] tiles away <in [{Friendly} {Land}] tiles>"],
+    unitTypes: ["GDR"],
+    column: 1, row: 41,
+  },
+  {
+    name: "Self-Repair System",
+    uniques: ["Unit will heal every turn, even if it performs an action"],
+    unitTypes: ["GDR"],
+    column: 1, row: 42,
+  },
+  {
+    name: "VLS Module",
+    uniques: [
+      "[+25]% Strength <when attacking>",
+      "Can carry [1] extra [Missile] units",
+    ],
+    unitTypes: ["GDR"],
+    column: 1, row: 43,
+  },
+  {
+    name: "TacCom Core",
+    uniques: ["[+15]% Strength bonus for [Military] units within [1] tiles"],
+    unitTypes: ["GDR"],
+    column: 1, row: 44,
+  },
+
+  // ============================================================
+  // ICEBREAKER PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Thermal Protection I",
+    uniques: [
+      "[+33]% Strength <when fighting in [Tundra] tiles>",
+      "[+33]% Strength <when fighting in [Snow] tiles>",
+    ],
+    unitTypes: ["Icebreaker"],
+  },
+  {
+    name: "Thermal Protection II",
+    prerequisites: ["Thermal Protection I"],
+    uniques: [
+      "[+33]% Strength <when fighting in [Tundra] tiles>",
+      "[+33]% Strength <when fighting in [Snow] tiles>",
+    ],
+    unitTypes: ["Icebreaker"],
+  },
+  {
+    name: "Thermal Protection III",
+    prerequisites: ["Thermal Protection II"],
+    uniques: [
+      "[+34]% Strength <when fighting in [Tundra] tiles>",
+      "[+34]% Strength <when fighting in [Snow] tiles>",
+    ],
+    unitTypes: ["Icebreaker"],
+  },
+  {
+    name: "Nuclear Engines",
+    prerequisites: ["Thermal Protection III"],
+    uniques: ["[+2] Movement"],
+    unitTypes: ["Icebreaker"],
+  },
+  {
+    name: "Rocket Systems",
+    prerequisites: ["Thermal Protection III"],
+    uniques: ["[+1] Range"],
+  },
+
+  // ============================================================
+  // RADAR AIRCRAFT PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Radar I",
+    uniques: ["[+1] Sight"],
+    unitTypes: ["Radar Aircraft"],
+  },
+  {
+    name: "Radar II",
+    prerequisites: ["Radar I"],
+    uniques: ["[+2] Sight"],
+    unitTypes: ["Radar Aircraft"],
+  },
+  {
+    name: "Radar III",
+    prerequisites: ["Radar II"],
+    uniques: ["[+3] Sight"],
+    unitTypes: ["Radar Aircraft"],
+  },
+  {
+    name: "Fuel Reserve I",
+    uniques: ["[+1] Range"],
+    unitTypes: ["Fighter", "Bomber", "Radar Aircraft"],
+  },
+  {
+    name: "Fuel Reserve II",
+    prerequisites: ["Fuel Reserve I"],
+    uniques: ["[+2] Range"],
+    unitTypes: ["Fighter", "Bomber", "Radar Aircraft"],
+  },
+  {
+    name: "Fuel Reserve III",
+    prerequisites: ["Fuel Reserve II"],
+    uniques: ["[+3] Range"],
+    unitTypes: ["Fighter", "Bomber", "Radar Aircraft"],
+  },
+  {
+    name: "Air Support",
+    prerequisites: ["Radar III", "Fuel Reserve III"],
+    uniques: ["[+20]% Strength bonus for [Military] units within [15] tiles"],
+    unitTypes: ["Radar Aircraft"],
+  },
+  {
+    name: "Modern Systems",
+    prerequisites: ["Air Support"],
+    uniques: ["[+2] Movement"],
+    unitTypes: ["Radar Aircraft"],
+  },
+
+  // ============================================================
+  // RANK SYSTEM PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Rank I",
+    uniques: ["[+20]% XP gained from combat", "[+10]% Strength"],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+      "Aircraft Carrier",
+    ],
+  },
+  {
+    name: "Rank II",
+    prerequisites: ["Rank I"],
+    uniques: ["[+40]% XP gained from combat", "[+10]% Strength"],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+      "Aircraft Carrier",
+    ],
+  },
+  {
+    name: "Rank III",
+    prerequisites: ["Rank II"],
+    uniques: ["[+60]% XP gained from combat", "[+10]% Strength"],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+      "Aircraft Carrier",
+    ],
+  },
+  {
+    name: "Post Rank",
+    prerequisites: ["Rank III"],
+    uniques: [
+      "[+25]% XP gained from combat",
+      "[+1] Movement",
+      "[+1] Sight",
+    ],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+      "Aircraft Carrier",
+    ],
+  },
+  {
+    name: "Community Sway",
+    prerequisites: ["Post Rank"],
+    uniques: ["Prevents spreading of religion to the city it is next to"],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+      "Aircraft Carrier",
+    ],
+  },
+  {
+    name: "Community Defender",
+    prerequisites: ["Post Rank"],
+    uniques: [
+      "[+3] Sight",
+      "Can see over obstacles",
+      "[+10]% Strength bonus for [Military] units within [2] tiles",
+    ],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+      "Aircraft Carrier",
+    ],
+  },
+  {
+    name: "Community Builder",
+    prerequisites: ["Post Rank"],
+    uniques: [
+      "Can build [All] improvements on tiles",
+      "Can build [All] improvements at a [+100]% rate",
+    ],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+      "Aircraft Carrier",
+    ],
+  },
+  {
+    name: "Martyr",
+    prerequisites: ["Post Rank"],
+    uniques: ["Can generate a large amount of culture <by consuming this unit>"],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+      "Aircraft Carrier",
+    ],
+  },
+  {
+    name: "Offensive Drills",
+    prerequisites: ["Rank III"],
+    uniques: ["[+25]% Strength <when attacking>"],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+      "Aircraft Carrier",
+    ],
+  },
+  {
+    name: "Offensive Drills II",
+    prerequisites: ["Offensive Drills"],
+    uniques: ["[+25]% Strength <when attacking>", "[+1] Movement"],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+      "Aircraft Carrier",
+    ],
+  },
+  {
+    name: "Offensive Mastery",
+    prerequisites: ["Offensive Drills II"],
+    uniques: [
+      "[+25]% Strength <when attacking>",
+      "[+50]% Strength bonus for [Siege] units within [3] tiles",
+    ],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+      "Aircraft Carrier",
+    ],
+  },
+  {
+    name: "Defensive Drills",
+    prerequisites: ["Rank III"],
+    uniques: ["[+25]% Strength <when defending>"],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+      "Aircraft Carrier",
+    ],
+  },
+  {
+    name: "Defensive Drills II",
+    prerequisites: ["Defensive Drills"],
+    uniques: ["[+25]% Strength <when defending>", "[+1] Sight"],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+      "Aircraft Carrier",
+    ],
+  },
+  {
+    name: "Capital Guards",
+    prerequisites: ["Defensive Drills II"],
+    uniques: [
+      "[+50]% Strength decreasing with distance from the capital",
+      "[+1] Sight",
+    ],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+      "Aircraft Carrier",
+    ],
+  },
+
+  // ============================================================
+  // RAIDER PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Raider I",
+    uniques: [
+      "[+25]% Yield from pillaging tiles",
+      "No movement cost to pillage",
+    ],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+    ],
+  },
+  {
+    name: "Raider II",
+    prerequisites: ["Raider I"],
+    uniques: [
+      "[+25]% Yield from pillaging tiles",
+      "Earn [10]% of killed [Military] unit's [Cost] as [Gold]",
+    ],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+    ],
+  },
+  {
+    name: "Raider III",
+    prerequisites: ["Raider II"],
+    uniques: [
+      "[+50]% Yield from pillaging tiles",
+      "[+25]% Health from pillaging tiles",
+      "Upon capturing a city, receive [3] times its [Gold] production as [Gold] immediately",
+    ],
+    unitTypes: [
+      "Ranged Gunpowder", "Gunpowder", "Armored", "Siege", "Sword",
+      "Mounted", "Archery", "Scout", "Ranged Water", "Melee Water",
+    ],
+  },
+
+  // ============================================================
+  // ROUTE MARCH PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Route March I",
+    prerequisites: ["Rank II"],
+    uniques: ["[+2] Movement <in [Friendly Land] tiles>"],
+    unitTypes: [
+      "Mounted", "Armored", "Sword", "Gunpowder", "Siege",
+      "Archery", "Ranged Gunpowder",
+    ],
+  },
+  {
+    name: "Route March II",
+    prerequisites: ["Route March I"],
+    uniques: ["[+1] Movement"],
+    unitTypes: [
+      "Mounted", "Armored", "Sword", "Gunpowder", "Siege",
+      "Archery", "Ranged Gunpowder",
+    ],
+  },
+  {
+    name: "Route March III",
+    prerequisites: ["Route March II"],
+    uniques: ["[+1] Movement"],
+    unitTypes: [
+      "Mounted", "Armored", "Sword", "Gunpowder", "Siege",
+      "Archery", "Ranged Gunpowder",
+    ],
+  },
+
+  // ============================================================
+  // MARINE TRAINING PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Marine Training I",
+    prerequisites: ["Rank II"],
+    uniques: [
+      "May attack when embarked",
+      "[+10]% Strength <when [Embarked]>",
+    ],
+    unitTypes: ["Ranged Gunpowder", "Archery"],
+  },
+  {
+    name: "Marine Training II",
+    prerequisites: ["Marine Training I"],
+    uniques: [
+      "[+1] Sight <when [Embarked]>",
+      "[+1] Movement <when [Embarked]>",
+      "[+20]% Strength <when [Embarked]>",
+    ],
+    unitTypes: ["Ranged Gunpowder", "Archery"],
+  },
+  {
+    name: "Marine Training III",
+    prerequisites: ["Marine Training II"],
+    uniques: [
+      "[+1] Sight <when [Embarked]>",
+      "[+1] Movement <when [Embarked]>",
+      "[+20]% Strength <when [Embarked]>",
+    ],
+    unitTypes: ["Ranged Gunpowder", "Archery"],
+  },
+
+  {
+    name: "Quick Vessels",
+    uniques: ["[+2] Movement <when [Embarked]>"],
+    unitTypes: ["Sword", "Gunpowder"],
+  },
+
+  {
+    name: "Speed Loaders",
+    prerequisites: ["Accuracy II", "Barrage II", "Shock II", "Drill II"],
+    uniques: ["[+1] additional attacks per turn"],
+    unitTypes: ["Ranged Gunpowder", "Gunpowder"],
+  },
+
+  {
+    name: "Collateral Damage",
+    prerequisites: ["Volley", "Siege II", "Bombardment II"],
+    uniques: ["Destroys tile improvements when attacking"],
+    unitTypes: ["Siege", "Bomber", "Ranged Water"],
+  },
+
+  // ============================================================
+  // MILITIA PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Battlefield Survival I",
+    uniques: [
+      "Unit will heal every turn, even if it performs an action",
+      "[+10] HP when healing",
+      "[+25]% XP gained from combat",
+    ],
+    unitTypes: ["Militia"],
+    column: 1, row: 31,
+  },
+  {
+    name: "Defender I",
+    uniques: [
+      "[+20]% Strength <when defending>",
+      "[+25]% XP gained from combat",
+    ],
+    unitTypes: ["Militia"],
+    column: 1, row: 32,
+  },
+  {
+    name: "Battlefield Survival II",
+    prerequisites: ["Battlefield Survival I", "Defender I"],
+    uniques: [
+      "Heals [20] damage if it kills a unit",
+      "[+20]% Strength <when attacking>",
+    ],
+    unitTypes: ["Militia"],
+    column: 2, row: 31,
+  },
+  {
+    name: "Defender II",
+    prerequisites: ["Battlefield Survival I", "Defender I"],
+    uniques: [
+      "All adjacent units heal [+10] HP when healing",
+      "[+30]% Strength <when defending>",
+    ],
+    unitTypes: ["Militia"],
+    column: 2, row: 32,
+  },
+  {
+    name: "Special Promotion",
+    prerequisites: ["Battlefield Survival II", "Defender II"],
+    uniques: ["[This Unit] upgrades for free including special upgrades"],
+    unitTypes: ["Militia"],
+    column: 3, row: 32,
+  },
+
+  // ============================================================
+  // INFANTRY PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Bayonet Charge",
+    uniques: ["[+20]% Strength <when attacking>"],
+    unitTypes: ["Infantry"],
+  },
+  {
+    name: "Shield Wall",
+    uniques: ["[+25]% Strength <when defending> <vs [Ranged] units>"],
+    unitTypes: ["Infantry"],
+  },
+  {
+    name: "Field Medic",
+    prerequisites: ["Greatswords", "Shield Wall"],
+    uniques: ["Unit will heal every turn, even if it performs an action"],
+    unitTypes: ["Infantry"],
+  },
+  {
+    name: "Greatswords",
+    prerequisites: ["Bayonet Charge", "Field Medic"],
+    uniques: ["[+25]% Strength <vs [Anti Cavalry] units>"],
+    unitTypes: ["Infantry", "Mercenary"],
+  },
+  {
+    name: "Urban Warfare",
+    prerequisites: ["Field Medic", "Greatswords"],
+    uniques: [
+      "[+40]% Strength <vs cities>",
+      "[+25]% Strength <in [City center] tiles>",
+    ],
+    unitTypes: ["Infantry"],
+  },
+  {
+    name: "Captain",
+    prerequisites: ["Field Medic", "Greatswords"],
+    uniques: ["[+25]% Strength"],
+    unitTypes: ["Infantry"],
+  },
+  {
+    name: "Elite Shock Troops",
+    prerequisites: ["Urban Warfare", "Captain"],
+    uniques: ["[1] additional attacks per turn"],
+    unitTypes: ["Infantry"],
+  },
+
+  // ============================================================
+  // MERCENARY PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Savage Aggression",
+    uniques: ["[+20]% Strength <when attacking>"],
+    unitTypes: ["Mercenary"],
+  },
+  {
+    name: "Kite Shields",
+    uniques: ["[+25]% Strength <when defending> <vs [Ranged] units>"],
+    unitTypes: ["Mercenary"],
+  },
+  {
+    name: "Anti Cavalry",
+    prerequisites: ["Kite Shields"],
+    uniques: [
+      "[+20]% Strength <vs [Heavy Cavalry] units>",
+      "[+20]% Strength <vs [Light Cavalry] units>",
+      "[+20]% Strength <vs [Counter Cavalry] units>",
+      "[+20]% Strength <vs [Ranged Cavalry] units>",
+    ],
+    unitTypes: ["Mercenary"],
+  },
+  {
+    name: "Warhammers",
+    prerequisites: ["Savage Aggression"],
+    uniques: ["[+25]% Strength <vs [Anti Cavalry] units>"],
+    unitTypes: ["Mercenary"],
+  },
+  {
+    name: "Urban Assault",
+    prerequisites: ["Warhammers"],
+    uniques: ["[+40]% Strength <vs cities>"],
+    unitTypes: ["Mercenary"],
+  },
+  {
+    name: "Lightfooted",
+    prerequisites: ["Anti Cavalry"],
+    uniques: ["[+1] Movement"],
+    unitTypes: ["Mercenary"],
+  },
+  {
+    name: "Animalistic Bloodlust",
+    prerequisites: ["Urban Assault", "Lightfooted"],
+    uniques: ["Heals [25] damage if it kills a unit"],
+    unitTypes: ["Mercenary"],
+  },
+
+  // ============================================================
+  // MARINES PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Naval Recon",
+    uniques: [
+      "[+1] Sight <for [Embarked] units>",
+      "[+1] Sight <when [Embarked]>",
+    ],
+    unitTypes: ["Marines"],
+  },
+  {
+    name: "Offshore Operation",
+    uniques: ["[+100]% Strength <when defending> <when [Embarked]>"],
+    unitTypes: ["Marines"],
+  },
+  {
+    name: "Expeditionary Marines",
+    prerequisites: ["Naval Recon", "Offshore Operation"],
+    uniques: ["[+25]% Strength <in [Foreign Land] tiles>"],
+    unitTypes: ["Marines"],
+  },
+  {
+    name: "Coastal Guards",
+    prerequisites: ["Naval Recon", "Offshore Operation"],
+    uniques: ["[+30]% Strength <in [Friendly Land] tiles>"],
+    unitTypes: ["Marines"],
+  },
+  {
+    name: "Amphibious Raider",
+    prerequisites: ["Expeditionary Marines"],
+    uniques: ["No movement cost to pillage"],
+    unitTypes: ["Marines"],
+  },
+  {
+    name: "Rapid Response",
+    prerequisites: ["Coastal Guards"],
+    uniques: ["[+20]% Strength <when defending>", "[+1] Movement"],
+    unitTypes: ["Marines"],
+  },
+  {
+    name: "Marine Commando",
+    prerequisites: ["Amphibious Raider", "Rapid Response"],
+    uniques: ["Ignores Zone of Control", "Can move after attacking"],
+    unitTypes: ["Marines"],
+  },
+
+  // ============================================================
+  // ANTI CAVALRY PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Formation",
+    uniques: [
+      "[+15]% Strength <vs [Heavy Cavalry] units>",
+      "[+15]% Strength <vs [Light Cavalry] units>",
+    ],
+    unitTypes: ["Anti Cavalry"],
+  },
+  {
+    name: "Thrust",
+    uniques: ["[+15]% Strength <vs [Infantry] units>"],
+    unitTypes: ["Anti Cavalry"],
+  },
+  // Chokepoint — FIXED: removed Caltrops from prerequisites to break circular dep
+  {
+    name: "Chokepoint",
+    prerequisites: ["Caltrops"],
+    uniques: ["[+25]% Strength <in [Rough terrain] tiles>"],
+    unitTypes: ["Anti Cavalry"],
+  },
+  {
+    name: "Anti Cavalry Suppression",
+    prerequisites: ["Caltrops"],
+    uniques: [
+      "[-10]% Strength for enemy [Heavy Cavalry] units in adjacent [All] tiles",
+      "[-10]% Strength for enemy [Light Cavalry] units in adjacent [All] tiles",
+      "[-10]% Strength for enemy [Counter Cavalry] units in adjacent [All] tiles",
+    ],
+    unitTypes: ["Anti Cavalry"],
+  },
+  {
+    name: "Rapid Redeployment",
+    prerequisites: ["Chokepoint"],
+    uniques: ["[+1] Movement"],
+    unitTypes: ["Anti Cavalry"],
+  },
+  {
+    name: "Endurance",
+    prerequisites: ["Rapid Redeployment", "Anti Cavalry Suppression"],
+    uniques: [
+      "[+30]% Strength <when defending>",
+      "[+10] HP when healing",
+    ],
+    unitTypes: ["Anti Cavalry"],
+  },
+
+  // ============================================================
+  // RECON PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Woodlander",
+    uniques: [
+      "Double movement in [Forest]",
+      "Double movement in [Jungle]",
+      "[+20]% Strength <in [Forest] tiles>",
+      "[+20]% Strength <in [Jungle] tiles>",
+    ],
+    unitTypes: ["Recon"],
+  },
+  {
+    name: "Highlander",
+    uniques: ["[+20]% Strength <in [Hill] tiles>"],
+    unitTypes: ["Recon"],
+  },
+  {
+    name: "Survivalist",
+    prerequisites: ["Woodlander", "Infiltration"],
+    uniques: [
+      "[+10] HP when healing <in [Foreign Land] tiles>",
+      "[+25]% Strength <when defending>",
+    ],
+    unitTypes: ["Recon"],
+  },
+  {
+    name: "Infiltration",
+    prerequisites: ["Highlander", "Survivalist"],
+    uniques: [
+      "[+1] Sight",
+      "May enter foreign tiles without open borders",
+    ],
+    unitTypes: ["Recon"],
+  },
+  {
+    name: "Sneak Attack",
+    prerequisites: ["Survivalist"],
+    uniques: ["[+100]% Strength"],
+    unitTypes: ["Recon"],
+  },
+  {
+    name: "Battle Recon",
+    prerequisites: ["Infiltration"],
+    uniques: [
+      "Ignores Zone of Control",
+      "Withdraws before melee combat <with [50]% chance>",
+    ],
+    unitTypes: ["Recon"],
+  },
+  {
+    name: "Camouflage",
+    prerequisites: ["Sneak Attack", "Battle Recon"],
+    uniques: ["Invisible to non-adjacent units"],
+    unitTypes: ["Recon"],
+  },
+
+  // ============================================================
+  // PARATROOPER PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Secure and Hold",
+    uniques: [
+      "[+10]% Strength <when defending>",
+      "[+15]% Strength <in [Enemy Land] tiles>",
+    ],
+    unitTypes: ["Paratrooper"],
+  },
+  {
+    name: "Multiterrain Operation",
+    uniques: [
+      "[+20]% Strength <in [Rough terrain] tiles>",
+      "Ignores terrain cost",
+    ],
+    unitTypes: ["Paratrooper"],
+  },
+  {
+    name: "Airborne Raider",
+    prerequisites: ["Secure and Hold"],
+    uniques: ["No movement cost to pillage"],
+    unitTypes: ["Paratrooper"],
+  },
+  {
+    name: "Forward Recon",
+    prerequisites: ["Multiterrain Operation"],
+    uniques: ["[+1] Sight"],
+    unitTypes: ["Paratrooper"],
+  },
+  {
+    name: "Paragrenadier",
+    prerequisites: ["Airborne Raider", "Supply Drop"],
+    uniques: [
+      "[+25]% Strength <vs [Heavy Cavalry] units>",
+      "[+25]% Strength <vs [Light Cavalry] units>",
+      "[+25]% Strength <vs [Ranged Cavalry] units> <when attacking>",
+      "[+25]% Strength <vs [Counter Cavalry] units>",
+    ],
+    unitTypes: ["Paratrooper", "Mercenary"],
+  },
+  {
+    name: "Supply Drop",
+    prerequisites: ["Forward Recon", "Paragrenadier"],
+    uniques: [
+      "[+10] HP when healing",
+      "[1] additional attacks per turn",
+    ],
+    unitTypes: ["Paratrooper"],
+  },
+  {
+    name: "Airborne Shock Troops",
+    prerequisites: ["Paragrenadier", "Supply Drop"],
+    uniques: [
+      "[+20]% Strength",
+      "[+30]% Strength <vs cities>",
+    ],
+    unitTypes: ["Paratrooper"],
+  },
+
+  // ============================================================
+  // RANGED HEAVY PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Emplacement",
+    uniques: ["[+15]% Strength <when defending>"],
+    unitTypes: ["Ranged Heavy"],
+  },
+  {
+    name: "Concentrated Barrage",
+    prerequisites: ["Emplacement", "Volley"],
+    uniques: [
+      "[+20]% Strength <vs [Water] units>",
+      "[+10]% Strength <vs [Land] units>",
+    ],
+    unitTypes: ["Ranged Heavy"],
+  },
+  {
+    name: "Counter Battery Tactics",
+    prerequisites: ["Emplacement", "Volley"],
+    uniques: [
+      "[+30]% Strength <vs [Siege Ranged] units> <when attacking>",
+      "[+20]% Strength <vs [Ranged Heavy] units> <when attacking>",
+    ],
+    unitTypes: ["Ranged Heavy"],
+  },
+  {
+    name: "Incendiary Munition",
+    prerequisites: ["Concentrated Barrage"],
+    uniques: [
+      "[+30]% Strength <vs cities>",
+      "[+30]% Strength <when attacking> <in [Fort] tiles>",
+    ],
+    unitTypes: ["Ranged Heavy"],
+  },
+  {
+    name: "Coordinated Bombardment",
+    prerequisites: ["Counter Battery Tactics"],
+    uniques: ["[+8]% Strength bonus for [Ranged] units within [1] tiles"],
+    unitTypes: ["Ranged Heavy"],
+  },
+  {
+    name: "Artillery Logistics",
+    prerequisites: ["Incendiary Munition", "Coordinated Bombardment"],
+    uniques: [
+      "Ignores terrain cost",
+      "[1] additional attacks per turn",
+    ],
+    unitTypes: ["Ranged Heavy"],
+  },
+
+  // ============================================================
+  // RANGED SUPPORT PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Precision",
+    uniques: ["[+25]% Strength <in [Open terrain] tiles>"],
+    unitTypes: ["Ranged Support"],
+  },
+  {
+    name: "Marksman",
+    prerequisites: ["Precision", "Suppressive Fire"],
+    uniques: ["[+20]% Strength <vs [{Land} {Ranged}] units> <when attacking>"],
+    unitTypes: ["Ranged Support"],
+  },
+  {
+    name: "Mantlet",
+    prerequisites: ["Precision", "Suppressive Fire"],
+    uniques: ["[+25]% Strength <vs [Ranged] units> <when defending>"],
+    unitTypes: ["Ranged Support"],
+  },
+  {
+    name: "Skirmisher Tactics",
+    prerequisites: ["Mantlet"],
+    uniques: ["Withdraws before melee combat <with [40]% chance>"],
+    unitTypes: ["Ranged Support"],
+  },
+
+  // ============================================================
+  // SIEGE MELEE PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Reinforced Armor",
+    uniques: ["[+20]% Strength <vs [Ranged] units> <when defending>"],
+    unitTypes: ["Siege Melee"],
+  },
+  {
+    name: "Sapping",
+    uniques: ["[+20]% Strength <vs cities>"],
+    unitTypes: ["Siege Melee"],
+  },
+  {
+    name: "Escort Team",
+    prerequisites: ["Reinforced Armor", "Sapping"],
+    uniques: ["[+20]% Strength <vs [Melee] units>"],
+    unitTypes: ["Siege Melee"],
+  },
+  {
+    name: "Recovery",
+    prerequisites: ["Reinforced Armor", "Sapping"],
+    uniques: ["[+10] HP when healing"],
+    unitTypes: ["Siege Melee"],
+  },
+  {
+    name: "Saboteur",
+    prerequisites: ["Recovery"],
+    uniques: [
+      "[+30]% Strength <vs cities> <when attacking>",
+      "No movement cost to pillage",
+    ],
+    unitTypes: ["Siege Melee"],
+  },
+  {
+    name: "Elite Assault Team",
+    prerequisites: ["Forced Breakthrough", "Saboteur"],
+    uniques: [
+      "[+20]% Strength <when attacking>",
+      "[1] additional attacks per turn",
+    ],
+    unitTypes: ["Siege Melee"],
+  },
+
+  // ============================================================
+  // SIEGE RANGED PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Grapeshot",
+    uniques: ["[+15]% Strength <vs [Land] units> <when attacking>"],
+    unitTypes: ["Siege Ranged"],
+  },
+  {
+    name: "Crew Weapons",
+    uniques: ["[+20]% Strength <when defending>"],
+    unitTypes: ["Siege Ranged", "Siege Nuke"],
+  },
+  {
+    name: "Volatile Munitions",
+    prerequisites: ["Grapeshot"],
+    uniques: ["[+30]% Strength <vs cities> <when attacking>"],
+    unitTypes: ["Siege Ranged"],
+  },
+  {
+    name: "Entrenched Position",
+    prerequisites: ["Crew Weapons"],
+    uniques: ["[+20]% Strength <vs [Ranged] units> <when defending>"],
+    unitTypes: ["Siege Ranged", "Siege Nuke"],
+  },
+  {
+    name: "Flare",
+    prerequisites: ["Volatile Munitions", "Entrenched Position"],
+    uniques: ["[+2] Sight"],
+    unitTypes: ["Siege Ranged", "Siege Nuke"],
+  },
+  {
+    name: "Coastal Artillery",
+    prerequisites: ["Volatile Munitions", "Entrenched Position"],
+    uniques: ["[+20]% Strength <vs [Water] units>"],
+    unitTypes: ["Siege Ranged"],
+  },
+  {
+    name: "Forward Observers",
+    prerequisites: ["Flare", "Coastal Artillery"],
+    uniques: ["[+1] Range"],
+    unitTypes: ["Siege Ranged", "Siege Nuke"],
+  },
+
+  // ============================================================
+  // LIGHT CAVALRY PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Charging Formation",
+    uniques: ["[+25]% Strength <in [Open terrain] tiles>"],
+    unitTypes: ["Light Cavalry"],
+  },
+  {
+    name: "Raiding",
+    uniques: ["[+25]% Strength <vs [Ranged] units>"],
+    unitTypes: ["Light Cavalry"],
+  },
+  {
+    name: "Marauders",
+    prerequisites: ["Raiding"],
+    uniques: ["No movement cost to pillage"],
+    unitTypes: ["Light Cavalry"],
+  },
+  {
+    name: "Double Envelopment",
+    prerequisites: ["Charging Formation"],
+    uniques: ["[+35]% to Flank Attack bonuses"],
+    unitTypes: ["Light Cavalry"],
+  },
+  {
+    name: "Outmaneuvering",
+    prerequisites: ["Double Envelopment", "Pursuit"],
+    uniques: [
+      "[+1] Movement",
+      "[+20]% Strength <vs [Anti Cavalry] units>",
+    ],
+    unitTypes: ["Light Cavalry"],
+  },
+  {
+    name: "Pursuit",
+    prerequisites: ["Outmaneuvering", "Marauders", "Long Weapons"],
+    uniques: ["[+20]% Strength <vs [Wounded] units>"],
+    unitTypes: ["Light Cavalry", "Counter Cavalry"],
+  },
+  {
+    name: "Commando Cavalry",
+    prerequisites: ["Pursuit", "Outmaneuvering"],
+    uniques: [
+      "Ignores Zone of Control",
+      "Withdraws before melee combat <with [40]% chance>",
+    ],
+    unitTypes: ["Light Cavalry"],
+  },
+
+  // ============================================================
+  // HEAVY CAVALRY PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Warhorse Blinkers",
+    uniques: [
+      "[+15]% Strength <in [Open terrain] tiles>",
+      "[+15]% Strength <when attacking>",
+    ],
+    unitTypes: ["Heavy Cavalry"],
+  },
+  {
+    name: "Barding",
+    uniques: ["[+20]% Strength <vs [Ranged] units> <when defending>"],
+    unitTypes: ["Heavy Cavalry"],
+  },
+  {
+    name: "Jousting",
+    prerequisites: ["Warhorse Blinkers", "Barding"],
+    uniques: [
+      "[+15]% Strength <vs [Heavy Cavalry] units>",
+      "[+15]% Strength <vs [Light Cavalry] units>",
+    ],
+    unitTypes: ["Heavy Cavalry"],
+  },
+  {
+    name: "Rout",
+    prerequisites: ["Warhorse Blinkers", "Barding"],
+    uniques: ["[+30]% Strength <vs [Wounded] units>"],
+    unitTypes: ["Heavy Cavalry"],
+  },
+  {
+    name: "Field Mending",
+    prerequisites: ["Jousting"],
+    uniques: [
+      "Unit will heal every turn, even if it performs an action",
+      "[+5] HP when healing",
+    ],
+    unitTypes: ["Heavy Cavalry"],
+  },
+  {
+    name: "Shock and Awe",
+    prerequisites: ["Rout"],
+    uniques: ["[-20]% Strength for enemy [Land] units in adjacent [All] tiles"],
+    unitTypes: ["Heavy Cavalry"],
+  },
+  {
+    name: "Lightening Warfare",
+    prerequisites: ["Field Mending", "Shock and Awe"],
+    uniques: [
+      "Ignores Zone of Control",
+      "[1] additional attacks per turn",
+    ],
+    unitTypes: ["Heavy Cavalry"],
+  },
+
+  // ============================================================
+  // RANGED CAVALRY PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Harassing Fire",
+    uniques: [
+      "[+20]% Strength <vs [Infantry] units> <when attacking>",
+      "[+20]% Strength <vs [Anti Cavalry] units> <when attacking>",
+    ],
+    unitTypes: ["Ranged Cavalry"],
+  },
+  {
+    name: "Accuracy",
+    uniques: ["[+20]% Strength <in [Open terrain] tiles> <when attacking>"],
+    unitTypes: ["Ranged Cavalry"],
+  },
+  {
+    name: "Evasive Tactic",
+    prerequisites: ["Harassing Fire"],
+    uniques: ["Withdraws before melee combat <with [40]% chance>"],
+    unitTypes: ["Ranged Cavalry"],
+  },
+  {
+    name: "Loose Formation",
+    prerequisites: ["Accuracy"],
+    uniques: ["[+25]% Strength <vs [Ranged] units> <when defending>"],
+    unitTypes: ["Ranged Cavalry"],
+  },
+  {
+    name: "Shoot and Scoot",
+    prerequisites: ["Evasive Tactic", "Huntdown"],
+    uniques: ["Can move after attacking"],
+    unitTypes: ["Ranged Cavalry"],
+  },
+  {
+    name: "Huntdown",
+    prerequisites: ["Loose Formation", "Shoot and Scoot"],
+    uniques: [
+      "[+1] Movement",
+      "[+25]% Strength <vs [Wounded] units>",
+    ],
+    unitTypes: ["Ranged Cavalry"],
+  },
+  {
+    name: "Veteran Skirmisher",
+    prerequisites: ["Huntdown", "Shoot and Scoot"],
+    uniques: [
+      "[+30]% Strength",
+      "Ignores terrain cost",
+    ],
+    unitTypes: ["Ranged Cavalry"],
+  },
+
+  // ============================================================
+  // COUNTER CAVALRY PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Long Weapons",
+    uniques: [
+      "[+20]% Strength <vs [Heavy Cavalry] units>",
+      "[+20]% Strength <vs [Light Cavalry] units>",
+      "[+20]% Strength <vs [Counter Cavalry] units>",
+    ],
+    unitTypes: ["Counter Cavalry"],
+  },
+  {
+    name: "Ambush",
+    uniques: [
+      "[+25]% Strength <in [Rough terrain] tiles>",
+      "[+30]% Strength <in [City center] tiles>",
+    ],
+    unitTypes: ["Counter Cavalry"],
+  },
+  {
+    name: "Protection",
+    prerequisites: ["Ambush"],
+    uniques: ["[+15]% Strength <when defending>"],
+    unitTypes: ["Counter Cavalry"],
+  },
+  {
+    name: "Preemptive",
+    prerequisites: ["Pursuit"],
+    uniques: ["[+30]% Strength <when attacking>"],
+    unitTypes: ["Counter Cavalry"],
+  },
+  {
+    name: "Fast Withdrawal",
+    prerequisites: ["Protection"],
+    uniques: ["Can move after attacking"],
+    unitTypes: ["Counter Cavalry"],
+  },
+  {
+    name: "Rear Attack",
+    prerequisites: ["Preemptive", "Fast Withdrawal"],
+    uniques: [
+      "[+1] Movement",
+      "Ignores Zone of Control",
+      "[+50]% to Flank Attack bonuses",
+    ],
+    unitTypes: ["Counter Cavalry"],
+  },
+
+  // ============================================================
+  // NAVAL MELEE PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Ramming",
+    uniques: ["[+25]% Strength <vs [Water] units>"],
+    unitTypes: ["Naval Melee"],
+  },
+  {
+    name: "Experienced Helmsman",
+    uniques: ["[+1] Movement"],
+    unitTypes: ["Naval Melee"],
+  },
+  {
+    name: "Coastal Assault",
+    uniques: ["Eliminates combat penalty for attacking across a coast"],
+    unitTypes: ["Naval Melee"],
+  },
+  {
+    name: "Reinforced Hull",
+    prerequisites: ["Ramming"],
+    uniques: ["[+25]% Strength <vs [Ranged] units>"],
+    unitTypes: ["Naval Melee"],
+  },
+  {
+    name: "Observation Tower",
+    prerequisites: ["Experienced Helmsman"],
+    uniques: ["[+1] Sight"],
+    unitTypes: ["Naval Melee"],
+  },
+  {
+    name: "Green Water Navy",
+    prerequisites: ["Reinforced Hull", "Damage Control"],
+    uniques: [
+      "[+15]% Strength <in [Coast] tiles>",
+      "[+25]% Strength <in [Atoll] tiles>",
+    ],
+    unitTypes: ["Naval Melee"],
+  },
+  {
+    name: "Damage Control",
+    prerequisites: ["Observation Tower", "Green Water Navy"],
+    uniques: ["May heal outside of friendly territory"],
+    unitTypes: ["Naval Melee"],
+  },
+  {
+    name: "Search and Destroy",
+    prerequisites: ["Damage Control", "Green Water Navy"],
+    uniques: [
+      "[+20]% Strength <vs [Wounded] units>",
+      "[+30]% Strength <vs [Naval Raider] units>",
+      "[+30]% Strength <vs [Naval Submarine] units>",
+    ],
+    unitTypes: ["Naval Melee"],
+  },
+
+  // ============================================================
+  // NAVAL SIEGE PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Naval Targeting",
+    uniques: ["[+25]% Strength <vs [Water] units>"],
+    unitTypes: ["Naval Siege"],
+  },
+  {
+    name: "Coastal Bombardment",
+    uniques: ["[+25]% Strength <vs [Land] units>"],
+    unitTypes: ["Naval Siege"],
+  },
+  {
+    name: "Double Armor Plating",
+    prerequisites: ["Naval Targeting", "Beachhead"],
+    uniques: ["[+25]% Strength <vs [Ranged] units> <when defending>"],
+    unitTypes: ["Naval Siege"],
+  },
+  {
+    name: "Beachhead",
+    prerequisites: ["Coastal Bombardment", "Double Armor Plating"],
+    uniques: [
+      "[+20]% Strength <in [Coast] tiles> <when defending>",
+      "[+20]% Strength <vs [Land] units>",
+    ],
+    unitTypes: ["Naval Siege"],
+  },
+  {
+    name: "Emergency Repair",
+    prerequisites: ["Double Armor Plating"],
+    uniques: ["May heal outside of friendly territory"],
+    unitTypes: ["Naval Siege"],
+  },
+  {
+    name: "Naval Blockade",
+    prerequisites: ["Beachhead"],
+    uniques: ["[+20]% Strength <vs cities>"],
+    unitTypes: ["Naval Siege"],
+  },
+  {
+    name: "Veteran Gun Crew",
+    prerequisites: ["Naval Blockade", "Emergency Repair"],
+    uniques: ["[1] additional attacks per turn"],
+    unitTypes: ["Naval Siege"],
+  },
+
+  // ============================================================
+  // NAVAL RANGED PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Broadside Barrage",
+    uniques: ["[+25]% Strength <vs [Water] units>"],
+    unitTypes: ["Naval Ranged"],
+  },
+  {
+    name: "Littoral Warfare",
+    uniques: ["[+20]% Strength <vs [Land] units>"],
+    unitTypes: ["Naval Ranged"],
+  },
+  {
+    name: "Line of Battle",
+    prerequisites: ["Broadside Barrage", "Littoral Warfare"],
+    uniques: ["[+25]% Strength <vs [Water] units>"],
+    unitTypes: ["Naval Ranged"],
+  },
+  {
+    name: "Navigator",
+    prerequisites: ["Broadside Barrage", "Littoral Warfare"],
+    uniques: ["[+1] Movement"],
+    unitTypes: ["Naval Ranged"],
+  },
+  {
+    name: "Auxiliary Ships",
+    prerequisites: ["Line of Battle", "Navigator"],
+    uniques: ["May heal outside of friendly territory"],
+    unitTypes: ["Naval Ranged"],
+  },
+  {
+    name: "Proximity Defense System",
+    prerequisites: ["Line of Battle", "Navigator"],
+    uniques: [
+      "[+30]% Strength <vs [Air] units> <when defending>",
+      "[+15]% Strength <vs [Melee] units> <when defending>",
+    ],
+    unitTypes: ["Naval Ranged"],
+  },
+  {
+    name: "Coincidence Rangefinding",
+    prerequisites: ["Auxiliary Ships", "Proximity Defense System"],
+    uniques: ["[+1] Range"],
+    unitTypes: ["Naval Ranged"],
+  },
+
+  // ============================================================
+  // NAVAL ESCORT PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Preempted Routing",
+    uniques: ["[+1] Movement"],
+    unitTypes: ["Naval Escort"],
+  },
+  {
+    name: "Old Ironside",
+    uniques: ["[+25]% Strength <vs [Ranged] units> <when defending>"],
+    unitTypes: ["Naval Escort"],
+  },
+  {
+    name: "Holdfast",
+    prerequisites: ["Preempted Routing", "Old Ironside"],
+    uniques: ["[+25]% Strength <vs [Air] units>"],
+    unitTypes: ["Naval Escort"],
+  },
+  {
+    name: "Let 'em Have It",
+    prerequisites: ["Preempted Routing", "Old Ironside"],
+    uniques: ["[+25]% Strength <vs [Water] units>"],
+    unitTypes: ["Naval Escort"],
+  },
+  {
+    name: "Hotfix",
+    prerequisites: ["Let 'em Have It", "Holdfast"],
+    uniques: ["May heal outside of friendly territory"],
+    unitTypes: ["Naval Escort"],
+  },
+  {
+    name: "Seafaring Spyglass",
+    prerequisites: ["Let 'em Have It", "Holdfast"],
+    uniques: ["[+1] Sight"],
+    unitTypes: ["Naval Escort"],
+  },
+  {
+    name: "Improved Threat Detection",
+    prerequisites: ["Hotfix", "Seafaring Spyglass"],
+    uniques: [
+      "[+30]% Strength <vs [Air] units> <when defending>",
+      "[+15]% Strength <vs [Melee] units> <when defending>",
+    ],
+    unitTypes: ["Naval Escort"],
+  },
+
+  // ============================================================
+  // NAVAL RAIDER & SUBMARINE PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Coastal Raider",
+    uniques: [
+      "[+40]% Strength <vs cities>",
+      "Earn [33]% of the damage done to [City] units as [Gold]",
+    ],
+    unitTypes: ["Naval Raider"],
+  },
+  {
+    name: "Wolfpack",
+    uniques: ["[+25]% Strength <vs [Water] units> <when attacking>"],
+    unitTypes: ["Naval Submarine"],
+  },
+  {
+    name: "Piracy",
+    uniques: ["Earn [33]% of the damage done to [Water] units as [Gold]"],
+    unitTypes: ["Naval Raider", "Naval Submarine"],
+  },
+  {
+    name: "Lurking Attack",
+    prerequisites: ["Coastal Raider", "Wolfpack"],
+    uniques: ["[+25]% Strength <vs [Water] units>"],
+    unitTypes: ["Naval Raider", "Naval Submarine"],
+  },
+  {
+    name: "Blockade Runner",
+    prerequisites: ["Piracy"],
+    uniques: ["[+1] Movement"],
+    unitTypes: ["Naval Raider", "Naval Submarine"],
+  },
+  {
+    name: "Weakpoint Exploitation",
+    prerequisites: ["Lurking Attack", "Blockade Runner"],
+    uniques: ["[+25]% Strength <vs [Wounded] units>"],
+    unitTypes: ["Naval Raider", "Naval Submarine"],
+  },
+  {
+    name: "Silent Running",
+    prerequisites: ["Lurking Attack", "Blockade Runner"],
+    uniques: ["Can move after attacking"],
+    unitTypes: ["Naval Raider", "Naval Submarine"],
+  },
+  {
+    name: "Veteran Raider",
+    prerequisites: ["Weakpoint Exploitation", "Silent Running"],
+    uniques: [
+      "Withdraws before melee combat <with [35]% chance>",
+      "[+35]% Strength <when attacking>",
+    ],
+    unitTypes: ["Naval Raider", "Naval Submarine"],
+  },
+
+  // ============================================================
+  // NAVAL CARRIER & LAND CARRIER PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Extended Flight Deck",
+    uniques: ["Can carry [1] extra [Aircraft] units"],
+    unitTypes: ["Naval Carrier", "Land Carrier"],
+  },
+  {
+    name: "Radar Dome",
+    uniques: ["[+2] Sight"],
+    unitTypes: ["Naval Carrier", "Land Carrier"],
+  },
+  {
+    name: "Hanger Deck",
+    prerequisites: ["Extended Flight Deck"],
+    uniques: ["Can carry [1] extra [Aircraft] units"],
+    unitTypes: ["Naval Carrier", "Land Carrier"],
+  },
+  {
+    name: "Defensive Systems",
+    prerequisites: ["Radar Dome"],
+    uniques: ["[+20]% Strength <when defending>"],
+    unitTypes: ["Naval Carrier", "Land Carrier"],
+  },
+  {
+    name: "Secondary Flight Deck",
+    prerequisites: ["Hanger Deck"],
+    uniques: ["Can carry [1] extra [Aircraft] units"],
+    unitTypes: ["Naval Carrier", "Land Carrier"],
+  },
+  {
+    name: "Close Range AA Defense",
+    prerequisites: ["Defensive Systems"],
+    uniques: ["[+25]% Strength <vs [Air] units> <when defending>"],
+    unitTypes: ["Naval Carrier", "Land Carrier"],
+  },
+  {
+    name: "Mobile Strategic Airbase",
+    prerequisites: ["Close Range AA Defense", "Secondary Flight Deck"],
+    uniques: [
+      "May heal outside of friendly territory",
+      "Unit will heal every turn, even if it performs an action",
+    ],
+    unitTypes: ["Naval Carrier", "Land Carrier"],
+  },
+
+  // ============================================================
+  // AIR FIGHTER PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Dogfighting",
+    uniques: ["[+30]% Strength <vs [Air Fighter] units>"],
+    unitTypes: ["Air Fighter", "Air Close Air Support"],
+  },
+  {
+    name: "Interception Countermeasure",
+    uniques: ["Damage taken from interception reduced by [50]%"],
+    unitTypes: ["Air Fighter"],
+  },
+  {
+    name: "Interceptor",
+    prerequisites: ["Dogfighting", "Interception Countermeasure"],
+    uniques: [
+      "[+20]% Damage when intercepting",
+      "[+30]% Strength <vs [Air Bomber] units>",
+    ],
+    unitTypes: ["Air Fighter", "Air Close Air Support"],
+  },
+  {
+    name: "Strafe",
+    prerequisites: ["Dogfighting", "Interception Countermeasure"],
+    uniques: ["[+25]% Strength <vs [non-air] units>"],
+    unitTypes: ["Air Fighter"],
+  },
+  {
+    name: "Sortie",
+    prerequisites: ["Interceptor"],
+    uniques: ["[1] extra interceptions may be made per turn"],
+    unitTypes: ["Air Fighter"],
+  },
+  {
+    name: "Fast Resupply",
+    prerequisites: ["Strafe"],
+    uniques: ["Unit will heal every turn, even if it performs an action"],
+    unitTypes: ["Air Fighter"],
+  },
+  {
+    name: "Ace Fighter Squadron",
+    prerequisites: ["Sortie", "Fast Resupply"],
+    uniques: ["[+25]% Strength", "[+2] Range"],
+    unitTypes: ["Air Fighter"],
+  },
+
+  // ============================================================
+  // AIR CLOSE AIR SUPPORT PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Torpedo Bomber",
+    uniques: ["[+20]% Strength <vs [Water] units>"],
+    unitTypes: ["Air Close Air Support"],
+  },
+  {
+    name: "Cockpit Armor",
+    uniques: ["Damage taken from interception reduced by [30]%"],
+    unitTypes: ["Air Close Air Support"],
+  },
+  {
+    name: "Tank Buster",
+    prerequisites: ["Torpedo Bomber", "Cockpit Armor"],
+    uniques: [
+      "[+50]% Strength <vs [Heavy Cavalry] units>",
+      "[+50]% Strength <vs [Light Cavalry] units>",
+      "[+50]% Strength <vs [Ranged Cavalry] units> <when attacking>",
+      "[+50]% Strength <vs [Counter Cavalry] units>",
+    ],
+    unitTypes: ["Air Close Air Support"],
+  },
+  {
+    name: "SEAD",
+    prerequisites: ["Cockpit Armor"],
+    uniques: [
+      "Damage taken from interception reduced by [20]%",
+      "[+25]% Strength <vs [Anti Air] units>",
+    ],
+    unitTypes: ["Air Close Air Support"],
+  },
+  // SEAD — also exists for CAS unit type
+  {
+    name: "SEAD",
+    prerequisites: ["Bombardment I", "Air Targeting I"],
+    uniques: ["[+33]% Strength <vs [Anti Air] units>"],
+    unitTypes: ["CAS"],
+  },
+  {
+    name: "Precision Bombing",
+    prerequisites: ["Torpedo Bomber", "Cockpit Armor"],
+    uniques: ["[+20]% Strength <vs [Land] units>"],
+    unitTypes: ["Air Close Air Support"],
+  },
+  {
+    name: "Experienced Ground Crew",
+    prerequisites: ["Tank Buster", "Precision Bombing", "SEAD", "Interceptor"],
+    uniques: ["Unit will heal every turn, even if it performs an action"],
+    unitTypes: ["Air Close Air Support"],
+  },
+  {
+    name: "Bunker Buster",
+    prerequisites: ["Tank Buster", "Precision Bombing", "SEAD", "Interceptor"],
+    uniques: ["[+25]% Strength <vs cities>"],
+    unitTypes: ["Air Close Air Support"],
+  },
+  {
+    name: "Ace Bomber Squadron",
+    prerequisites: ["Experienced Ground Crew", "Bunker Buster"],
+    uniques: ["[1] additional attacks per turn", "[+2] Range"],
+    unitTypes: ["Air Close Air Support"],
+  },
+
+  // ============================================================
+  // AIR BOMBER PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Carpet Bombing",
+    uniques: [
+      "[+50]% Strength <vs cities>",
+      "[+20]% Strength <vs [Land] units>",
+    ],
+    unitTypes: ["Air Bomber"],
+  },
+  {
+    name: "Evasive Maneuver",
+    uniques: ["Damage taken from interception reduced by [30]%"],
+    unitTypes: ["Air Bomber"],
+  },
+  {
+    name: "Naval Patrol Aircraft",
+    prerequisites: ["Carpet Bombing", "Evasive Maneuver"],
+    uniques: ["[+25]% Strength <vs [Water] units>"],
+    unitTypes: ["Air Bomber"],
+  },
+  {
+    name: "Heavy Gunship",
+    prerequisites: ["Carpet Bombing", "Evasive Maneuver"],
+    uniques: ["[+25]% Strength <vs [Land] units>"],
+    unitTypes: ["Air Bomber"],
+  },
+  {
+    name: "Tactical Maintenance",
+    prerequisites: ["Heavy Gunship", "Naval Patrol Aircraft"],
+    uniques: ["Unit will heal every turn, even if it performs an action"],
+    unitTypes: ["Air Bomber"],
+  },
+  {
+    name: "Long Range Mission",
+    prerequisites: ["Heavy Gunship", "Naval Patrol Aircraft"],
+    uniques: ["[+2] Range"],
+    unitTypes: ["Air Bomber"],
+  },
+  {
+    name: "Stratofortress",
+    prerequisites: ["Tactical Maintenance", "Long Range Mission"],
+    uniques: ["[+2] Range", "[+30]% Strength"],
+    unitTypes: ["Air Bomber"],
+  },
+
+  // ============================================================
+  // AIR NAVAL BOMBER PROMOTION TREE
+  // ============================================================
+
+  {
+    name: "Submarine Hunter",
+    uniques: ["[+30]% Strength <vs [Naval Submarine] units>"],
+    unitTypes: ["Air Naval Bomber"],
+  },
+  {
+    name: "Enhanced Maneuverability",
+    uniques: ["Damage taken from interception reduced by [30]%"],
+    unitTypes: ["Air Naval Bomber"],
+  },
+  {
+    name: "Patrol Aircraft",
+    prerequisites: ["Carpet Bombing", "Evasive Maneuver"],
+    uniques: [
+      "[+2] Sight",
+      "Can see invisible [Naval Submarine] units",
+    ],
+    unitTypes: ["Air Naval Bomber"],
+  },
+  {
+    name: "Improved Arsenal",
+    prerequisites: ["Submarine Hunter", "Enhanced Maneuverability"],
+    uniques: ["[+25]% Strength <vs [Water] units>"],
+    unitTypes: ["Air Naval Bomber"],
+  },
+  {
+    name: "Maintenance on The Move",
+    prerequisites: ["Improved Arsenal"],
+    uniques: ["Unit will heal every turn, even if it performs an action"],
+    unitTypes: ["Air Naval Bomber"],
+  },
+  {
+    name: "Unshakable Courage",
+    prerequisites: ["Maintenance on The Move", "Extended Range"],
+    uniques: [
+      "Damage taken from interception reduced by [30]%",
+      "[+20]% Strength",
+    ],
+    unitTypes: ["Air Naval Bomber"],
+  },
+
+  // ============================================================
+  // AIR ATOMIC BOMBER & NUKE MISSILE PROMOTIONS
+  // ============================================================
+
+  // (See Nuclear Strike Reserve, Strategic Nuclear Bomber,
+  //  Advanced Nuclear Bomber, Multistage Thrusters above  //  in the Atomic Bomber / Missile section)
+
+  // ============================================================
+  // TERRAIN & ERA PROMOTIONS
+  // ============================================================
+
+  {
+    name: "Trench Warfare",
+    unitTypes: ["Infantry", "Anti Cavalry", "Siege Melee"],
+    uniques: [
+      "Can build [Trench] improvements on tiles",
+      "Only available <after discovering [Combined Arms]>",
+    ],
+  },
+  {
+    name: "Storm The Trenches",
+    uniques: ["[+20]% Strength <in [Trench] tiles> <when attacking>"],
+  },
+  {
+    name: "Reactive Armor",
+    unitTypes: ["Heavy Cavalry"],
+    uniques: [
+      "[+20]% Strength <vs [Armored] units>",
+      "Ignores zone of control",
+      "Only available <after discovering [Mobile Tactics]>",
+    ],
+  },
+  {
+    name: "Warp",
+    unitTypes: ["Land Carrier"],
+    uniques: [
+      "May Paradrop to [All] tiles up to [100] tiles away",
+      "Only available <after discovering [Meteorical Endurance]>",
+    ],
+  },
+
+  // ============================================================
+  // ORGANIC REMEDIES
+  // ============================================================
+
+  {
+    name: "Organic Remedies",
+    uniques: [
+      "[+10] HP when healing <in [Jungle] tiles>",
+      "[+10] HP when healing <in [Forest] tiles>",
+      "[+5] HP when healing <in [Grassland] tiles>",
+      "[+5] HP when healing <in [Plains] tiles>",
+      "[+5] HP when healing <in [Tundra] tiles>",
+    ],
+    unitTypes: [
+      "Infantry", "Marines", "Anti Cavalry", "Mercenary",
+      "Recon", "Paratrooper", "Militia",
+    ],
+  },
+
+  // ============================================================
+  // SPYGLASS
+  // ============================================================
+
+  {
+    name: "Spyglass",
+    uniques: [
+      "[+1] Sight",
+      "May enter foreign tiles without open borders",
+    ],
+    unitTypes: ["Civilian"],
+  },
+
+  // ============================================================
+  // GENERIC EFFECT / ABILITY PROMOTIONS
+  // (No unit type restriction — applied via unit definitions)
+  // ============================================================
+
+  {
+    name: "Stealth",
+    uniques: ["Invisible to non-adjacent units"],
+  },
+  {
+    name: "Hovering",
+    uniques: [
+      "[0] Movement point cost to disembark",
+      "[0] Movement point cost to embark",
+      "Ignores terrain cost",
+    ],
+  },
+  {
+    name: "Rocket Launcher",
+    uniques: [
+      "[+35]% Strength <vs [Cyber] units>",
+      "[+75]% Strength <vs cities>",
+    ],
+  },
+  {
+    name: "Firewall",
+    uniques: ["[+33]% Strength <when defending>"],
+  },
+  {
+    name: "Heat Sensor",
+    uniques: ["[+200]% Strength <vs [Stealth] units>"],
+  },
+  {
+    name: "Implants",
+    uniques: ["[+25]% Strength <vs [Wounded] units>"],
+  },
+  {
+    name: "Regeneration",
+    uniques: ["[+25]% Strength <vs [Wounded] units>"],
+  },
+  {
+    name: "Scan Visor",
+    uniques: ["Can see invisible [All] units"],
+  },
+  {
+    name: "Energy Weapons",
+    uniques: [
+      "[+40]% Strength <vs [Bio] units>",
+      "[+40]% Strength <vs [Cyber] units>",
+    ],
+  },
+  {
+    name: "Gravity Generator",
+    uniques: ["[-25]% Strength for enemy [Military] units in adjacent [All] tiles"],
+  },
+  {
+    name: "In Orbit",
+    uniques: [
+      "[+25]% Strength <vs [Land] units>",
+      "[+25]% Strength <vs [Water] units>",
+    ],
+  },
+  {
+    name: "Energy Shield",
+    uniques: [
+      "[+20]% Strength <when defending>",
+      "[+20]% Strength <vs [Ranged] units>",
+      "[+100]% Strength <vs [Missile] units>",
+    ],
+  },
+  {
+    name: "Chosen",
+    uniques: [
+      "[+15]% Strength",
+      "[+20]% Strength <vs [Alien] units>",
+    ],
+  },
+  {
+    name: "Teleportation",
+    uniques: [
+      "May Paradrop to [Land] tiles up to [100] tiles away <in [Friendly Land] tiles>",
+      "Withdraws before melee combat <with [20]% chance>",
+    ],
+  },
+  {
+    name: "Support Unit",
+    uniques: ["Cannot attack"],
+  },
+  {
+    name: "Skirmish",
+    uniques: ["Withdraws before melee combat <with [33]% chance>"],
+  },
+  // Skirmish — alternate definition for flank attack bonus
+  {
+    name: "Skirmish",
+    uniques: ["[+25]% to Flank Attack bonuses"],
+  },
+  {
+    name: "Xenos",
+    uniques: [
+      "Unit will heal every turn, even if it performs an action",
+      "No movement cost to pillage",
+      "[-1] Sight",
+      "[4] [Body Snatcher]s rebel <upon conquering a city>",
+    ],
+  },
+  {
+    name: "Flying",
+    uniques: [
+      "No defensive terrain bonus",
+      "All tiles cost 1 movement",
+      "May travel on Water tiles without embarking",
+      "Can enter ice tiles",
+    ],
+  },
+  {
+    name: "Iron Curtain Force Field",
+    uniques: ["[+50]% Strength <when defending>"],
+  },
+  {
+    name: "Modern",
+    uniques: ["[+25]% Strength <when defending>"],
+  },
+  {
+    name: "Radar",
+    uniques: [
+      "Can see over obstacles",
+      "Only available <after discovering [Radar]>",
+    ],
+    unitTypes: [
+      "Melee Water", "Ranged Water", "Aircraft Carrier", "Armored",
+    ],
+  },
+
+  // ============================================================
+  // DEFLECT SYSTEM (Hankunesia)
+  // ============================================================
+
+  {
+    name: "Deflect",
+    uniques: [
+      "Block the next Ranged attack and gain Ranged Immunity for 1 turn. Doesn't apply vs Air units. Cooldown: 5 turns.",
+      "[+1000]% Strength <when defending> <vs [Ranged]> <for units without [Deflect Cooldown]> <hidden from users>",
+    ],
+  },
+  {
+    name: "Deflect Active",
+    uniques: ["[+1000]% Strength <when defending> <vs [{non-[Air]} {Ranged}]>"],
+  },
+  {
+    name: "Deflect Cooldown",
+    uniques: ["Deflect is on cooldown", "Deflect CD <hidden from users>"],
+  },
+
+  // ============================================================
+  // WAR WEARINESS SYSTEM
+  // ============================================================
+
+  {
+    name: "WWV",
+    uniques: [
+      "Instantly provides [-50] [War Weariness] <upon being defeated> <vs [non-[Barbarians]] units> <in [Friendly Land] tiles> <when at war>",
+      "Instantly provides [100] [War Weariness] <upon being defeated> <vs [non-[Barbarians]] units> <in [non-[Friendly Land]] tiles> <when at war>",
+      "Instantly consumes [300] [War Weariness] <upon conquering a city>",
+      "Instantly consumes [100] [War Weariness] <upon defeating a [non-[Barbarians]] unit> <when above [1] [War Weariness]> <in [Friendly Land] tiles>",
+      "Instantly consumes [50] [War Weariness] <upon defeating a [non-[Barbarians]] unit> <when above [1] [War Weariness]> <in [Foreign Land] tiles>",
+    ],
+  },
+  {
+    name: "Fearless",
+    uniques: [
+      "Instantly provides [50] [War Weariness] <upon conquering a city>",
+      "Instantly consumes [30] [War Weariness] <upon defeating a [non-[Barbarians]] unit> <when above [1] [War Weariness]> <in [Friendly Land] tiles>",
+      "Instantly consumes [20] [War Weariness] <upon defeating a [non-[Barbarians]] unit> <when above [1] [War Weariness]> <in [non-[Friendly Land]] tiles>",
+      "[+33]% Strength <when attacking> <in [Friendly Land] tiles> <with [33]% chance>",
+    ],
+  },
+
+  // ============================================================
+  // LUCKY STAR & COMBAT PAY
+  // ============================================================
+
+  {
+    name: "Lucky Star",
+    uniques: [
+      "[+30]% Strength <with [10]% chance>",
+      "[+25]% Strength <with [20]% chance>",
+      "[+20]% Strength <with [35]% chance>",
+      "[+15]% Strength <with [65]% chance>",
+      "[+10]% Strength <with [95]% chance>",
+    ],
+  },
+  {
+    name: "Combat Pay",
+    uniques: ["Earn [100]% of killed [Military] unit's [Strength] as [Gold]"],
+  },
+  {
+    name: "Landlubber",
+    uniques: [
+      "[-20]% Strength <when attacking>",
+      "[-20]% Strength <when defending>",
+    ],
+  },
+  {
+    name: "Samurai Spirit",
+    uniques: [
+      "[+30]% Strength <when attacking>",
+      "[+30]% Strength <when defending>",
+    ],
+  },
+  {
+    name: "Spirit of Conquest",
+    uniques: [
+      "[+20]% Strength <when attacking>",
+      "[+20]% Strength <when defending>",
+    ],
+  },
+
+  // ============================================================
+  // FOR DEMOCRACY / WORLD IN PEACE
+  // ============================================================
+
+  {
+    name: "For democracy",
+    uniques: ["[+50]% Strength <when fighting in [Foreign Land] tiles>"],
+  },
+  {
+    name: "World in Peace",
+    uniques: ["[+50]% Strength <when defending in [Friendly Lands] tiles>"],
+  },
+
+  // ============================================================
+  // VAMPIRIC / VAMPIRE CONVERSION
+  // ============================================================
+
+  {
+    name: "Vampiric",
+    uniques: [
+      "Unit will heal every turn, even if it performs an action",
+      "[-50]% Strength <when fighting in [Desert] tiles>",
+    ],
+  },
+  {
+    name: "Vampire Conversion",
+    uniques: [
+      "Heals [33] damage if it kills a unit",
+      "May capture killed [All] units",
+    ],
+  },
+  {
+    name: "Spiritual",
+    uniques: [
+      "Invisible to non-adjacent units",
+      "[-15]% Strength <when attacking>",
+    ],
+  },
+  {
+    name: "Harbringer",
+    uniques: [
+      "Earn [100]% of killed [Military] unit's [Strength] as [Faith]",
+      "Earn [100]% of killed [Barbarian] unit's [Strength] as [Faith]",
+      "[+15]% Strength <vs [Wounded] units>",
+    ],
+  },
+  {
+    name: "Scythe",
+    uniques: ["Heals [80] damage if it kills a unit"],
+  },
+  {
+    name: "Noble Knight's Ability",
+    uniques: ["[+33]% Strength <vs [Ranged] units>"],
+  },
+  {
+    name: "Magecraft",
+    uniques: [
+      "[+50]% Strength <when attacking> <with [25]% chance>",
+      "[+50]% Strength <when defending> <with [25]% chance>",
+    ],
+  },
+  {
+    name: "Hex Field",
+    uniques: ["All adjacent units heal [+15] HP when healing"],
+  },
+
+  // ============================================================
+  // RELIGIOUS / DEVOUT
+  // ============================================================
+
+  {
+    name: "Devout",
+    uniques: ["Can Spread Religion <[1] additional time(s)>"],
+  },
+
+  // ============================================================
+  // BARBARIAN-SPECIFIC PROMOTIONS
+  // ============================================================
+
+  {
+    name: "No Suicide",
+    uniques: [
+      "Can only attack [Civilian] units",
+      "Can only attack [Military] units",
+      "[+15]% Strength when stacked with [Worker]",
+      "Heals [25] damage if it kills a unit",
+      "This Unit upgrades for free including special upgrades <upon entering the [Classical era]> <with [25]% chance>",
+      "This Unit upgrades for free including special upgrades <upon entering the [Medieval era]> <with [25]% chance>",
+      "This Unit upgrades for free including special upgrades <upon entering the [Renaissance era]> <with [25]% chance>",
+      "This Unit upgrades for free including special upgrades <upon entering the [Industrial era]> <with [50]% chance>",
+      "This Unit upgrades for free including special upgrades <upon entering the [Modern era]> <with [50]% chance>",
+      "This Unit upgrades for free including special upgrades <upon entering the [Atomic era]> <with [75]% chance>",
+      "This Unit upgrades for free including special upgrades <upon entering the [Information era]> <with [100]% chance>",
+    ],
+  },
+  {
+    name: "Mutation",
+    uniques: ["A [Viscera] rebels <upon being defeated>"],
+  },
+  {
+    name: "Battle Network",
+    uniques: ["[+20]% Strength <when adjacent to a [Friendly] unit>"],
+  },
+  {
+    name: "Total Siege",
+    uniques: [
+      "Free [Hypervelocity Missile] appears <when number of [[Hypervelocity Missile] Units] is less than [3]> <with [33]% chance>",
+    ],
+  },
+  {
+    name: "Nanoswarm",
+    uniques: [
+      "Comment [Friendly units heal 10 HP when next to this unit]",
+      "Comment [Enemy units take 10 damage when next to this unit]",
+    ],
+  },
+  {
+    name: "Command Nexus",
+    uniques: ["[-15]% Strength bonus for [Hostile] units within [2] tiles"],
+  },
+  {
+    name: "Barbarian Civilian",
+    uniques: [
+      "Can move after attacking",
+      "Ignores Zone of Control",
+      "Can pass through impassable tiles",
+      "Invisible to non-adjacent units",
+      "Unit will heal every turn, even if it performs an action",
+      "Destroys tile improvements when attacking",
+      "All tiles cost 1 movement",
+    ],
+  },
+  {
+    name: "Unable to pillage tiles",
+    uniques: ["Unable to pillage tiles"],
+  },
+
+  // ============================================================
+  // DOOMSTAR CIV PROMOTIONS
+  // ============================================================
+
+  {
+    name: "DSEliteUnit",
+    uniques: [
+      "[+5] HP when healing",
+      "[+300]% XP gained from combat",
+      "[+2] XP gained from combat",
+    ],
+  },
+  {
+    name: "Gray Goo Devouring",
+    uniques: [
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[+50]% Strength <for [9999] turns> <for [Gray Goo unit] units>",
+    ],
+  },
+
+  // ============================================================
+  // AUTUMN CURSE (EbiKoumori of Midori)
+  // ============================================================
+
+  {
+    name: "Autumn Curse",
+    uniques: [
+      "Cursed",
+      "Turn this tile into a [Autumnland] tile <in [{Land} {non-[Tundra]} {non-[Snow]} {non-[Desert]}] tiles> <upon being defeated>",
+    ],
+  },
+
+  // ============================================================
+  // SIEGE TRAIN / HIDDEN / TSARSTIVE
+  // ============================================================
+
+  {
+    name: "Siege Train",
+    uniques: [
+      "[+2] Movement <when number of [Destroyed Defences] is more than [0]> <hidden from users>",
+      "Comment [+2 Movement for 2 turns after conquering a city]",
+    ],
+  },
+  {
+    name: "Tsarstive",
+    uniques: [
+      "[This Unit] gains the [Hidden] promotion <upon entering a [Hidden Fortress] tile>",
+      "[This Unit] loses the [Hidden] promotion <upon entering a [non-[Hidden Fortress]] tile>",
+    ],
+  },
+  {
+    name: "Hidden",
+    uniques: [
+      "Invisible to others",
+      "[+10]% Strength <if it hasn't used other actions yet>",
+    ],
+  },
+
+  // ============================================================
+  // KABUNAKAMA
+  // ============================================================
+
+  {
+    name: "Kabunakama I",
+    uniques: ["Comment [1 unit defeated, 2 more units needed for upgrade]"],
+  },
+  {
+    name: "Kabunakama II",
+    uniques: ["Comment [2 units defeated, 1 more unit needed for upgrade]"],
+  },
+
+  // ============================================================
+  // MISCELLANEOUS CIV-SPECIFIC ABILITIES
+  // ============================================================
+
+  // Hankunesia
+  {
+    name: "Trekker",
+    uniques: ["Can pass through impassable tiles <in [Friendly Land] tiles>"],
+  },
+
+  // Small people
+  {
+    name: "Seaside",
+    uniques: [
+      "[-33]% maintenance costs",
+      "Can build [Water] improvements on tiles",
+    ],
+  },
+
+  // Aleksandria
+  {
+    name: "[Comrade] ability",
+    uniques: ["[+10]% Strength bonus for [Wounded] units within [1] tiles"],
+  },
+
+  // Cadari Republik
+  {
+    name: "[Patriot] ability",
+    uniques: [
+      "[+10]% Strength <in [Friendly Land] tiles>",
+      "Can move after attacking",
+    ],
+  },
+
+  // Thuntopia
+  {
+    name: "Unrelenting",
+    uniques: [
+      "No damage penalty for wounded units <during a Golden Age>",
+      "Unit will heal every turn, even if it performs an action <during a Golden Age>",
+    ],
+  },
+
+  // Arepandia
+  {
+    name: "Botanic Expedition",
+    uniques: [
+      "Ignores terrain cost",
+      "[20]% Strength <vs [Barbarian] units>",
+      "May enter foreign tiles without open borders",
+    ],
+  },
+
+  // The Not Guy Fawkes
+  {
+    name: "[Backswordsman] ability",
+    uniques: ["No movement cost to pillage", "[-100]% maintenance costs"],
+  },
+
+  // Principality of Vinroth
+  {
+    name: "[Bounty Hunter] ability",
+    uniques: [
+      "[+15]% Strength <when fighting in [Foreign Land] tiles>",
+      "Earn [100]% of killed [Military] unit's [Strength] as [Gold]",
+    ],
+  },
+
+  // ============================================================
+  // UNIQUE UNIT ABILITIES (KEPT ON UPGRADE)
+  // ============================================================
+
+  {
+    name: "Morale",
+    uniques: ["[+15]% Strength"],
+  },
+  {
+    name: "Great Generals I",
+    uniques: ["[Great General] is earned [50]% faster"],
+  },
+  {
+    name: "Great Generals II",
+    uniques: ["[Great General] is earned [100]% faster"],
+  },
+  {
+    name: "Quick Study",
+    uniques: ["[+50]% XP gained from combat"],
+  },
+  {
+    name: "Haka War Dance",
+    uniques: ["[-10]% Strength for enemy [Military] units in adjacent [All] tiles"],
+  },
+  {
+    name: "Rejuvenation",
+    uniques: ["All healing effects doubled"],
+  },
+  {
+    name: "Slinger Withdraw",
+    uniques: ["Withdraws before melee combat <with [80]% chance>"],
+  },
+  {
+    name: "Ignore terrain cost",
+    uniques: ["Ignores terrain cost"],
+  },
+  {
+    name: "Pictish Courage",
+    uniques: [
+      "No movement cost to pillage",
+      "[+20]% Strength <when fighting in [Foreign Land] tiles>",
+    ],
+  },
+  {
+    name: "Home Sweet Home",
+    uniques: ["[+30]% Strength decreasing with distance from the capital"],
+  },
+  {
+    name: "[Mohawk Warrior] ability",
+    uniques: [
+      "[+33]% Strength <when fighting in [Forest] tiles>",
+      "[+33]% Strength <when fighting in [Jungle] tiles>",
+    ],
+  },
+  {
+    name: "[Jaguar] ability",
+    uniques: [
+      "[+33]% Strength <when fighting in [Forest] tiles>",
+      "[+33]% Strength <when fighting in [Jungle] tiles>",
+      "Heals [25] damage if it kills a unit",
+    ],
+  },
+  {
+    name: "[Khopesh Swordsman] ability",
+    uniques: ["[+33]% Strength <when fighting in [Desert] tiles>"],
+  },
+  {
+    name: "[Persian Immortal] ability",
+    uniques: ["[+10] HP when healing"],
+  },
+  {
+    name: "[Conquistador] ability",
+    uniques: ["[+100]% Strength <when defending> <when [Embarked]>"],
+  },
+  {
+    name: "[Janissary] ability",
+    uniques: [
+      "Heals [50] damage if it kills a unit",
+      "[+25]% Strength <when attacking>",
+    ],
+  },
+  {
+    name: "[Sipahi] ability",
+    uniques: ["No movement cost to pillage"],
+  },
+  {
+    name: "[Cossack] ability",
+    uniques: ["[+50]% Strength <vs [Wounded] units>"],
+  },
+  {
+    name: "[Chu-Ko-Nu] ability",
+    uniques: ["[1] additional attacks per turn"],
+  },
+  {
+    name: "[Longbowman] ability",
+    uniques: ["[+1] Range"],
+  },
+  {
+    name: "[Samurai] ability",
+    uniques: ["[+20]% Strength <when fighting in [Open terrain] tiles>"],
+  },
+  {
+    name: "[Berserker] ability",
+    uniques: [
+      "Eliminates combat penalty for attacking over a river",
+      "Eliminates combat penalty for attacking across a coast",
+    ],
+  },
+  {
+    name: "[Minuteman] ability",
+    uniques: [
+      "[+20]% Strength <when fighting in [Rough terrain] tiles>",
+      "Ignores Zone of Control",
+    ],
+  },
+  {
+    name: "[Hussar] ability",
+    uniques: ["[+50]% to Flank Attack bonuses"],
+  },
+  {
+    name: "[Norwegian Ski Infantry] ability",
+    uniques: [
+      "[+25]% Strength <when fighting in [Snow] tiles>",
+      "[+25]% Strength <when fighting in [Tundra] tiles>",
+      "[+25]% Strength <when fighting in [Hill] tiles>",
+      "Double movement in [Snow]",
+      "Double movement in [Tundra]",
+      "Double movement in [Hill]",
+    ],
+  },
+  {
+    name: "[Carolean] ability",
+    uniques: ["Unit will heal every turn, even if it performs an action"],
+  },
+  {
+    name: "[Hakkapeliitta] ability",
+    uniques: [
+      "Transfer Movement to [Great General]",
+      "[+15]% Strength <when stacked with a [Great General] unit>",
+    ],
+  },
+  {
+    name: "[B17] ability",
+    uniques: [
+      "Damage taken from interception reduced by [30]%",
+      "[+33]% Strength <vs cities>",
+    ],
+  },
+  {
+    name: "[Zero] ability",
+    uniques: ["[+33]% Strength <vs [Fighter] units>"],
+  },
+  {
+    name: "[Sturmtruppen] ability",
+    uniques: ["[+15]% Strength <when attacking>"],
+  },
+  {
+    name: "[Khillaychuki Cavalry] ability",
+    uniques: ["[+25]% Strength <in [Hill] tiles>"],
+  },
+  {
+    name: "UAV",
+    uniques: [
+      "[-50]% maintenance costs",
+      "Damage taken from interception reduced by [50]%",
+      "[+20]% Strength <when stacked with a [Siege Carrier] unit>",
+    ],
+  },
+  {
+    name: "Drill",
+    uniques: ["[+20]% Strength <in [Rough terrain] tiles>"],
+  },
+  {
+    name: "Relentless Invasion",
+    uniques: ["Ignores terrain cost", "Ignores Zone of Control"],
+  },
+
+  // ============================================================
+  // MOD-SPECIFIC UNIQUE UNIT ABILITIES
+  // ============================================================
+
+  {
+    name: "[Magarru] ability",
+    uniques: ["[This Unit] gains [2] movement <upon damaging a [Land] unit>"],
+  },
+  {
+    name: "[Medjay] ability",
+    uniques: [
+      "[+15]% Strength <when fighting in [Friendly Land] tiles>",
+      "[+15]% Strength <when fighting in [City center] tiles>",
+    ],
+  },
+  {
+    name: "[Phalanx] ability",
+    uniques: ["[+10]% Strength <when adjacent to a [Phalanx] unit>"],
+  },
+  {
+    name: "[Han Chu-Ko-Nu] ability",
+    uniques: ["[+20]% Strength <when adjacent to a [Wounded] unit>"],
+  },
+  {
+    name: "Mono No Aware",
+    uniques: ["Can build [Jinja (Sea)] improvements on tiles"],
+  },
+  {
+    name: "[Yumi] ability",
+    uniques: [
+      "[+25]% Strength <when above [2] movement>",
+      "[+15]% Strength <when above [1] movement>",
+    ],
+  },
+  {
+    name: "[Burning Arrows] ability",
+    uniques: ["[+50]% Strength <when fighting in [Forest] tiles>"],
+  },
+  {
+    name: "[Xshasan Immortal] ability",
+    uniques: ["Heals [15] damage if it kills a unit"],
+  },
+  {
+    name: "[Roman Legion] ability",
+    uniques: ["[+10]% Strength <for every [Completed Policy branches]>"],
+  },
+  {
+    name: "[Hwarang] ability",
+    uniques: ["[+25]% Strength <vs cities>"],
+  },
+  {
+    name: "[Tehina] ability",
+    uniques: [
+      "Gain [100] [Gold] <upon discovering a [{City-State} {City center}] tile>",
+    ],
+  },
+  {
+    name: "Tu'i Tonga",
+    uniques: [
+      "Comment [Gain 30 Culture upon discovering a City center, increasing by 20 Culture each age]",
+      "Gain [30] [Culture] <upon discovering a [City center] tile> <during the [Ancient era]> <(modified by game speed)> <hidden from users>",
+      "Gain [50] [Culture] <upon discovering a [City center] tile> <during the [Classical era]> <(modified by game speed)> <hidden from users>",
+      "Gain [70] [Culture] <upon discovering a [City center] tile> <during the [Medieval era]> <(modified by game speed)> <hidden from users>",
+      "Gain [90] [Culture] <upon discovering a [City center] tile> <during the [Renaissance era]> <(modified by game speed)> <hidden from users>",
+      "Gain [110] [Culture] <upon discovering a [City center] tile> <during the [Industrial era]> <(modified by game speed)> <hidden from users>",
+      "Gain [130] [Culture] <upon discovering a [City center] tile> <during the [Modern era]> <(modified by game speed)> <hidden from users>",
+      "Gain [150] [Culture] <upon discovering a [City center] tile> <during the [Atomic era]> <(modified by game speed)> <hidden from users>",
+      "Gain [170] [Culture] <upon discovering a [City center] tile> <during the [Information era]> <(modified by game speed)> <hidden from users>",
+      "Gain [190] [Culture] <upon discovering a [City center] tile> <during the [Future era]> <(modified by game speed)> <hidden from users>",
+    ],
+  },
+  {
+    name: "[Leiomano] ability",
+    uniques: [
+      "[+10]% Strength <vs [Mounted] units>",
+      "[+10]% Strength <vs [Sword] units>",
+    ],
+  },
+  {
+    name: "Þjóðveldið",
+    uniques: [
+      "Comment [Gain 70 Culture upon discovering a Natural Wonder, increasing by 30 Culture each age]",
+      "Gain [70] [Culture] <upon discovering a [Natural Wonder] tile> <during the [Ancient era]> <(modified by game speed)> <hidden from users>",
+      "Gain [100] [Culture] <upon discovering a [Natural Wonder] tile> <during the [Classical era]> <(modified by game speed)> <hidden from users>",
+      "Gain [130] [Culture] <upon discovering a [Natural Wonder] tile> <during the [Medieval era]> <(modified by game speed)> <hidden from users>",
+      "Gain [160] [Culture] <upon discovering a [Natural Wonder] tile> <during the [Renaissance era]> <(modified by game speed)> <hidden from users>",
+      "Gain [180] [Culture] <upon discovering a [Natural Wonder] tile> <during the [Industrial era]> <(modified by game speed)> <hidden from users>",
+      "Gain [210] [Culture] <upon discovering a [Natural Wonder] tile> <during the [Modern era]> <(modified by game speed)> <hidden from users>",
+      "Gain [240] [Culture] <upon discovering a [Natural Wonder] tile> <during the [Atomic era]> <(modified by game speed)> <hidden from users>",
+      "Gain [270] [Culture] <upon discovering a [Natural Wonder] tile> <during the [Information era]> <(modified by game speed)> <hidden from users>",
+      "Gain [300] [Culture] <upon discovering a [Natural Wonder] tile> <during the [Future era]> <(modified by game speed)> <hidden from users>",
+    ],
+  },
+  {
+    name: "[Víkingr] ability",
+    uniques: [
+      "Unit will heal every turn, even if it performs an action <within [1] tiles of a [pillaged]> <hidden from users>",
+      "Comment [Unit will heal every turn, even if it performs an action within 1 tile of a pillaged tile]",
+    ],
+  },
+  {
+    name: "Servitium Debitum",
+    uniques: [
+      "[+20]% Strength <when attacking> <in tiles adjacent to [Coast] tiles>",
+      "[+1] Movement <when [Embarked]>",
+    ],
+  },
+  {
+    name: "Trained Sherpas",
+    uniques: [
+      "Can pass through impassable tiles",
+      "[This Unit] heals [50] HP <upon ending a turn in a [Mountain] tile>",
+    ],
+  },
+  {
+    name: "Ulus",
+    uniques: [
+      "[+1] Movement",
+      "[This Unit] gains [2] movement <upon entering a [Örtöö] tile>",
+    ],
+  },
+  {
+    name: "[Keshig] ability",
+    uniques: ["[This Unit] heals [15] HP <upon defeating a [Military] unit>"],
+  },
+  {
+    name: "[Chevaler] ability",
+    uniques: ["[+20]% Strength <vs [Sword] units>"],
+  },
+  {
+    name: "[Golden Bangles] ability",
+    uniques: [
+      "[+15]% Strength <for every adjacent [Luxury resource]>",
+      "[+10]% Strength <for every adjacent [Strategic resource]>",
+      "[+5]% Strength <for every adjacent [Bonus resource]>",
+    ],
+  },
+  {
+    name: "[Abambowa] ability",
+    uniques: ["[+75]% Health from pillaging tiles"],
+  },
+  {
+    name: "[Mikasa] ability",
+    uniques: ["Free [Ironclad] appears <upon being defeated>"],
+  },
+  {
+    name: "[Soldaderas] ability",
+    uniques: ["All adjacent units heal [10] HP when healing"],
+  },
+  {
+    name: "[Sepoy] ability",
+    uniques: ["[This Unit] heals [10] HP <upon defeating a [Military] unit>"],
+  },
+  {
+    name: "[Gholām] ability",
+    uniques: [
+      "[+15]% Strength <when adjacent to a [Great General] unit>",
+      "[+20] HP when healing <when adjacent to a [Great General] unit>",
+    ],
+  },
+  {
+    name: "[Gusa] ability",
+    uniques: [
+      "[+3]% Strength <for every [Remaining [{Friendly} {Major}] Civilizations]>",
+      "[+2]% Strength <for every [Remaining [{Friendly} {City-State}] Civilizations]>",
+    ],
+  },
+  {
+    name: "[Prussian Hussar] ability",
+    uniques: ["[+60]% Strength <if it hasn't used other actions yet>"],
+  },
+  {
+    name: "[Castilian Tercio] ability",
+    uniques: [
+      "[-20]% Strength for enemy [Mounted] units in adjacent [All] tiles",
+    ],
+  },
+]

@@ -1,0 +1,99 @@
+[
+    {
+        "name": "Domination",
+        "victoryScreenHeader": "Destroy all enemies to win!",
+        "milestones": [
+            "Destroy all players",
+            "Build [Statue of Supreme Leader]",
+            "Build [Throne]",
+            "Build [Crown]"
+        ],
+        "victoryString": "The world has been convulsed by war. Many great and powerful civilizations have fallen, but you have survived - and emerged victorious! The world will long remember your glorious triumph!",
+        "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    },
+    {
+        "name": "Economic",
+        "victoryScreenHeader": "Complete all the terraformer parts\nto win!",
+        "milestones": [
+            "Build [International Reserve Currency]",
+            "Build [International Trade Organization]",
+            "Build [International Stock Market]",
+            "Build [International Bank]"
+        ],
+        "victoryString": "You have taken over the World Economy with overwhelming economic power and monopolized the world's precious resources.",
+        "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    },
+    {
+        "name": "Cultural",
+        "victoryScreenHeader": "Complete 6 policy branches and\nbuild the Utopia Project to win!",
+        "milestones": [
+            "Complete [8] Policy branches",
+            "Build [National Monument]",
+            "Complete [8] World Wonders"
+        ],
+        "victoryString": "You have achieved victory through the awesome power of your Culture. Your civilization's greatness - the magnificence of its monuments and the power of its artists - have astounded the world! Poets will honor you as long as beauty brings gladness to a weary heart.",
+        "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    },
+    {
+        "name": "Diplomatic",
+        "victoryScreenHeader": "Build the UN and Build the World Alliance and be voted world leader to win!",
+        "milestones": [
+            "Anyone should build [United Nations]",
+            "Anyone should build [World Alliance]",
+            "Anyone should build [International Nuclear Containment Agency]",
+            "Anyone should build [House of Nations]",
+            "Anyone should build [Palace of Peace]",
+            "Anyone should build [Security Council]",
+            "Anyone should build [Geneva Convention]",
+            "Anyone should build [International War Crime Court]",
+            "Build [Humanitarian Aid Agency]",
+            "Win diplomatic vote"
+        ],
+        "victoryString": "You have triumphed over your foes through the art of diplomacy! Your cunning and wisdom have earned you great friends - and divided and sown confusion among your enemies! Forever will you be remembered as the leader who brought peace to this weary world!",
+        "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    },
+    {
+        "name": "Scientific",
+        "victoryScreenHeader": "Complete all the spaceship parts and Build the Time Machine to win!",
+        "milestones": [
+            "Build [National Space Agency]",
+            "Build [Apollo Program]",
+            "Build [Space Telescope]",
+            "Build [International Space Station]",
+            "Build [Mars Colonization Program]",
+            "Build [National Institute of Science Advancement]",
+            "Build [Supercomputer]",
+            "Build [Quantum Computer]",
+            "Build [AI Singularity]",
+            "Add all [spaceship parts] in capital",
+            "Build [Time Machine Blueprints]",
+            "Add all [Time Machine parts] in capital"
+        ],
+        "requiredSpaceshipParts": [
+            "SS Engine",
+            "SS Stasis Chamber",
+            "SS Cockpit",
+            "SS Booster",
+            "SS Booster",
+            "SS Booster",
+            "Photon Generator",
+            "Photon Generator",
+            "Causality Matrix",
+            "Dimensional Shifter",
+            "Entropy Phaser"
+        ],
+        "victoryString": "You have achieved victory through mastery of Science! You have conquered the mysteries of nature and led your people on a voyage to a brave new world! Your triumph will be remembered as long as the stars burn in the night sky!",
+        "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    },
+    {
+        "name": "Religious",
+        "milestones": [
+            "Become the world religion",
+            "Build [Religious Order]",
+            "Build [Book of Wisdom]",
+            "Build [Library of Knowledge]"
+        ],
+        "victoryString": "We have converted all the people in the world to the same belief, the true way shall guide humanity forward!",
+        "defeatString": "Remember, it is important to not let those pesky missionary take your people's heart! Next time."
+    }
+]

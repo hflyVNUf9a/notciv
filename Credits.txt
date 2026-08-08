@@ -1,0 +1,76 @@
+Credits:
+Mod used: Advance-Wars-Mod URL: https://github.com/NoviceCoder2000/Advance-Wars-Mod
+
+Mod Used: The-Great-Martian-War-GnK URL: https://github.com/Calais-Osterrepublic/The-Great-Martian-War-GnK
+
+Mod Used: Resources-Edited URL: https://github.com/Mr-Chubz/Resources-Edited
+
+Mod Used: Arepa-s-Canal-Mod URL: https://github.com/Caballero-Arepa/Arepa-s-Canal-Mod
+
+Mod Used: Arial-Edited URL: https://github.com/Mr-Chubz/Arial-Edited
+
+Mod Used: Alpha-Frontier URL: https://github.com/carriontrooper/Alpha-Frontier
+
+Mod Used: Barbarians-but-Better URL: https://github.com/Calais-Osterrepublic/Barbarians-but-Better
+
+Mod Used: Better-Workers URL: https://github.com/the-s-is-silent/Better-Workers
+
+Mod Used: Civ-VII-Nations URL: https://github.com/Kurwizimi/Civ-VII-Nations
+
+Mod Used: Civ-V---Screens URL: https://github.com/RobLoach/Civ-V---Screens
+
+Mod Used: Civ-V---Era-Popups URL: https://github.com/RobLoach/Civ-V---Era-Popups
+
+Mod Used: Civ-V---Voices URL: https://github.com/RobLoach/Civ-V---Voices
+
+Mod Used: ColonialUSA URL: https://github.com/ryflan3/ColonialUSA
+
+Mod Used: Community-Civs URL: https://github.com/Caballero-Arepa/Community-Civs
+
+Mod Used: Critical-Damage URL: https://github.com/hachchch/Critical-Damage
+
+Mod Used: Future-Edited URL: https://github.com/Mr-Chubz/Future-Edited
+
+Mod Used: Future-Expansion-Enhanced URL: https://github.com/denismattos/Future-Expansion-Enhanced
+
+Mod Used: Future-Worlds URL: https://github.com/Kurwizimi/Future-Worlds
+
+Mod Used: Ice-Breakers URL: https://github.com/Mr-Chubz/Ice-Breakers
+
+Mod Used: IndustrialEraAmerica URL: https://github.com/TheoneNave99/IndustrialEraAmerica
+
+Mod Used: ModernUSA URL: https://github.com/TheoneNave99/ModernUSA
+
+Mod Used: MorePromotions URL: https://github.com/TheoneNave99/MorePromotions
+
+Mod Used: Resource-Recyclers URL: https://github.com/SpacedOutChicken/Resource-Recyclers
+
+Mod Used: RekMOD URL: https://github.com/ravignir/RekMOD
+
+Mod Used: Rome-Improvements URL: https://github.com/OmberMan/Rome-Improvements
+
+Mod Used: Sullien-s-Mythical-Civilizations URL: https://github.com/carriontrooper/Sullien-s-Mythical-Civilizations
+
+Mod Used: The-Ultimate-Modpack_III URL: https://github.com/Mr-Chubz/The-Ultimate-Modpack_III
+
+Mod Used: TheIndustrialists URL: https://github.com/TheoneNave99/TheIndustrialists
+
+Mod Used: Thunders-Barbarians URL: https://github.com/ThunderWasTaken/Thunders-Barbarians
+
+Mod Used: Tileimprovements-Tunnel URL: https://github.com/Rex1um7/Tileimprovements-Tunnel
+
+Mod Used: UltimateLibertyCiv URL: https://github.com/TheoneNave99/UltimateLibertyCiv
+
+Mod Used: Unciv-modern-armies URL: https://github.com/JOGANfruit/Unciv-modern-armies
+
+Mod Used: UltimateRome URL: https://github.com/TheoneNave99/UltimateRome
+
+Mod Used: USSR-Unciv URL: https://github.com/Doomstar00/USSR-Unciv
+
+Mod Used: War-in-Ukraine URL: https://github.com/ArseniySCM/War-in-Ukraine
+
+Mod Used: War-Weariness URL: https://github.com/Rex1um7/War-Weariness
+
+Mod Used: Warfare-Edited URL: https://github.com/Mr-Chubz/Warfare-Edited
+
+Mod Used: Warfare-Expanded-Lite URL: https://github.com/GeneralWadaling/Warfare-Expanded-Lite
