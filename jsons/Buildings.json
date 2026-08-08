@@ -1076,7 +1076,7 @@
     cost: 150,
     requiredTech: "Rifling",
     cityStrength: 3,
-    uniques: ["New [Military] units start with [10] Experience [in this city]"],
+    uniques: ["New [Military] units start with [10] XP [in this city]"],
   },
   {
     name: "Stronghold",
@@ -1478,7 +1478,7 @@
     cost: 40,
     maintenance: 1,
     requiredTech: "Pottery",
-    uniques: ["Hidden when religion is disabled"],
+    uniques: ["Only available <when religion is enabled>"],
   },
   {
     name: "El Caracol",
@@ -1844,8 +1844,8 @@
     isNationalWonder: true,
     uniques: [
       "Free [Great General] appears",
-      "New [Military] units start with [15] Experience [in this city]",
-      "Requires a [Barracks] in all cities",
+      "New [Military] units start with [15] XP [in this city]",
+      "Only available <if [Barracks] is constructed in all [non-[Puppeted]] cities>",
       "All newly-trained [non-air] units [in this city] receive the [Morale] promotion",
       "Cost increases by [30] per owned city",
     ],
@@ -1879,7 +1879,7 @@
     hurryCostModifier: 25,
     requiredTech: "Philosophy",
     uniques: [
-      "Hidden when religion is disabled",
+      "Only available <when religion is enabled>",
       "[+10]% Natural religion spread [in this city]",
       "Destroyed when the city is captured",
     ],
@@ -1922,7 +1922,7 @@
     hurryCostModifier: 25,
     requiredTech: "Philosophy",
     uniques: [
-      "Hidden when religion is disabled",
+      "Only available <when religion is enabled>",
       "Destroyed when the city is captured",
       "[+5]% [Food] [in this city]",
     ],
@@ -2539,9 +2539,9 @@
     isNationalWonder: true,
     percentStatBonus: { science: 50 },
     uniques: [
-      "Requires a [Library] in all cities",
+      "Only available <if [Library] is constructed in all [non-[Puppeted]] cities>",
       "[+15]% [Science] [in all cities] <while the empire is happy>",
-      "[+30]% [Gold] [in all cities] <when below [0] Happiness>",
+      "[+30]% [Gold] [in all cities] <when below [0] [Happiness]>",
       "Cost increases by [30] per owned city",
     ],
     requiredTech: "Philosophy",
@@ -2589,7 +2589,7 @@
     requiredBuilding: "Market",
     requiredTech: "Banking",
     uniques: [
-      "Doubles Gold given to enemy if city is captured",
+      "[+100]% Gold given to enemy if city is captured <in this city>",
       "Destroyed when the city is captured",
       "All newly-trained [Military] units [in this city] receive the [Combat Pay] promotion",
     ],
@@ -4535,7 +4535,7 @@
     science: 1,
     isNationalWonder: true,
     uniques: [
-      "Requires a [Hospital] in all cities",
+      "Only available <if [Hospital] is constructed in all [non-[Puppeted]] cities>",
       "[+15]% Food <in all cities>",
       "Cost increases by [30] per owned city",
       "[Consumes [2] [Biohazard Matter]",
@@ -4616,7 +4616,7 @@
       "Provides [-150] [War Weariness] <when above [50] [War Weariness]> <every [1] turns> <when not at war> <for [City-States] Civilizations>",
       "Provides [-50] [War Weariness] <when above [50] [War Weariness]> <every [1] turns> <when at war> <for [City-States] Civilizations>",
       "Provides [-50] [War Weariness] <when above [500] [War Weariness]> <for [3] turns> <when not at war>",
-      "Instantly provides [200] [War Weariness] <upon declaring war with a major Civilization>",
+      "Instantly provides [200] [War Weariness] <upon declaring war on [Major] Civilizations>",
       "Provides [-25] [War Weariness] <upon declaring friendship> <for [1] turns>",
       "Provides [-20] [War Weariness] <upon declaring friendship> <for [2] turns>",
       "Provides [-15] [War Weariness] <upon declaring friendship> <for [3] turns>",
@@ -4635,7 +4635,7 @@
       "Can be purchased for [0] [Gold] [in annexed cities]",
       "Provides [-10] [War Weariness] <when above [0] [War Weariness]> <every [1] turns> <when not at war>",
       "Provides [-5] [War Weariness] <when above [500] [War Weariness]> <every [1] turns> <when at war>",
-      "Instantly provides [100] [War Weariness] <upon declaring war with a major Civilization>",
+      "Instantly provides [100] [War Weariness] <upon declaring war on [Major] Civilizations>",
     ],
   },
   {
@@ -4839,7 +4839,7 @@
     requiredResource: "Corporation Slot",
     uniques: [
       "Provides [2] [Defense Force Stock]",
-      "New [Military] units start with [25] Experience [in all cities]",
+      "New [Military] units start with [25] XP [in all cities]",
       "Consumes [1] [Corporation Slot(Total)]",
       "Only available <after discovering [Corporations]>",
       "Only available <with [Corporation Slot]>",
@@ -4882,7 +4882,7 @@
     requiredResource: "Corporation Slot",
     uniques: [
       "Provides [2] [Space Stock]",
-      "[-33]% Food consumption by specialists [in all cities]",
+      "[-33]% Food consumption by [Specialists] [in all cities]",
       "[-33]% Unhappiness from [Specialists] [in all cities]",
       "Consumes [1] [Corporation Slot(Total)]",
       "Only available <after discovering [Corporations]>",

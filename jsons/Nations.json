@@ -1367,8 +1367,8 @@
     "uniqueName": "8 лет бомбить Домбас",
     "uniques": [
       "[+25]% Strength <vs [City-States]>",
-      "Double quantity of [Iron] produced",
-      "Double quantity of [Coal] produced"
+      "[+100]% [Iron] resource production",
+      "[+100]% [Coal] resource production"
     ],
     "cities": ["Донецк", "Авдеевка", "Мариуполь", "Бахмут", "Белгород", "Луганск", "Угольдар", "Краматорск", "Макеевка", "Северск", "Соледар", "Украинск"],
     "spyNames": ["Oleksandr", "Danya", "Volodymir", "Anna", "Dmytro", "Sergiy", "Ivan", "Taras"]
@@ -2281,8 +2281,8 @@
       "[-75]% Gold cost of acquiring tiles [in all cities]",
       "Starts with [Commerce] adopted",
       "[+2 Gold] from every [Strategic resource]",
-      "Double quantity of [Coal] produced",
-      "Double quantity of [Aluminum] produced"
+      "[+100]% [Coal] resource production",
+      "[+100]% [Aluminum] resource production"
     ],
     "cities": [
       "Washington", "New York", "Boston", "Philadelphia", "Atlanta", "Chicago",
@@ -2386,7 +2386,7 @@
     "innerColor": [156, 102, 31],
     "uniqueName": "New World Order",
     "uniqueText": "Unaffected by unhapiness penalties. This effect stops applying when below -10 Happiness.",
-    "uniques": ["[+75]% growth [in all cities] <when between [-10] and [0] Happiness>"],
+    "uniques": ["[+75]% growth [in all cities] <when between [-10] and [0] [Happiness]>"],
     "cities": ["Majesty", "Laford", "Pleigas", "Viiling", "Rosey", "Alosa", "Delmont", "Jathe", "Onnall", "Electrora"]
   },
 
@@ -4149,7 +4149,7 @@
     "uniqueName": "Northern Colossus",
     "uniques": [
       "[+1 Production] from [All] tiles [in all cities]",
-      "+[10]% [Production] [in all cities]",
+      "[+10]% [Production] [in all cities]",
       "[+3 Gold] from [Mine] tiles [in all cities]",
       "[+1 Gold] from [Tundra] tiles [in all cities]",
       "[+2 Science, +1 Production, +1 Culture] from [Snow] tiles [in all cities]",
@@ -4193,7 +4193,7 @@
     "uniqueName": "Biggest nation",
     "uniques": [
       "[+1 Production, +1 Food] in cities on [Snow] tiles",
-      "Double quantity of [Oil] produced"
+      "[+100]% [Oil] resource production"
     ],
     "cities": ["Москва", "Ростов", "Екатеринбург", "Санкт-Петербург", "Калининград", "Омск", "Новосибирск", "Казань", "Астрахань", "Самара", "Челябинск", "Пермь", "Саратов", "Воронеж"],
     "spyNames": ["Aleksandr", "Sergey", "Arseniy", "Mikhail", "Dmytry", "Vladymir", "Joseph"]
