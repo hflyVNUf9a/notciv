@@ -701,7 +701,7 @@
         "cost": 225,
         "uniques": [
             "Can build [Land] improvements on tiles",
-            "[-33]% tile improvement construction time",
+            "[-33]% construction time for [All] improvements",
             "[+1] Movement <after discovering [Combustion]>",
             "[+1] Movement <after discovering [Mobile Tactics]>"
         ]
